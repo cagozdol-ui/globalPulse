@@ -238,19 +238,46 @@ regimes:
 # ------------------------------------------------------------
 narrative:
   language: "tr"
-  model: "claude-sonnet-4-6"
+
+  # Guncel model isimleri: claude-haiku-4-5, claude-sonnet-5, claude-opus-5
+  # Bu is icin Haiku fazlasiyla yeterli: hazir bir siniflandirma
+  # ciktisini akici Turkce'ye ceviriyor, muhakeme yapmiyor.
+  model: "claude-haiku-4-5"
+
+  max_tokens: 1500
   max_paragraphs: 4
-  include_previous_day: true
-  memory_file: "data/narrative_history.json"
-  memory_lookback_days: 5
+
+  # Maliyet takibi icin fiyat tablosu (USD / 1M token).
+  # Fiyat degisirse SADECE burayi guncelle; usage.json otomatik uyar.
+  # Kaynak: platform.claude.com/docs/en/about-claude/pricing
+  pricing_usd_per_mtok:
+    claude-haiku-4-5:
+      input: 1.00
+      output: 5.00
+    claude-sonnet-5:
+      input: 3.00
+      output: 15.00
+    claude-opus-5:
+      input: 5.00
+      output: 25.00
+
+  # Hafiza
+  history_file: "data/narrative_history.json"
+  usage_file: "data/usage.json"
+  history_lookback: 3          # LLM'e kac onceki gunun yorumu verilsin
+  highlight_streak_new: 3      # kac gunden azsa "yeni" sayilsin
+
   must_cover:
     - "tespit edilen rejim ve neden"
     - "onceki gune gore ne degisti"
     - "Turkiye/BIST'e gecis kanali"
     - "izlenecek bir sonraki tetikleyici"
+
   forbidden:
     - "al/sat tavsiyesi"
-    - "fiyat hedefi"
+    - "fiyat hedefi veya seviye tahmini"
     - "kesinlik ifadeleri (kesinlikle, mutlaka, garanti)"
+    - "girdide olmayan sayi veya gosterge uydurmak"
+
   disclaimer: >
     Bu icerik bilgilendirme amaclidir, yatirim tavsiyesi degildir.
