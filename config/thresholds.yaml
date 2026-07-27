@@ -186,7 +186,7 @@ regimes:
     priority: 7
     label: "Turkiye'ye ozgu risk"
     conditions:
-      - "turkey_cds_chg_5d_pct > 10"
+      - "turkey_cds_5y_chg_5d_pct > 10"
       - "em_equity_chg_5d_pct > -2"   # EM genel sakin
     severity: high
     note: >
