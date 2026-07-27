@@ -233,7 +233,7 @@ def main() -> int:
         print("[HATA] Hicbir kaynaktan veri gelmedi.", file=sys.stderr)
         return 1
 
-    new = pd.concat(parts, axis=1)
+    new = pd.concat(parts, axis=1, sort=False)
     new.index = pd.to_datetime(new.index)
     new = new.sort_index()
     new = apply_fallbacks(new)
