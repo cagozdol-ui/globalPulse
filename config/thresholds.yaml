@@ -1,0 +1,231 @@
+# ============================================================
+# GlobalPulse - Rejim Siniflandirma Esikleri
+# ============================================================
+# NOT: Bu esikler heuristiktir, istatistiksel degildir.
+# Her gostergede sabit esik + rolling persentil birlikte
+# degerlendirilir. Persentil, rejim kaymasina karsi korumadir.
+# ============================================================
+
+meta:
+  version: "0.1.0"
+  updated: "2026-07-27"
+  percentile_window_days: 504   # ~2 yil islem gunu
+  timezone: "Europe/Istanbul"
+
+# ------------------------------------------------------------
+# 1. VERI KAYNAKLARI
+# ------------------------------------------------------------
+sources:
+  fred:
+    vix:            VIXCLS
+    hy_oas:         BAMLH0A0HYM2
+    ig_oas:         BAMLC0A0CM
+    ust_2y:         DGS2
+    ust_10y:        DGS10
+    real_10y:       DFII10
+    breakeven_10y:  T10YIE
+    fwd_5y5y:       T5YIFR
+    dxy_broad:      DTWEXBGS      # DXY yerine genis dolar endeksi
+  yfinance:
+    move:      "^MOVE"            # bazen bos doner, fallback gerekli
+    dxy:       "DX-Y.NYB"
+    gold:      "GC=F"
+    brent:     "BZ=F"
+    copper:    "HG=F"
+    usdjpy:    "JPY=X"
+    spx:       "^GSPC"
+    em_equity: "EEM"
+    usdtry:    "TRY=X"
+    xu100:     "XU100.IS"
+  manual_or_proxy:
+    turkey_cds_5y:
+      note: "Ucretsiz kaynak yok; TR eurobond spread proxy veya elle guncelleme"
+      proxy_ticker: null
+
+# ------------------------------------------------------------
+# 2. TEKIL GOSTERGE ESIKLERI  (seviye bazli)
+# ------------------------------------------------------------
+levels:
+  vix:
+    calm:    [0, 14]
+    normal:  [14, 20]
+    warning: [20, 28]
+    stress:  [28, 999]
+  move:
+    calm:    [0, 80]
+    normal:  [80, 110]
+    warning: [110, 140]
+    stress:  [140, 999]
+  hy_oas:
+    calm:    [0, 300]
+    normal:  [300, 400]
+    warning: [400, 500]
+    stress:  [500, 9999]
+  ig_oas:
+    calm:    [0, 90]
+    normal:  [90, 130]
+    warning: [130, 180]
+    stress:  [180, 9999]
+  real_10y:
+    calm:    [-5, 1.0]
+    normal:  [1.0, 2.0]
+    warning: [2.0, 2.5]
+    stress:  [2.5, 10]
+  fwd_5y5y:
+    # cift tarafli: hem cok dusuk hem cok yuksek problem
+    deflation_risk: [0, 1.8]
+    normal:         [1.8, 2.6]
+    inflation_risk: [2.6, 10]
+  turkey_cds_5y:
+    calm:    [0, 250]
+    normal:  [250, 350]
+    warning: [350, 450]
+    stress:  [450, 9999]
+
+# ------------------------------------------------------------
+# 3. HIZ / MOMENTUM ESIKLERI
+# ------------------------------------------------------------
+# Seviyeden daha erken sinyal verir. Rejim degisimi burada yakalanir.
+velocity:
+  ust_10y:
+    window_days: 30
+    threshold_bp: 50
+    label: "faiz soku"
+  dxy:
+    window_days: 60
+    threshold_pct: 5.0
+    label: "dolar soku"
+  usdjpy:
+    window_days: 5
+    threshold_pct: 3.0
+    label: "carry unwind riski"
+  vix:
+    window_days: 1
+    threshold_pct: 40.0
+    label: "volatilite patlamasi"
+  hy_oas:
+    window_days: 20
+    threshold_bp: 75
+    label: "kredi spread genislemesi"
+  turkey_cds_5y:
+    window_days: 5
+    threshold_pct: 10.0
+    label: "TR risk primi sicramasi"
+
+# ------------------------------------------------------------
+# 4. BILESIK REJIM KURALLARI
+# ------------------------------------------------------------
+# Sirayla degerlendirilir, ilk eslesen kazanir (priority dusuk = once)
+# Tek gosterge asla yeterli degil: her kural >=2 teyit ister.
+regimes:
+
+  - id: credit_stress
+    priority: 1
+    label: "Kredi stresi"
+    conditions:
+      - "hy_oas > 450"
+      - "vix > 25"
+    severity: high
+    note: >
+      Kredi ve hisse volatilitesi ayni anda bozuluyor. Gercek
+      risk-off. EM ve BIST'e gecis kanali hizli acilir.
+
+  - id: recession_pricing
+    priority: 2
+    label: "Bull steepening / resesyon fiyatlamasi"
+    conditions:
+      - "ust_2y_chg_20d < -20"        # bp
+      - "curve_2s10s_chg_20d > 15"    # bp, dikleşiyor
+      - "hy_oas_chg_20d > 0"
+    severity: high
+    note: >
+      En tehlikeli kombinasyon. Faiz indirimi fiyatlaniyor ama
+      kredi de bozuluyor -> piyasa buyume korkusu fiyatliyor.
+
+  - id: technical_volatility
+    priority: 3
+    label: "Teknik dalgalanma"
+    conditions:
+      - "vix > 25"
+      - "hy_oas < 350"
+    severity: low
+    note: >
+      Hisse volatilitesi kredi tarafindan teyit edilmiyor.
+      Genellikle gecici; pozisyon kaynakli.
+
+  - id: safe_haven_rate_uncertainty
+    priority: 4
+    label: "Guvenli liman + faiz belirsizligi"
+    conditions:
+      - "move > 130"
+      - "dxy_chg_20d > 0"
+      - "gold_chg_20d > 0"
+    severity: medium
+
+  - id: gold_anomaly
+    priority: 5
+    label: "Altin anomalisi"
+    conditions:
+      - "dxy_chg_60d > 0"
+      - "real_10y_chg_60d > 0"
+      - "gold_chg_60d > 5"
+    severity: medium
+    note: >
+      Klasik iliski kirilmis. Genellikle merkez bankasi alimi
+      veya jeopolitik prim. LLM katmanina aciklama icin devret.
+
+  - id: bear_steepening
+    priority: 6
+    label: "Bear steepening / term premium"
+    conditions:
+      - "ust_2y_chg_20d > 10"
+      - "curve_2s10s_chg_20d > 15"
+    severity: medium
+
+  - id: turkey_idiosyncratic
+    priority: 7
+    label: "Turkiye'ye ozgu risk"
+    conditions:
+      - "turkey_cds_chg_5d_pct > 10"
+      - "em_equity_chg_5d_pct > -2"   # EM genel sakin
+    severity: high
+    note: >
+      Kuresel risk-off degil, yerel haber akisi. EMBI+ ile
+      karsilastirmadan bu ayrim yapilamaz.
+
+  - id: risk_on
+    priority: 8
+    label: "Risk-on"
+    conditions:
+      - "vix < 16"
+      - "hy_oas < 320"
+      - "spx_chg_20d > 0"
+    severity: none
+
+  - id: neutral
+    priority: 99
+    label: "Notr"
+    conditions: []
+    severity: none
+
+# ------------------------------------------------------------
+# 5. LLM ANLATI KATMANI AYARLARI
+# ------------------------------------------------------------
+narrative:
+  language: "tr"
+  model: "claude-sonnet-4-6"
+  max_paragraphs: 4
+  include_previous_day: true
+  memory_file: "data/narrative_history.json"
+  memory_lookback_days: 5
+  must_cover:
+    - "tespit edilen rejim ve neden"
+    - "onceki gune gore ne degisti"
+    - "Turkiye/BIST'e gecis kanali"
+    - "izlenecek bir sonraki tetikleyici"
+  forbidden:
+    - "al/sat tavsiyesi"
+    - "fiyat hedefi"
+    - "kesinlik ifadeleri (kesinlikle, mutlaka, garanti)"
+  disclaimer: >
+    Bu icerik bilgilendirme amaclidir, yatirim tavsiyesi degildir.
