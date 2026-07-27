@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "timestamp": "2026-07-27T12:43:30Z",
+      "as_of": "2026-07-27",
+      "model": "claude-haiku-4-5",
+      "input_tokens": 1124,
+      "output_tokens": 746,
+      "cost_usd": 0.004854,
+      "priced": true
+    }
+  ]
+}
