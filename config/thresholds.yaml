@@ -7,7 +7,7 @@
 # ============================================================
 
 meta:
-  version: "0.1.0"
+  version: "0.2.0"
   updated: "2026-07-27"
   percentile_window_days: 504   # ~2 yil islem gunu
   timezone: "Europe/Istanbul"
@@ -120,7 +120,7 @@ velocity:
 regimes:
 
   - id: credit_stress
-    priority: 1
+    priority: 10
     label: "Kredi stresi"
     conditions:
       - "hy_oas > 450"
@@ -131,7 +131,7 @@ regimes:
       risk-off. EM ve BIST'e gecis kanali hizli acilir.
 
   - id: recession_pricing
-    priority: 2
+    priority: 20
     label: "Bull steepening / resesyon fiyatlamasi"
     conditions:
       - "ust_2y_chg_20d < -20"        # bp
@@ -143,7 +143,7 @@ regimes:
       kredi de bozuluyor -> piyasa buyume korkusu fiyatliyor.
 
   - id: technical_volatility
-    priority: 3
+    priority: 30
     label: "Teknik dalgalanma"
     conditions:
       - "vix > 25"
@@ -154,7 +154,7 @@ regimes:
       Genellikle gecici; pozisyon kaynakli.
 
   - id: safe_haven_rate_uncertainty
-    priority: 4
+    priority: 40
     label: "Guvenli liman + faiz belirsizligi"
     conditions:
       - "move > 130"
@@ -163,7 +163,7 @@ regimes:
     severity: medium
 
   - id: gold_anomaly
-    priority: 5
+    priority: 50
     label: "Altin anomalisi"
     conditions:
       - "dxy_chg_60d > 0"
@@ -175,7 +175,7 @@ regimes:
       veya jeopolitik prim. LLM katmanina aciklama icin devret.
 
   - id: bear_steepening
-    priority: 6
+    priority: 60
     label: "Bear steepening / term premium"
     conditions:
       - "ust_2y_chg_20d > 10"
@@ -183,7 +183,7 @@ regimes:
     severity: medium
 
   - id: turkey_idiosyncratic
-    priority: 7
+    priority: 70
     label: "Turkiye'ye ozgu risk"
     conditions:
       - "turkey_cds_5y_chg_5d_pct > 10"
@@ -193,8 +193,21 @@ regimes:
       Kuresel risk-off degil, yerel haber akisi. EMBI+ ile
       karsilastirmadan bu ayrim yapilamaz.
 
+  - id: real_rate_squeeze
+    priority: 55
+    label: "Reel faiz sikismasi"
+    conditions:
+      - "real_10y_pct_rank > 90"
+      - "real_10y_chg_60d > 10"
+      - "hy_oas < 400"
+    severity: medium
+    note: >
+      Reel faiz 2 yillik araligin tepesinde ve yukselmeye devam
+      ediyor, ama kredi tarafi henuz bozulmamis. Uzun vadeli
+      varlik degerlemeleri ve EM sermaye akimlari icin baski.
+
   - id: risk_on
-    priority: 8
+    priority: 80
     label: "Risk-on"
     conditions:
       - "vix < 16"
@@ -202,8 +215,20 @@ regimes:
       - "spx_chg_20d > 0"
     severity: none
 
+  - id: calm_drift
+    priority: 90
+    label: "Sakin seyir"
+    conditions:
+      - "vix < 22"
+      - "hy_oas < 400"
+      - "ig_oas < 140"
+    severity: none
+    note: >
+      Belirgin bir stres yok. VIX ve kredi spreadleri normal
+      bantta. Bu bir "olay yok" gunu; highlights bolumune bak.
+
   - id: neutral
-    priority: 99
+    priority: 999
     label: "Notr"
     conditions: []
     severity: none
