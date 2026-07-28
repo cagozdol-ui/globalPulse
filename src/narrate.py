@@ -28,6 +28,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 from collections import defaultdict
 from datetime import date, datetime
@@ -37,12 +38,67 @@ import pandas as pd
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from classify import classify  # noqa: E402
+from classify import SERIES_KIND, classify  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config" / "thresholds.yaml"
 HISTORY_PATH = ROOT / "data" / "history.parquet"
 LATEST_PATH = ROOT / "data" / "latest.json"
+
+
+# ===============================================================
+# Metrik birimleri
+# ===============================================================
+_CHG_RE = re.compile(r"^(?P<base>.+?)_chg_(?P<n>\d+)d(?P<pct>_pct)?$")
+
+
+def metric_unit(name: str) -> str:
+    """
+    Bir metrik adindan birimini cikarir.
+
+    LLM'e sayi gonderirken birim ZORUNLU. Aksi halde 27 bp'yi
+    yuzde 27 diye okuyor - bu hatayi bir kez yasadik.
+    """
+    if name.endswith("_pct_rank"):
+        return "persentil"
+    if name == "tr_rel_5d":
+        return "yuzde puan"
+
+    m = _CHG_RE.match(name)
+    if m:
+        if m.group("pct"):
+            return "%"
+        base = m.group("base")
+        kind = SERIES_KIND.get(base, "price")
+        return "bp" if kind in ("rate", "spread", "cds") else "%"
+
+    kind = SERIES_KIND.get(name, "price")
+    if kind == "rate":
+        return "%"
+    if kind in ("spread", "cds"):
+        return "bp"
+    return ""
+
+
+def describe_conditions(conditions: list[str], metrics: dict) -> list[str]:
+    """
+    Ham kosul dizeleri ("real_10y_chg_60d > 10") LLM'e GONDERILMEZ:
+    icindeki esik sabitinin birimi yok ve model onu yuzde saniyor.
+    Bunun yerine kosulda gecen metriklerin GERCEK degerini birimiyle
+    veririz. Neden'i zaten rejim notu anlatiyor.
+    """
+    names: list[str] = []
+    for c in conditions:
+        for tok in re.findall(r"[A-Za-z_][A-Za-z0-9_]*", c):
+            if tok in metrics and tok not in names:
+                names.append(tok)
+
+    out = []
+    for nm in names:
+        unit = metric_unit(nm)
+        val = metrics[nm]
+        out.append(f"{nm} = {val:g}{(' ' + unit) if unit else ''}")
+    return out
 
 
 # ===============================================================
@@ -130,12 +186,19 @@ tespiti ve esik degerlendirmesi zaten kural tabanli bir sistem
 tarafindan yapildi. Senin isin siniflandirmak DEGIL, aciklamak.
 
 KURALLAR:
-- En fazla {n['max_paragraphs']} paragraf yaz. Baslik kullanma.
+- En fazla {n['max_paragraphs']} paragraf yaz.
+- BASLIK KULLANMA. Markdown isareti (#, *, -) kullanma. Duz paragraf yaz.
+- Esik/limit degeri yazma. Sadece guncel degerleri kullan; hangi
+  esigin asildigini rejim etiketi zaten soyluyor.
 - SADECE sana verilen verilerdeki sayilari kullan. Verilmemis
   hicbir gosterge, seviye veya rakam uydurma.
 - "yeni" isaretli gostergelere agirlik ver. "devam" isaretli
   olanlar zaten gunlerdir boyle; onlara en fazla bir cumle ayir.
 - Rejim etiketini oldugu gibi kabul et, sorgulama.
+- BIRIMLERE DIKKAT ET. "bp" = baz puan = yuzde puanin yuzde biri.
+  Ornek: "27 bp" YUZDE 27 DEGILDIR, 0.27 puandir. Faiz ve spread
+  degisimleri bp cinsindendir; fiyat/endeks degisimleri % cinsinden.
+  Bir sayiyi yazarken birimini girdideki gibi aynen kullan.
 - Neden-sonuc kurarken temkinli ol: "olabilir", "isaret ediyor"
   gibi ifadeler kullan.
 
@@ -154,7 +217,8 @@ ZORUNLU OLARAK DEGIN:
     lines += [
         f"REJIM: {r['label']}  (onem: {r['severity']})",
         f"Rejim gerekcesi: {r['note'] or '-'}",
-        f"Eslesen kosullar: {', '.join(r['matched_conditions']) or '-'}",
+        f"Rejimi tetikleyen gostergelerin GUNCEL degerleri: "
+        f"{'; '.join(describe_conditions(r['matched_conditions'], result.get('metrics', {}))) or '-'}",
         f"Dune gore rejim degisti mi: {'EVET, onceki: ' + str(prev_regime) if changed and prev_regime else ('EVET (ilk kayit)' if changed else 'HAYIR, ayni')}",
         "",
         "GOSTERGE SEVIYELERI:",
@@ -169,7 +233,10 @@ ZORUNLU OLARAK DEGIN:
     lines += ["", "ONE CIKANLAR (persentil ucunda olanlar):"]
     if result["highlights"]:
         for h in result["highlights"]:
-            chg = f", 20 is gunu degisim {h['chg_20d']}" if h["chg_20d"] is not None else ""
+            chg = (
+                f", 20 is gunu degisim {h['chg_20d']} {h.get('chg_unit', '')}".rstrip()
+                if h["chg_20d"] is not None else ""
+            )
             lines.append(
                 f"  [{h['status'].upper()}] {h['indicator']}: {h['value']} "
                 f"(persentil {h['pct_rank']}{chg}) - {h['streak_days']} gundur listede"
