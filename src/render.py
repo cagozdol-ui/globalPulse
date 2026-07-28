@@ -162,41 +162,45 @@ def strip(pct: float | None, band: str) -> str:
 </div>"""
 
 
-def sparkline(values: list[float], rng: list[float]) -> str:
+def sparkline(values: list[float], rng: list[float] | None = None) -> str:
     """
-    Son 60 is gununun yorungesi, 2 yillik aralik icinde olceklenmis.
+    Son 60 is gununun yorungesi.
 
-    One cikanlar bolumunde persentil seridi bilgi tasimiyordu: o bolume
-    zaten sadece uctaki gostergeler giriyor, dolayisiyla isaretci her
-    zaman kenardaydi. Asil merak edilen "oraya nasil geldi" - bu yuzden
-    konum yerine yorunge cizilir.
+    Y ekseni 60 gunun KENDI min-max araligina olceklenir, 2 yillik
+    araliga degil. Ilk denemede 2 yillik aralik kullanildi ve cizgiler
+    duzlesti: son 60 gun genelde araligin dar bir diliminde duruyor.
+    Sayfada seviyeyi buyuk rakam, aralikdaki konumu p-degeri zaten
+    veriyor; sparkline'in tek isi yorunge.
+
+    Ust ve alt referans cizgileri 60 gunun zirvesi ve dibidir.
     """
-    if not values or not rng or len(values) < 2:
+    vals = [v for v in (values or []) if v is not None]
+    if len(vals) < 2:
         return ""
 
-    lo, hi = rng
+    lo, hi = min(vals), max(vals)
     span = hi - lo
     if span <= 0:
         return ""
 
-    w, h, pad = 220.0, 34.0, 3.0
-    n = len(values)
+    w, h, pad = 220.0, 40.0, 5.0
+    n = len(vals)
     pts = []
-    for i, v in enumerate(values):
+    for i, v in enumerate(vals):
         x = i / (n - 1) * w
         y = pad + (1 - (v - lo) / span) * (h - 2 * pad)
         pts.append(f"{x:.1f},{y:.1f}")
 
-    last_x, last_y = pts[-1].split(",")
-    first_v, last_v = values[0], values[-1]
-    trend = "yükseliyor" if last_v > first_v else ("düşüyor" if last_v < first_v else "yatay")
+    lx, ly = pts[-1].split(",")
+    trend = ("yükseliyor" if vals[-1] > vals[0]
+             else "düşüyor" if vals[-1] < vals[0] else "yatay")
 
     return f"""<svg class="spark" viewBox="0 0 {w:.0f} {h:.0f}" preserveAspectRatio="none"
-     role="img" aria-label="Son {n} iş günü {trend}">
-  <line class="spark__base" x1="0" y1="{h - pad:.1f}" x2="{w:.0f}" y2="{h - pad:.1f}"/>
+     role="img" aria-label="Son {n} iş gününde {trend}; en yüksek {hi:g}, en düşük {lo:g}">
   <line class="spark__base" x1="0" y1="{pad:.1f}" x2="{w:.0f}" y2="{pad:.1f}"/>
+  <line class="spark__base" x1="0" y1="{h - pad:.1f}" x2="{w:.0f}" y2="{h - pad:.1f}"/>
   <polyline class="spark__line" points="{' '.join(pts)}"/>
-  <circle class="spark__dot" cx="{last_x}" cy="{last_y}" r="2.6"/>
+  <circle class="spark__dot" cx="{lx}" cy="{ly}" r="2.8"/>
 </svg>"""
 
 
@@ -497,7 +501,7 @@ h2{
   font-variant-numeric:tabular-nums;
 }
 .hl__body{display:flex; align-items:center; gap:.75rem; margin:.55rem 0 0}
-.spark{flex:1; height:34px; width:100%; overflow:visible}
+.spark{flex:1; height:40px; width:100%; overflow:visible}
 .spark__line{fill:none; stroke:var(--normal); stroke-width:1.4;
   vector-effect:non-scaling-stroke; stroke-linejoin:round; stroke-linecap:round}
 .spark__base{stroke:var(--rule-soft); stroke-width:1; vector-effect:non-scaling-stroke}
