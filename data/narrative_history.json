@@ -12,5 +12,19 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi, bugün ilk kez tespit edildi ve bu durum uzun vadeli varlık değerlemelerinin altında yatan temel baskıyı yansıtıyor. 10 yıllık reel faiz 2.43% seviyesinde, 2 yılın en yüksek noktasında konumlanmış ve son 20 işgünde %27 artış kaydetmiş durumda. Bu ekstrem yükseliş, nominal faizlerdeki hızlı çıkışla (2 yıl %27, 10 yıl %33) birlikte gözlenirken, enflasyon beklentileri (5y5y forward 2.28%) nispeten sabit kalmış. Durum, merkez bankasının reel faiz artışına odaklandığını ve bunun finansal koşulları sıkılaştırdığını gösteriyor.\n\nKredi piyasaları henüz ciddi stres göstermemiş: yüksek getirili tahvil spreadleri (HY OAS 277) ve yatırım derecesi spreadleri (IG OAS 79) sakin kalmaya devam ediyor. Bununla birlikte bu sakinlik, reel faizlerin tepe seviyelere çıkması ve uzun süre orada kalması durumunda kırılganlığın ortaya çıkabileceğini işaret ediyor. Dolar/Yen (163.69, persentil 99.8) ve bakır (6.39, persentil 96.9) gibi risk göstergeleri de şiddetli dalgalanmalar yaşıyor; bu, gelişen piyasalar için sermaye akış baskısının mevcut olduğunun habercisi olabilir.\n\nTürkiye açısından, reel faiz yükselmesinin EM portföylerinde seçici daralmalar yaratması olası hale gelmiş. CDS'ler (291 bp, veri yetersizliği nedeniyle persentil hesaplanamamış) şu an normalken, uzun vadeli varlıkların yeniden fiyatlanması sürecinde dikkat edilmesi gereken bir alan. Dolar güçlenmesi ve reel faizlerin tepede kalışı, TL cinsinden dış finansmana maliyeti artırabilir.\n\nIzlenecek tetikleyici: reel 10 yıllık faizin bu seviyelerde ne kadar dayanacağı ve kredi spreadlerinde (özellikle EM bileşeni) herhangi bir genişleme başlayıp başlamayacağı. Nominal faizlerdeki dinginleşme veya enflasyon beklentilerinde yumuşama, rejim dinamiklerini önemli ölçüde değiştirebilir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-07-28",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "real_10y",
+      "usdjpy",
+      "ust_10y",
+      "ust_2y",
+      "copper"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi devam ediyor. Dün ilk tespit edilen bu koşul, bugün aynı parametrelerle yeniden doğrulanmış durumda: 10 yıllık reel faiz 2.43% seviyesinde 2 yılın tepesinde ve kredi piyasaları (HY OAS 279, IG OAS 80) henüz bozulma sinyali vermemiş. Rejim değişmedi, ancak tetikleyici koşullar (real_10y > %90 persentil, son 60 günde >%10 artış, hy_oas < 400) hala aktif.\n\nÖnceki güne kıyasla en önemli hareket, yeni olarak ortaya çıkan USD/JPY (163.89, persentil 100.0) ve bakır fiyatlandırması (6.32, persentil 95.3) göstergelerinde gözleniyor. Her iki gösterge de 20 işgünlük kazançlarını (sırasıyla %1.2, %2.1) sürdürüyor. Ust_10y ve ust_2y faizleri de son iki gün yüksekliğini korumuş; nominal faiz eğrisi dışsal şokların etkisinde kalmaya devam ediyor. VIX (18.58) ve MOVE (70.88) rahat seviyelerde kalmakla birlikte, risk yok değil—baskı derinliğinden ziyade dağılımda.\n\nTürkiye açısından, reel faiz sıkışması döneminde EM para birimleri ve cari hesap dinamikleri risk taşıyor. Dolar/Yen'in ekstrem seviyelerde seyretmesi, yen carry işlemlerinin gerilemesi anlamına gelebilir; bu, EM'ye akan spekülatif fonları çekilmeye açık hale getirir. Türkiye CDS beşyıllık (291 bp) şu an \"normal\" görünse de, veri yetersiz olduğu için 2 yılın başından beri gösterdiği trend takip edilmeli.\n\nİzlenecek tetikleyici: real_10y 2.50% üstüne çıkması veya HY OAS'ın 300 bp üstüne hızla hareket etmesi. Her iki durum da kredi piyasasının sıkışma baskısını hissetmeye başladığının ilk işareti olabilir. Ayrıca bakır ve USD/JPY'nin bu yüksek seviyelerde kırılması, küresel büyüme beklentileri veya para politikası izlemeleri açısından dönüm noktası oluşturabilir.",
+    "generated_by": "llm"
   }
 ]
