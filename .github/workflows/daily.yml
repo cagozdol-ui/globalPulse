@@ -1,0 +1,101 @@
+name: Gunluk guncelleme
+
+on:
+  schedule:
+    # 04:30 UTC = 07:30 Turkiye. ABD kapanisi (21:00 UTC) ve FRED'in
+    # gece guncellemesi tamamlandiktan sonra, sabah kahvesinden once.
+    # Pazartesi calismasi Cuma kapanisini kapsar (hafta sonu veri yok).
+    - cron: "30 4 * * 1-5"
+  workflow_dispatch:          # elle de tetiklenebilsin
+
+# Ayni anda iki calisma olmasin - ikisi de commit atmaya kalkarsa carpisirlar
+concurrency:
+  group: gunluk
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+
+    steps:
+      - name: Repoyu al
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Bagimliliklari kur
+        run: pip install -r requirements.txt
+
+      - name: Veri cek
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: |
+          if [ -z "$FRED_API_KEY" ]; then
+            echo "::error::FRED_API_KEY secret'i tanimli degil."
+            exit 1
+          fi
+          python src/fetch.py
+
+      - name: Anlati uret
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::warning::ANTHROPIC_API_KEY yok - yedek metin uretilecek."
+          fi
+          python src/narrate.py
+
+      - name: Dashboard uret
+        run: python src/render.py
+
+      - name: Ozeti Actions sayfasina yaz
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, pathlib
+          p = pathlib.Path("data/latest.json")
+          if not p.exists():
+              print("latest.json uretilmedi."); raise SystemExit
+          d = json.loads(p.read_text(encoding="utf-8"))
+          c = d["classification"]; r = c["regime"]
+          print(f"## {c['as_of']} — {r['label']}\n")
+          print(f"**Onem:** {r['severity']}  ")
+          print(f"**Kaynak:** {d.get('generated_by')}\n")
+          new = [h for h in c.get("highlights", []) if h.get("status") == "yeni"]
+          if new:
+              print("### Yeni one cikanlar\n")
+              for h in new:
+                  print(f"- **{h['indicator']}** {h['value']} (p{h['pct_rank']})")
+              print()
+          for a in c.get("velocity_alerts", []):
+              print(f"- ⚠️ {a['label']}: {a['change']}{a['unit']} / {a['window_days']}g")
+          q = []
+          if c.get("missing_series"): q.append("eksik seri: " + ", ".join(c["missing_series"]))
+          if c.get("skipped_regimes"): q.append("atlanan kural: " + ", ".join(s["label"] for s in c["skipped_regimes"]))
+          if q:
+              print("\n### Veri kalitesi\n")
+              for i in q: print(f"- {i}")
+          u = d.get("usage_summary", {})
+          tm = u.get("this_month") or {}
+          print(f"\n---\nBu ay: {tm.get('calls',0)} cagri, ~${tm.get('cost_usd',0):.4f}")
+          PY
+
+      - name: Sonucu repoya yaz
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f data/history.parquet data/latest.json \
+                     data/narrative_history.json data/usage.json \
+                     docs/index.html
+          if git diff --staged --quiet; then
+            echo "Degisiklik yok, commit atlanadi."
+          else
+            git commit -m "Gunluk guncelleme $(date -u +%Y-%m-%d)"
+            git push
+          fi
