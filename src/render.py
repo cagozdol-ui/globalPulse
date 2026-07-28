@@ -60,6 +60,8 @@ LABELS = {
     "spx": "S&P 500",
     "em_equity": "Gelişen piyasa hissesi",
     "xu100": "BIST 100",
+    "bist_usd": "BIST 100 (dolar bazlı)",
+    "tr_rel_5d": "BIST vs EM — 5 gün",
 }
 
 BAND_LABELS = {
@@ -69,6 +71,7 @@ BAND_LABELS = {
     "stress": "stres",
     "deflation_risk": "deflasyon riski",
     "inflation_risk": "enflasyon riski",
+    "outperform": "görece güçlü",
     "veri_yok": "veri yok",
     "tanimsiz": "tanımsız",
 }
@@ -77,6 +80,7 @@ BAND_CLASS = {
     "calm": "calm", "normal": "normal",
     "warning": "warn", "stress": "stress",
     "deflation_risk": "warn", "inflation_risk": "warn",
+    "outperform": "calm",
     "veri_yok": "void", "tanimsiz": "void",
 }
 
