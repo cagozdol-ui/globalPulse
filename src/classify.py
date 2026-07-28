@@ -58,6 +58,9 @@ SERIES_KIND = {
     "em_equity":     "price",
     "usdtry":        "price",
     "xu100":         "price",
+    # Turetilmis seriler
+    "bist_usd":      "price",   # xu100 / usdtry
+    "tr_rel_5d":     "cds",     # yuzde puan; degisim basit fark
 }
 
 # Degisim pencereleri - IS GUNU cinsinden
@@ -145,6 +148,22 @@ def build_metrics(
     if {"ust_2y", "ust_10y"}.issubset(work.columns):
         work["curve_2s10s"] = (work["ust_10y"] - work["ust_2y"]) * 100.0
         mask["curve_2s10s"] = mask["ust_2y"] & mask["ust_10y"]
+
+    # BIST'in dolar bazli degeri
+    if {"xu100", "usdtry"}.issubset(work.columns):
+        denom = work["usdtry"].where(work["usdtry"] > 0)
+        work["bist_usd"] = work["xu100"] / denom
+        mask["bist_usd"] = mask["xu100"] & mask["usdtry"]
+
+    # Turkiye'ye ozgu goreli stres:
+    #   BIST(USD) 5 gunluk getirisi  -  EM hisse 5 gunluk getirisi
+    # Negatif = Turkiye EM'den ayrisarak geride kaliyor.
+    # CDS verisi olmadigi gunlerde idiyosinkratik riski yakalar.
+    if {"bist_usd", "em_equity"}.issubset(work.columns):
+        bist_ret = work["bist_usd"].pct_change(5) * 100.0
+        em_ret = work["em_equity"].pct_change(5) * 100.0
+        work["tr_rel_5d"] = bist_ret - em_ret
+        mask["tr_rel_5d"] = mask["bist_usd"] & mask["em_equity"]
 
     for col in work.columns:
         s = work[col].dropna()
@@ -269,6 +288,7 @@ def find_highlights(metrics: dict[str, float], cfg: dict) -> list[dict]:
     tracked = set(cfg.get("levels", {}).keys()) | {
         "ust_2y", "ust_10y", "curve_2s10s", "dxy", "gold",
         "brent", "copper", "usdjpy", "spx", "em_equity",
+        "bist_usd", "tr_rel_5d",
     }
 
     for name in sorted(tracked):
@@ -284,6 +304,9 @@ def find_highlights(metrics: dict[str, float], cfg: dict) -> list[dict]:
         else:
             continue
 
+        kind = SERIES_KIND.get(name, "price")
+        unit = "bp" if kind in ("rate", "spread", "cds") else "%"
+
         highlights.append({
             "indicator": name,
             "value": round(metrics[name], 2),
@@ -291,6 +314,7 @@ def find_highlights(metrics: dict[str, float], cfg: dict) -> list[dict]:
             "note": note,
             "chg_20d": round(metrics[f"{name}_chg_20d"], 1)
             if f"{name}_chg_20d" in metrics else None,
+            "chg_unit": unit,
         })
 
     highlights.sort(key=lambda h: abs(h["pct_rank"] - 50), reverse=True)
