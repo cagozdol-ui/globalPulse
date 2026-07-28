@@ -131,6 +131,16 @@ h2{
   font-family:var(--mono); font-size:1.05rem; margin-left:auto;
   font-variant-numeric:tabular-nums;
 }
+.hl__body{display:flex; align-items:center; gap:.75rem; margin:.55rem 0 0}
+.spark{flex:1; height:34px; width:100%; overflow:visible}
+.spark__line{fill:none; stroke:var(--normal); stroke-width:1.4;
+  vector-effect:non-scaling-stroke; stroke-linejoin:round; stroke-linecap:round}
+.spark__base{stroke:var(--rule-soft); stroke-width:1; vector-effect:non-scaling-stroke}
+.spark__dot{fill:var(--new)}
+.hl--devam .spark__line{stroke:var(--void)}
+.hl--devam .spark__dot{fill:var(--void)}
+.hl__pct{font-family:var(--mono); font-size:.72rem; color:var(--ink-soft);
+  min-width:3.2em; text-align:right; font-variant-numeric:tabular-nums}
 .hl__meta{font-family:var(--sans); font-size:.8rem; color:var(--ink-soft); margin-top:.35rem}
 .tag{
   font-family:var(--sans); font-size:.65rem; font-weight:600;
@@ -190,6 +200,11 @@ h2{
 /* --- tek orkestre edilmis an: isaretciler yerine kayar --- */
 @media (prefers-reduced-motion:no-preference){
   .strip__marker{animation:slide .7s cubic-bezier(.2,.8,.2,1) both}
+  .spark__line{stroke-dasharray:1000; stroke-dashoffset:1000;
+    animation:draw 1.1s cubic-bezier(.3,.7,.3,1) both}
+  .spark__dot{animation:fade .3s ease-out .9s both}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
   .hl-list .hl:nth-child(1) .strip__marker{animation-delay:.05s}
   .hl-list .hl:nth-child(2) .strip__marker{animation-delay:.12s}
   .hl-list .hl:nth-child(3) .strip__marker{animation-delay:.19s}
@@ -227,7 +242,7 @@ h2{
   <section class="narrative">
     <h2>Yorum</h2>
     
-    <p>Reel faiz sıkışması rejimi üçüncü günü devam ediyor ve manzara değişmemiş durumda. 10 yıllık reel faiz 2.43% ile 2 yılın en yüksek seviyesinde kalırken, son 60 günde 47 bp artış hızını koruyor. Dün tespit edilen koşullar bugün de aynı seviyelerde yinelenmiş; rejim parametrelerinde herhangi bir yumuşama işareti görülmüyor. Bu istikrar, temel baskıların devam ettiğini ve piyasanın henüz yeni bir dengenin arayışında olduğunu işaret ediyor.</p><p>Kredi piyasaları reel faiz baskısına henüz tam olarak ayak uydurmamış gözüküyor. Yüksek getirili tahvil spreadi 279 bp ile son iki yılın çok düşük ucunda (30. persentil) kalırken, investment grade spreadi 80 bp seviyesinde sakin durumda. Volatilite göstergeleri de (VIX 18.58, MOVE 70.88) benzer şekilde normalin altında yer alıyor. Bu koşut hareket, uzun vadeli varlık değerlemeleri üzerindeki baskıların henüz borç piyasasında tam kriz dinamiğine dönüşmediğini gösteriyor.</p><p>Teknoloji ve meta malları perspektifinden bakıldığında, bakır son beş işgün içinde %2 değişimle yüksek persentil (95.1) bölgesinde, USD/JPY ise 163.86 ile tüm zamanlar tepesinde (100. persentil) kalıyor. Bu görüntü, yen taşıyıcı oyunun devam ettiğini ve riskten kaçınma hareketinin halen sınırlı olduğunu yansıtıyor.</p><p>Türkiye bağlamında CDS verisi eksik olduğu için kesin bir değerlendirme yapılamasa da, reel faiz sıkışması ortamında EM sermaye akışları baskı altında kalabilir; bu noktada TRY dinamikleri ve BIST uzun vadeli tahvil serileri izlenmelidir. Önümüzdeki tetikleyici: kredi spreadi genişlemesi başlayıp başlamayacağı ya da nominal faiz yükselişinin durdurulacak sinyalleri.</p>
+    <p>Reel faiz sıkışması rejimi üçüncü günü sabit seviyelerde devam ediyor. 10 yıllık reel faiz 2.43% ile 2 yılın tepesinde kalmış, son 60 günde 47 bp&#x27;lik yükseliş hızını sürdürüyor. Dün de tespit edilen koşullar bugün aynen yinelenmiş; rejim parametrelerinde herhangi bir yumuşama işareti görülmüyor. Bu istikrar, temel baskıların henüz çözülmediğini ve piyasanın yeni bir dengeye oturmadığını gösteriyor.</p><p>Kredi piyasaları şu ana kadar dirençli kalıyor. Yüksek getirili tahvil spreadleri 279 bp&#x27;de sakin seviyelerde bulunurken, yatırım seviyesi 80 bp&#x27;de normal aralıkta yer alıyor. Bu, reel faiz baskısının henüz kredi temininde belirgin bozulmaya dönüşmediğini işaret ediyor; ancak uzun vadeli varlık değerlemelerini eşit derecede etkiliyor.</p><p>Türkiye açısından kanal, dış finansman maliyetinin yüksek kalması ve EM sermaye akışlarının basılı kalması biçiminde işliyebilir. CDS verisi bulunmasa da, reel faizlerdeki küresel sıkışma ortamında Türk varlıkları için dönem sonu konumlanma kararlarının tetikleyici olabilir. Bütün dikkatin gerçek faizin 47 bp hızında ilerlemeye devam edip etmeyeceğine, özellikle de enflasyon beklentilerinin (5y5y: 2.24%) ayak bağı olmaya başlayıp başlamayacağına olması gerekiyor.</p><p>Sırada, 10 yıllık reel faizin bu aşırı seviyede kalış süresi ve kredi spreadlerindeki ilk genişleme işareti dikkat edilmesi gereken tetikleyiciler. VIX&#x27;in 18.58&#x27;de normal kalması paniğin yokluğunu gösterirken, sıkışmanın daha sessiz, değerleme odaklı bir dinamik olduğunu anlatıyor.</p>
   </section>
 
   <section>
@@ -238,15 +253,16 @@ h2{
     <span class="hl__name">10Y reel faiz</span>
     <span class="hl__num">2.43%</span>
   </div>
-  <div class="strip" role="img" aria-label="2 yıllık aralıkta yüzde 100 konumunda">
-  <div class="strip__rail">
-    <span class="strip__tick" style="left:25%"></span>
-    <span class="strip__tick strip__tick--mid" style="left:50%"></span>
-    <span class="strip__tick" style="left:75%"></span>
-    <span class="strip__marker strip__marker--normal" style="--pos:100.00%"></span>
+  <div class="hl__body">
+    <svg class="spark" viewBox="0 0 220 34" preserveAspectRatio="none"
+     role="img" aria-label="Son 60 iş günü yükseliyor">
+  <line class="spark__base" x1="0" y1="31.0" x2="220" y2="31.0"/>
+  <line class="spark__base" x1="0" y1="3.0" x2="220" y2="3.0"/>
+  <polyline class="spark__line" points="0.0,18.2 3.7,17.6 7.5,18.6 11.2,17.9 14.9,16.7 18.6,16.7 22.4,16.4 26.1,13.3 29.8,12.3 33.6,10.8 37.3,12.3 41.0,10.8 44.7,11.4 48.5,11.4 52.2,13.3 55.9,13.6 59.7,14.5 63.4,14.2 67.1,14.2 70.8,14.2 74.6,13.0 78.3,13.0 82.0,10.5 85.8,9.8 89.5,10.2 93.2,9.8 96.9,11.4 100.7,11.1 104.4,11.7 108.1,12.0 111.9,9.2 115.6,9.8 119.3,9.8 123.1,7.7 126.8,7.4 130.5,9.2 134.2,10.5 138.0,10.8 141.7,11.4 145.4,10.2 149.2,8.6 152.9,8.3 156.6,8.3 160.3,8.9 164.1,7.0 167.8,6.7 171.5,6.7 175.3,6.4 179.0,5.2 182.7,6.1 186.4,6.4 190.2,5.5 193.9,6.7 197.6,5.5 201.4,4.9 205.1,4.2 208.8,3.0 212.5,3.0 216.3,3.0 220.0,3.0"/>
+  <circle class="spark__dot" cx="220.0" cy="3.0" r="2.6"/>
+</svg>
+    <span class="hl__pct">p100</span>
   </div>
-  <span class="strip__val">p100</span>
-</div>
   <div class="hl__meta">3 gündür · 20 iş günü +23 bp</div>
 </li><li class="hl hl--devam">
   <div class="hl__head">
@@ -254,15 +270,16 @@ h2{
     <span class="hl__name">USD/JPY</span>
     <span class="hl__num">163.86</span>
   </div>
-  <div class="strip" role="img" aria-label="2 yıllık aralıkta yüzde 100 konumunda">
-  <div class="strip__rail">
-    <span class="strip__tick" style="left:25%"></span>
-    <span class="strip__tick strip__tick--mid" style="left:50%"></span>
-    <span class="strip__tick" style="left:75%"></span>
-    <span class="strip__marker strip__marker--normal" style="--pos:100.00%"></span>
+  <div class="hl__body">
+    <svg class="spark" viewBox="0 0 220 34" preserveAspectRatio="none"
+     role="img" aria-label="Son 60 iş günü yükseliyor">
+  <line class="spark__base" x1="0" y1="31.0" x2="220" y2="31.0"/>
+  <line class="spark__base" x1="0" y1="3.0" x2="220" y2="3.0"/>
+  <polyline class="spark__line" points="0.0,10.5 3.7,11.9 7.5,11.5 11.2,11.5 14.9,11.0 18.6,10.5 22.4,10.3 26.1,9.6 29.8,9.1 33.6,9.1 37.3,8.9 41.0,9.0 44.7,8.9 48.5,9.0 52.2,9.0 55.9,8.6 59.7,8.2 63.4,8.6 67.1,8.5 70.8,8.1 74.6,7.7 78.3,7.8 82.0,7.7 85.8,7.3 89.5,7.5 93.2,7.2 96.9,7.0 100.7,7.5 104.4,7.7 108.1,7.4 111.9,7.2 115.6,7.0 119.3,6.1 123.1,5.9 126.8,5.8 130.5,5.7 134.2,5.5 138.0,5.5 141.7,5.5 145.4,5.3 149.2,4.5 152.9,4.6 156.6,5.9 160.3,5.9 164.1,5.1 167.8,4.8 171.5,4.6 175.3,4.8 179.0,5.4 182.7,4.7 186.4,5.0 190.2,5.2 193.9,4.8 197.6,4.6 201.4,4.7 205.1,3.8 208.8,3.9 212.5,3.0 216.3,3.3 220.0,3.0"/>
+  <circle class="spark__dot" cx="220.0" cy="3.0" r="2.6"/>
+</svg>
+    <span class="hl__pct">p100</span>
   </div>
-  <span class="strip__val">p100</span>
-</div>
   <div class="hl__meta">3 gündür · 20 iş günü +1.2 %</div>
 </li><li class="hl hl--devam">
   <div class="hl__head">
@@ -270,15 +287,16 @@ h2{
     <span class="hl__name">ABD 10Y tahvil</span>
     <span class="hl__num">4.69%</span>
   </div>
-  <div class="strip" role="img" aria-label="2 yıllık aralıkta yüzde 99 konumunda">
-  <div class="strip__rail">
-    <span class="strip__tick" style="left:25%"></span>
-    <span class="strip__tick strip__tick--mid" style="left:50%"></span>
-    <span class="strip__tick" style="left:75%"></span>
-    <span class="strip__marker strip__marker--normal" style="--pos:99.20%"></span>
+  <div class="hl__body">
+    <svg class="spark" viewBox="0 0 220 34" preserveAspectRatio="none"
+     role="img" aria-label="Son 60 iş günü yükseliyor">
+  <line class="spark__base" x1="0" y1="31.0" x2="220" y2="31.0"/>
+  <line class="spark__base" x1="0" y1="3.0" x2="220" y2="3.0"/>
+  <polyline class="spark__line" points="0.0,13.4 3.7,12.2 7.5,12.9 11.2,11.9 14.9,11.0 18.6,11.0 22.4,10.7 26.1,7.8 29.8,7.3 33.6,5.9 37.3,8.3 41.0,8.3 44.7,8.6 48.5,8.6 52.2,10.0 55.9,10.5 59.7,11.2 63.4,11.2 67.1,10.7 70.8,11.0 74.6,10.2 78.3,10.7 82.0,8.8 85.8,8.6 89.5,9.3 93.2,8.8 96.9,11.2 100.7,10.5 104.4,10.7 108.1,11.7 111.9,10.2 115.6,11.0 119.3,11.0 123.1,9.8 126.8,10.0 130.5,12.2 134.2,12.4 138.0,12.9 141.7,12.9 145.4,11.4 149.2,10.5 152.9,10.2 156.6,10.2 160.3,10.5 164.1,8.8 167.8,8.6 171.5,9.0 175.3,8.6 179.0,7.1 182.7,8.1 186.4,8.8 190.2,8.3 193.9,8.8 197.6,7.6 201.4,6.9 205.1,5.9 208.8,4.9 212.5,5.4 216.3,5.4 220.0,5.4"/>
+  <circle class="spark__dot" cx="220.0" cy="5.4" r="2.6"/>
+</svg>
+    <span class="hl__pct">p99</span>
   </div>
-  <span class="strip__val">p99</span>
-</div>
   <div class="hl__meta">3 gündür · 20 iş günü +25 bp</div>
 </li><li class="hl hl--devam">
   <div class="hl__head">
@@ -286,15 +304,16 @@ h2{
     <span class="hl__name">ABD 2Y tahvil</span>
     <span class="hl__num">4.33%</span>
   </div>
-  <div class="strip" role="img" aria-label="2 yıllık aralıkta yüzde 98 konumunda">
-  <div class="strip__rail">
-    <span class="strip__tick" style="left:25%"></span>
-    <span class="strip__tick strip__tick--mid" style="left:50%"></span>
-    <span class="strip__tick" style="left:75%"></span>
-    <span class="strip__marker strip__marker--normal" style="--pos:97.90%"></span>
+  <div class="hl__body">
+    <svg class="spark" viewBox="0 0 220 34" preserveAspectRatio="none"
+     role="img" aria-label="Son 60 iş günü yükseliyor">
+  <line class="spark__base" x1="0" y1="31.0" x2="220" y2="31.0"/>
+  <line class="spark__base" x1="0" y1="3.0" x2="220" y2="3.0"/>
+  <polyline class="spark__line" points="0.0,17.5 3.7,16.2 7.5,16.7 11.2,15.4 14.9,14.0 18.6,14.5 22.4,14.0 26.1,11.5 29.8,12.1 33.6,10.4 37.3,12.9 41.0,11.8 44.7,10.4 48.5,10.4 52.2,13.7 55.9,14.0 59.7,14.3 63.4,14.5 67.1,12.6 70.8,12.6 74.6,11.8 78.3,12.6 82.0,9.3 85.8,9.9 89.5,10.4 93.2,10.4 96.9,12.6 100.7,11.5 104.4,12.1 108.1,12.6 111.9,8.5 115.6,8.8 119.3,8.8 123.1,7.4 126.8,9.6 130.5,11.0 134.2,11.5 138.0,12.1 141.7,11.2 145.4,10.1 149.2,9.3 152.9,10.1 156.6,10.1 160.3,10.4 164.1,8.8 167.8,8.2 171.5,9.6 175.3,8.2 179.0,6.8 182.7,9.0 186.4,10.4 190.2,9.6 193.9,9.0 197.6,8.2 201.4,6.8 205.1,5.5 208.8,3.8 212.5,4.9 216.3,4.9 220.0,4.9"/>
+  <circle class="spark__dot" cx="220.0" cy="4.9" r="2.6"/>
+</svg>
+    <span class="hl__pct">p98</span>
   </div>
-  <span class="strip__val">p98</span>
-</div>
   <div class="hl__meta">3 gündür · 20 iş günü +19 bp</div>
 </li><li class="hl hl--devam">
   <div class="hl__head">
@@ -302,16 +321,17 @@ h2{
     <span class="hl__name">Bakır</span>
     <span class="hl__num">6.32</span>
   </div>
-  <div class="strip" role="img" aria-label="2 yıllık aralıkta yüzde 95 konumunda">
-  <div class="strip__rail">
-    <span class="strip__tick" style="left:25%"></span>
-    <span class="strip__tick strip__tick--mid" style="left:50%"></span>
-    <span class="strip__tick" style="left:75%"></span>
-    <span class="strip__marker strip__marker--normal" style="--pos:95.10%"></span>
+  <div class="hl__body">
+    <svg class="spark" viewBox="0 0 220 34" preserveAspectRatio="none"
+     role="img" aria-label="Son 60 iş günü yükseliyor">
+  <line class="spark__base" x1="0" y1="31.0" x2="220" y2="31.0"/>
+  <line class="spark__base" x1="0" y1="3.0" x2="220" y2="3.0"/>
+  <polyline class="spark__line" points="0.0,8.4 3.7,8.5 7.5,7.2 11.2,5.5 14.9,4.7 18.6,3.1 22.4,3.9 26.1,7.2 29.8,7.0 33.6,8.1 37.3,6.8 41.0,7.1 44.7,6.2 48.5,6.2 52.2,6.0 55.9,6.6 59.7,5.7 63.4,6.0 67.1,4.3 70.8,3.0 74.6,4.8 78.3,4.5 82.0,7.1 85.8,6.4 89.5,6.6 93.2,7.2 96.9,7.1 100.7,5.3 104.4,4.8 108.1,4.7 111.9,4.8 115.6,5.9 119.3,5.9 123.1,6.1 126.8,8.3 130.5,10.4 134.2,9.1 138.0,8.3 141.7,8.8 145.4,7.8 149.2,8.5 152.9,8.6 156.6,8.6 160.3,8.0 164.1,8.0 167.8,9.3 171.5,7.6 175.3,7.4 179.0,7.4 182.7,6.4 186.4,6.7 190.2,6.7 193.9,7.5 197.6,6.7 201.4,4.5 205.1,5.1 208.8,6.6 212.5,6.5 216.3,6.3 220.0,6.4"/>
+  <circle class="spark__dot" cx="220.0" cy="6.4" r="2.6"/>
+</svg>
+    <span class="hl__pct">p95</span>
   </div>
-  <span class="strip__val">p95</span>
-</div>
-  <div class="hl__meta">3 gündür · 20 iş günü +2 %</div>
+  <div class="hl__meta">3 gündür · 20 iş günü +2.1 %</div>
 </li></ul>
   </section>
 
@@ -414,16 +434,16 @@ h2{
   <td class="note-cell"></td>
 </tr><tr>
   <th scope="row">BIST vs EM — 5 gün</th>
-  <td class="num">0.63 pp</td>
+  <td class="num">2.96 pp</td>
   <td><span class="band band--normal">normal</span></td>
-  <td class="strip-cell"><div class="strip" role="img" aria-label="2 yıllık aralıkta yüzde 59 konumunda">
+  <td class="strip-cell"><div class="strip" role="img" aria-label="2 yıllık aralıkta yüzde 84 konumunda">
   <div class="strip__rail">
     <span class="strip__tick" style="left:25%"></span>
     <span class="strip__tick strip__tick--mid" style="left:50%"></span>
     <span class="strip__tick" style="left:75%"></span>
-    <span class="strip__marker strip__marker--normal" style="--pos:59.40%"></span>
+    <span class="strip__marker strip__marker--normal" style="--pos:84.40%"></span>
   </div>
-  <span class="strip__val">p59</span>
+  <span class="strip__val">p84</span>
 </div></td>
   <td class="note-cell"></td>
 </tr><tr>
@@ -443,10 +463,10 @@ h2{
 
   <footer class="colophon">
     <dl>
-      <dt>Üretim</dt><dd>2026-07-28 13:18 UTC</dd>
+      <dt>Üretim</dt><dd>2026-07-28 13:33 UTC</dd>
       <dt>Kaynak</dt><dd>Claude (claude-haiku-4-5)</dd>
-      <dt>Bu ay</dt><dd>5 çağrı · $0.0251</dd>
-      <dt>Toplam</dt><dd>5 çağrı · $0.0251</dd>
+      <dt>Bu ay</dt><dd>6 çağrı · $0.0300</dd>
+      <dt>Toplam</dt><dd>6 çağrı · $0.0300</dd>
     </dl>
     <p class="disclaimer">Bu icerik bilgilendirme amaclidir, yatirim tavsiyesi degildir.</p>
   </footer>
