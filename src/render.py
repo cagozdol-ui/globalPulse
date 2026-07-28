@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -263,11 +264,37 @@ def render_quality(c: dict) -> str:
     return "<ul class=\"quality\">" + "".join(f"<li>{esc(i)}</li>" for i in items) + "</ul>"
 
 
+_MD_HEAD = re.compile(r"^\s{0,3}#{1,6}\s+")
+_MD_EMPH = re.compile(r"(\*\*|__|\*|_)(?=\S)(.+?)(?<=\S)\1")
+
+
 def render_narrative(text: str) -> str:
-    paras = [p.strip() for p in (text or "").split("\n") if p.strip()]
-    if not paras:
+    """
+    Dil modeline "markdown kullanma" denmis olsa da bazen baslik
+    veya kalin yazi uretiyor. Ham gecerse ekranda '# Baslik' diye
+    gorunur. Burada savunma amacli temizlenir.
+    """
+    out = []
+    for raw in (text or "").split("\n"):
+        line = raw.strip()
+        if not line:
+            continue
+        line = _MD_HEAD.sub("", line)          # # Baslik -> Baslik
+        line = _MD_EMPH.sub(r"\2", line)       # **kalin** -> kalin
+        if line:
+            out.append(line)
+
+    if not out:
         return '<p class="empty">Yorum üretilemedi.</p>'
-    return "".join(f"<p>{esc(p)}</p>" for p in paras)
+
+    # Basliga benzeyen ilk satir (kisa, noktalama yok) one cikarilir
+    html_parts = []
+    for i, line in enumerate(out):
+        if i == 0 and len(line) < 90 and not line.endswith((".", "!", "?", ":")):
+            html_parts.append(f'<p class="lede">{esc(line)}</p>')
+        else:
+            html_parts.append(f"<p>{esc(line)}</p>")
+    return "".join(html_parts)
 
 
 # ---------------------------------------------------------------
@@ -356,6 +383,10 @@ h2{
   margin:0 0 1.25rem;
 }
 .narrative p{margin:0 0 1.1rem}
+.narrative .lede{
+  font-family:var(--sans); font-weight:600; font-size:1.15rem;
+  line-height:1.3; letter-spacing:-.005em; margin-bottom:1.2rem;
+}
 .narrative p:last-child{margin-bottom:0}
 .empty{color:var(--ink-soft); font-style:italic; margin:0}
 
