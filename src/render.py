@@ -162,6 +162,44 @@ def strip(pct: float | None, band: str) -> str:
 </div>"""
 
 
+def sparkline(values: list[float], rng: list[float]) -> str:
+    """
+    Son 60 is gununun yorungesi, 2 yillik aralik icinde olceklenmis.
+
+    One cikanlar bolumunde persentil seridi bilgi tasimiyordu: o bolume
+    zaten sadece uctaki gostergeler giriyor, dolayisiyla isaretci her
+    zaman kenardaydi. Asil merak edilen "oraya nasil geldi" - bu yuzden
+    konum yerine yorunge cizilir.
+    """
+    if not values or not rng or len(values) < 2:
+        return ""
+
+    lo, hi = rng
+    span = hi - lo
+    if span <= 0:
+        return ""
+
+    w, h, pad = 220.0, 34.0, 3.0
+    n = len(values)
+    pts = []
+    for i, v in enumerate(values):
+        x = i / (n - 1) * w
+        y = pad + (1 - (v - lo) / span) * (h - 2 * pad)
+        pts.append(f"{x:.1f},{y:.1f}")
+
+    last_x, last_y = pts[-1].split(",")
+    first_v, last_v = values[0], values[-1]
+    trend = "yükseliyor" if last_v > first_v else ("düşüyor" if last_v < first_v else "yatay")
+
+    return f"""<svg class="spark" viewBox="0 0 {w:.0f} {h:.0f}" preserveAspectRatio="none"
+     role="img" aria-label="Son {n} iş günü {trend}">
+  <line class="spark__base" x1="0" y1="{h - pad:.1f}" x2="{w:.0f}" y2="{h - pad:.1f}"/>
+  <line class="spark__base" x1="0" y1="{pad:.1f}" x2="{w:.0f}" y2="{pad:.1f}"/>
+  <polyline class="spark__line" points="{' '.join(pts)}"/>
+  <circle class="spark__dot" cx="{last_x}" cy="{last_y}" r="2.6"/>
+</svg>"""
+
+
 def fmt_val(v, unit: str = "") -> str:
     if v is None:
         return "—"
@@ -209,7 +247,10 @@ def render_highlights(highlights: list[dict]) -> str:
     <span class="hl__name">{esc(label_of(h['indicator']))}</span>
     <span class="hl__num">{fmt_val(h.get('value'), unit_of(h['indicator']))}</span>
   </div>
-  {strip(h.get('pct_rank'), 'normal')}
+  <div class="hl__body">
+    {sparkline(h.get('spark') or [], h.get('spark_range') or [])}
+    <span class="hl__pct">p{h.get('pct_rank'):.0f}</span>
+  </div>
   <div class="hl__meta">{esc(meta)}{' · 20 iş günü ' + esc(chg) if chg else ''}</div>
 </li>""")
 
@@ -455,6 +496,16 @@ h2{
   font-family:var(--mono); font-size:1.05rem; margin-left:auto;
   font-variant-numeric:tabular-nums;
 }
+.hl__body{display:flex; align-items:center; gap:.75rem; margin:.55rem 0 0}
+.spark{flex:1; height:34px; width:100%; overflow:visible}
+.spark__line{fill:none; stroke:var(--normal); stroke-width:1.4;
+  vector-effect:non-scaling-stroke; stroke-linejoin:round; stroke-linecap:round}
+.spark__base{stroke:var(--rule-soft); stroke-width:1; vector-effect:non-scaling-stroke}
+.spark__dot{fill:var(--new)}
+.hl--devam .spark__line{stroke:var(--void)}
+.hl--devam .spark__dot{fill:var(--void)}
+.hl__pct{font-family:var(--mono); font-size:.72rem; color:var(--ink-soft);
+  min-width:3.2em; text-align:right; font-variant-numeric:tabular-nums}
 .hl__meta{font-family:var(--sans); font-size:.8rem; color:var(--ink-soft); margin-top:.35rem}
 .tag{
   font-family:var(--sans); font-size:.65rem; font-weight:600;
@@ -514,6 +565,11 @@ h2{
 /* --- tek orkestre edilmis an: isaretciler yerine kayar --- */
 @media (prefers-reduced-motion:no-preference){
   .strip__marker{animation:slide .7s cubic-bezier(.2,.8,.2,1) both}
+  .spark__line{stroke-dasharray:1000; stroke-dashoffset:1000;
+    animation:draw 1.1s cubic-bezier(.3,.7,.3,1) both}
+  .spark__dot{animation:fade .3s ease-out .9s both}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
   .hl-list .hl:nth-child(1) .strip__marker{animation-delay:.05s}
   .hl-list .hl:nth-child(2) .strip__marker{animation-delay:.12s}
   .hl-list .hl:nth-child(3) .strip__marker{animation-delay:.19s}
