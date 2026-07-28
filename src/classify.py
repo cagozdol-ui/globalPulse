@@ -78,6 +78,9 @@ MIN_REAL_OBS = 60
 EXTREME_HIGH = 95.0
 EXTREME_LOW = 5.0
 
+# One cikanlar bolumunde gosterilecek yorunge uzunlugu (is gunu)
+SPARK_DAYS = 60
+
 
 # ---------------------------------------------------------------
 # 1. Normalizasyon
@@ -127,6 +130,7 @@ def build_metrics(
     df: pd.DataFrame,
     real_mask: pd.DataFrame,
     percentile_window: int = 504,
+    out_series: dict | None = None,
 ) -> tuple[dict[str, float], dict[str, int]]:
     """
     Uretilen isimler:
@@ -202,6 +206,9 @@ def build_metrics(
                 m[f"{col}_chg_{n}d"] = last - prev                # zaten bp
             elif prev != 0:
                 m[f"{col}_chg_{n}d"] = (last / prev - 1.0) * 100.0
+
+    if out_series is not None:
+        out_series["df"] = work      # turetilmis serileri de icerir
 
     clean = {k: v for k, v in m.items() if v is not None and math.isfinite(v)}
     return clean, real_counts
@@ -279,7 +286,12 @@ def check_velocity(metrics: dict[str, float], cfg: dict) -> list[dict]:
 # ---------------------------------------------------------------
 # 5. One cikanlar (rejimden bagimsiz)
 # ---------------------------------------------------------------
-def find_highlights(metrics: dict[str, float], cfg: dict) -> list[dict]:
+def find_highlights(
+    metrics: dict[str, float],
+    cfg: dict,
+    series: pd.DataFrame | None = None,
+    window: int = 504,
+) -> list[dict]:
     """
     Persentil ucunda olan gostergeleri toplar. Rejim "Sakin seyir"
     ciktigi gunlerde bile dikkat cekilmesi gerekenler kaybolmasin diye.
@@ -307,7 +319,7 @@ def find_highlights(metrics: dict[str, float], cfg: dict) -> list[dict]:
         kind = SERIES_KIND.get(name, "price")
         unit = "bp" if kind in ("rate", "spread", "cds") else "%"
 
-        highlights.append({
+        item = {
             "indicator": name,
             "value": round(metrics[name], 2),
             "pct_rank": round(pct, 1),
@@ -315,7 +327,22 @@ def find_highlights(metrics: dict[str, float], cfg: dict) -> list[dict]:
             "chg_20d": round(metrics[f"{name}_chg_20d"], 1)
             if f"{name}_chg_20d" in metrics else None,
             "chg_unit": unit,
-        })
+        }
+
+        # Yorunge: son SPARK_DAYS is gunu + 2 yillik aralik.
+        # "p100'de" olmak tek basina yetersiz; oraya nasil geldigi
+        # (aylardir orada mi, dun mu firladi) farkli bir bilgi.
+        if series is not None and name in series.columns:
+            s = series[name].dropna()
+            ref = s.tail(window)
+            tail = s.tail(SPARK_DAYS)
+            if len(tail) >= 10 and len(ref) >= 10:
+                lo, hi = float(ref.min()), float(ref.max())
+                if hi > lo:
+                    item["spark"] = [round(float(v), 4) for v in tail]
+                    item["spark_range"] = [round(lo, 4), round(hi, 4)]
+
+        highlights.append(item)
 
     highlights.sort(key=lambda h: abs(h["pct_rank"] - 50), reverse=True)
     return highlights
@@ -391,7 +418,11 @@ def classify(df: pd.DataFrame, cfg: dict) -> dict[str, Any]:
     window = cfg.get("meta", {}).get("percentile_window_days", 504)
 
     norm, real_mask = normalize(df)
-    metrics, real_counts = build_metrics(norm, real_mask, percentile_window=window)
+    holder: dict = {}
+    metrics, real_counts = build_metrics(
+        norm, real_mask, percentile_window=window, out_series=holder
+    )
+    full = holder.get("df", norm)
 
     regime, skipped = match_regime(metrics, cfg)
 
@@ -404,7 +435,7 @@ def classify(df: pd.DataFrame, cfg: dict) -> dict[str, Any]:
         "as_of": str(norm.index[-1].date()),
         "regime": regime,
         "levels": classify_levels(metrics, real_counts, cfg),
-        "highlights": find_highlights(metrics, cfg),
+        "highlights": find_highlights(metrics, cfg, series=full, window=window),
         "velocity_alerts": check_velocity(metrics, cfg),
         "skipped_regimes": skipped,
         "missing_series": [s for s in cfg.get("levels", {}) if s not in metrics],
