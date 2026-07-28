@@ -76,6 +76,14 @@ levels:
     deflation_risk: [0, 1.8]
     normal:         [1.8, 2.6]
     inflation_risk: [2.6, 10]
+  # BIST(USD) 5 gunluk getirisi eksi EM hisse 5 gunluk getirisi (yuzde puan)
+  # CDS verisi olmadigi gunlerde Turkiye'ye ozgu stresi yakalayan vekil.
+  tr_rel_5d:
+    stress:     [-100, -6]
+    warning:    [-6, -3]
+    normal:     [-3, 3]
+    outperform: [3, 100]
+
   turkey_cds_5y:
     calm:    [0, 250]
     normal:  [250, 350]
@@ -182,16 +190,31 @@ regimes:
       - "curve_2s10s_chg_20d > 15"
     severity: medium
 
-  - id: turkey_idiosyncratic
+  - id: turkey_idiosyncratic_cds
     priority: 70
-    label: "Turkiye'ye ozgu risk"
+    label: "Turkiye'ye ozgu risk (CDS)"
     conditions:
       - "turkey_cds_5y_chg_5d_pct > 10"
       - "em_equity_chg_5d_pct > -2"   # EM genel sakin
     severity: high
     note: >
-      Kuresel risk-off degil, yerel haber akisi. EMBI+ ile
-      karsilastirmadan bu ayrim yapilamaz.
+      Risk primi sicradi ama EM geneli sakin. Kuresel risk-off
+      degil, yerel haber akisi.
+
+  # CDS verisi yoksa yukaridaki kural atlanir ve bu devreye girer.
+  # Ayni soruyu farkli veriyle sorar: BIST dolar bazinda EM'den
+  # ayrisarak geriye mi dusuyor?
+  - id: turkey_idiosyncratic_rel
+    priority: 72
+    label: "Turkiye'ye ozgu risk (goreli)"
+    conditions:
+      - "tr_rel_5d < -5"
+      - "em_equity_chg_5d_pct > -2"
+    severity: high
+    note: >
+      BIST dolar bazinda EM hisse senetlerinden belirgin sekilde
+      ayrisarak geride kaldi, ama EM geneli sakin. Yerel bir
+      etkene isaret ediyor. CDS verisi olmadan hesaplandi.
 
   - id: real_rate_squeeze
     priority: 55
