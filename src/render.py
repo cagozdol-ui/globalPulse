@@ -28,6 +28,9 @@ from string import Template
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from classify import SERIES_KIND  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config" / "thresholds.yaml"
 LATEST_PATH = ROOT / "data" / "latest.json"
@@ -84,6 +87,25 @@ BAND_CLASS = {
     "outperform": "calm",
     "veri_yok": "void", "tanimsiz": "void",
 }
+
+# Ekranda gosterilecek birimler. Ham sayi yaniltir:
+# "279" bp mi yuzde mi? Okuyucu tahmin etmek zorunda kalmasin.
+UNIT_OVERRIDE = {
+    "tr_rel_5d": " pp",
+    "vix": "", "move": "",
+}
+
+
+def unit_of(key: str) -> str:
+    if key in UNIT_OVERRIDE:
+        return UNIT_OVERRIDE[key]
+    kind = SERIES_KIND.get(key, "price")
+    if kind == "rate":
+        return "%"
+    if kind in ("spread", "cds"):
+        return " bp"
+    return ""
+
 
 SEVERITY_LABELS = {
     "none": "önem düşük",
@@ -185,7 +207,7 @@ def render_highlights(highlights: list[dict]) -> str:
   <div class="hl__head">
     {tag}
     <span class="hl__name">{esc(label_of(h['indicator']))}</span>
-    <span class="hl__num">{fmt_val(h.get('value'))}</span>
+    <span class="hl__num">{fmt_val(h.get('value'), unit_of(h['indicator']))}</span>
   </div>
   {strip(h.get('pct_rank'), 'normal')}
   <div class="hl__meta">{esc(meta)}{' · 20 iş günü ' + esc(chg) if chg else ''}</div>
@@ -209,7 +231,7 @@ def render_levels(levels: dict) -> str:
 
         rows.append(f"""<tr>
   <th scope="row">{esc(label_of(key))}</th>
-  <td class="num">{fmt_val(v.get('value'))}</td>
+  <td class="num">{fmt_val(v.get('value'), unit_of(key))}</td>
   <td><span class="band band--{cls}">{esc(BAND_LABELS.get(band, band))}</span></td>
   <td class="strip-cell">{strip(v.get('pct_rank'), band)}</td>
   <td class="note-cell">{note}</td>
