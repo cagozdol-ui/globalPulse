@@ -26,5 +26,18 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi dördüncü günü sabit seviyelerde devam ediyor. 10 yıllık reel faiz 2.43% ile 2 yılın tepesinde kalmış, son 60 günde 47 bp'lik yükseliş hızı korunuyor. Dün tespit edilen koşullar bugün aynen tekrarlanmış; rejim parametrelerinde yumuşama işareti görülmüyor. Bu uzun vadeli donuşukluk, temel baskıların henüz çözülmediğini ve piyasanın yeni bir dengeye oturmadığını isaret ediyor.\n\nKredi tarafı normalde oynarken risk-free taraf asimetrik olarak sıkılmış durumdadır. HY spread'ler 279 bp ile sakin kalıyor ancak bu, daha riskli varlıklara yönelişin artık sinirli olabileceğini gösteriyor. Likidite göstergeleri (VIX 18.67, MOVE 70.88) hala normal bölgede olmakla birlikte, gerçek faizlerin bu kadar yüksekte sabitlenmesi, EM sermaye akışlarında ve uzun vadeli yatırım kararlarında baskı yaratmaya devam ediyor.\n\nTürkiye piyasalarında bu rejim, yurt dışı faiz seviyelerinin yükselişteki istikrarı nedeniyle doğrudan finansman maliyeti baskısı ve döviz talep daralması kanalı üzerinden işliyor. Türk hisse senetleri 5 günlük bazda 3.32% ile diğer pazarları geride bırakmış; bu, seçici risksevginin hala varlığını ancak genel EM hareketinin zayıf olduğunu gösteriyor.\n\nSıkışmanın çözülüp çözülmeyeceği, gelecek haftalarda 10 yıllık reel faizin bu 2.43% seviyesinden düşüp düşmeyeceğine bağlı. Eğer nominal faizler sabit kalırken enflasyon beklentileri yükselirse yumuşama sinyali olabilir. ABD veri takvimi ve Fed söylemine ilişkin haberleri yakından izlemek gerekiyor.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-07-29",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "real_10y",
+      "usdjpy",
+      "ust_10y",
+      "ust_2y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi dördüncü günde sabit seviyelerle devam ediyor. 10 yıllık reel faiz 2.44% ile 2 yılın tepesinde kalmış, bu seviye 2 yılın 100. persentilinde yer alıyor. Son 60 günde 50 bp'lik yükseliş hızı korunuyor ve özünde değişen bir şey yok; rejim parametreleri önceki günle eşdeğer kalmıştır.\n\nKredi piyasaları şimdilik serinlik içinde. Yüksek getirili tahvil spreadi 281 bp ile 2 yılın 34. persentilinde, yatırım seviyesi spread 81 bp ile 52. persentilde bulunuyor. Bu durum, reel faizlerdeki baskıya rağmen kredi riski fiyatlamasının henüz bozulmadığını isaret ediyor. Volatilite göstergeleri de normalin altında seyrediyor; VIX 18.67 ve MOVE endeksi 70.88 ile piyasanın bekleyiş içinde olduğunu gösteriyor.\n\nTürkiye açısından izlenecek kanal, bu yüksek reel faiz ortamının yurtiçi kredi talebine ve kurlar üzerindeki baskıya dönüşme biçimidir. 5 günlük TL göreceli performansı 0.42 ile normal seviyede kalsa da, küresel reel faizlerin bu kadar yüksek tutulması gelişen piyasaların para çıkış riski oluşturmaya devam edebilir.\n\nÖnceki günlere kıyasla yeni bir hareket gözlenmiyor. Sonraki tetikleyici, 10 yıllık reel faizin bu 2.44% seviyesinden düşmeye başlaması veya tersine daha da yükselmesi halinde kredi spreadlerin tepki gösterip göstermeyeceğidir.",
+    "generated_by": "llm"
   }
 ]
