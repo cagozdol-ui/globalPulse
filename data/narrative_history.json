@@ -52,5 +52,17 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi dördüncü günde devam ediyor ve ana dinamikleri önceki günlerle özdeş. 10 yıllık reel faiz 2.41% ile 2 yılın 99. persentilinde sabitlenmiş, son 60 günde 45 bp'lik yükseliş hızı korunuyor. Kredi piyasaları henüz baskı göstermemiş; yüksek getirili tahvil spreadi 284 bp ile sakin kalırken, yatırım dereceli spread 81 bp seviyesinde normal. Oynaklık göstergeleri (VIX 18.21, MOVE 70.88) piyasa katılımcılarının bu durumu şimdilik yönetilebilir gördüğünü işaret ediyor.\n\nYenilik olarak bakır son bir günde 96. persentile çıkmış, 20 işgünde %4.4 artış kaydetti. Bu hareket emtia değerlemelerinin uzun vadeli reel faiz baskısına hassas tepki verdiğini gösteriyor. Dönem içi sabit kalanlar (reel 10 yıl, USD/JPY, ABD 10 yıl tahvili) piyasanın yeni denge arayışında olduğunu, henüz istikrarlı bir seviyeye oturtulmadığını gösteriyor.\n\nTürkiye açısından kanal, EM sermaye akışlarıdır. Reel faiz sıkışması ortamında gelişen pazar varlıklarından para çekme baskısı belirginleşebilir; TL yıllık bazda volatiliteye açık durumdadır. Bununla birlikte, kısa vadeli (5 gün) TL relatif performansı 59. persentilde normal seviyelerde, şimdilik EM reasürans olmamıştır. CDS verisi bulunmaması nedeniyle yerli risk priminde güncel işaret alınamıyor.\n\nGelecek izleme noktası, kredi spreadi hareketleridir. Reel faiz bu kadar yüksek kaldığında, çok hızlı veya baskılı bir kredi döngüsü açılması olabilir; HY spreadi 300 bp'yi aşarsa veya 5 gündeki TL performansı negatife dönerse rejim kalıcı bir gerileme evresi içine girebilir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-07-31",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "copper",
+      "real_10y",
+      "ust_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi beşinci günde istikrarını koruyor. 10 yıllık reel faiz 2.41% ile 2 yılın 99. persentilinde sabitlenmiş, son 60 günde 48 bp'lik yükseliş hızı devam ediyor. Kredi spreatleri henüz tepki vermemiş; yüksek getirili tahvil spreadi 287 bp, yatırım dereceli spreadi 81 bp ile sakin kalmaya devam ediyor. Bu bileşim, uzun vadeli varlik degerlemelerinin baskı altında olduğunu ama kredi piyasasının henüz gerginleşmediğini gösteriyor.\n\nBakır son iki günde 2 yıllık persentilinin 98.8'ine tırmanmış; 20 iş günü bazında 6.2% artış gözlenmektedir. Bu yeni uyarı, emtia tarafından gelen inflasyonist baskıya işaret ediyor ve reel faiz sıkışmasının temel dinamiklerini destekliyor. VIX 20.66 ile 2 yılın 79.6. persentilinde; oynaklık yukarı yönlü olmasına rağmen credit spreatleri nispeten sakin kalması, piyasanın şu an reel faiz riskine odaklandığını gösteriyor.\n\nTürkiye göreceli getirisi son 5 günde yüzde 5.26 gerilemiş ve 2 yılın 8. persentilindedir. Bu, EM sermaye akımlarının baskı altında olduğunu işaret ediyor. Reel faiz sıkışmasının yükselmesi ve EM para birimlerinin zayıflaması, Türk tahvil piyasasında carry arbitrajını zayıflatan dinamik olabilir. CDS verisinin eksikliği bu kanalı tam olarak izlemeyi kısıtlıyor.\n\nSonraki tetikleyici, kredi spreatleri—özellikle yüksek getirili segmentin—reel faiz baskısını ne kadar süre çekebileceğidir. Eğer spreatlerde genişleme görülürse rejim şiddetlenebilir. Türkiye açısından, EM para devalüasyonunun hızlanması ve CDS düzeylerinin yükselmesi Merkez Bankası tarafındaki tepkiyi belirleyecektir.",
+    "generated_by": "llm"
   }
 ]
