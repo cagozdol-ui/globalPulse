@@ -89,6 +89,15 @@
       "output_tokens": 676,
       "cost_usd": 0.005252,
       "priced": true
+    },
+    {
+      "timestamp": "2026-08-03T07:58:20Z",
+      "as_of": "2026-08-03",
+      "model": "claude-haiku-4-5",
+      "input_tokens": 1941,
+      "output_tokens": 735,
+      "cost_usd": 0.005616,
+      "priced": true
     }
   ]
 }
