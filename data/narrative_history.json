@@ -90,5 +90,19 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi yedinci gününü tamamlıyor ve yapısal dinamikler değişmemiş. 10 yıllık reel faiz 2.47% ile 2 yılın tepesinde (100. persentil) tutunmuş, son 60 günde 48 bp'lik yükseliş hızı istikrar gösteriyor. Kredi spreatleri—yüksek getirili 284 bp, yatırım dereceli 80 bp—hâlâ sakin; VIX 15.99 ve MOVE 70.88 oynaklık baskısı işaret etmiyor. Bu, reel faiz baskısının henüz kredi piyasalarına yansımadığını, daha çok uzun vadeli varlık değerlemeleri ve yükselen pazar sermaye akışları üzerine etki ettiğini gösteriyor.\n\nYeni tetikleyici olarak S&P 500 (persentil 95.2) iki gündür listede yer alıyor; son 20 işlem gününde -0.2% ile hafif negatif. Bu, yüksek reel faizler ortamında hisse senedi fiyatlamasındaki direnci işaret edebilir, ancak henüz keskin bir satış sinyali değil. Bakır (persentil 99.6, +6.8%) ve 10 yıllık nominal faiz (persentil 99.4, +20 bp) daha uzun süredir aşırı seviyelerde; bu trend korunuyor. USDJPY'de beş işlem gününde -3.7% taşıma poz açılması hızının uyarısı, reel faiz artışında EM riskine duyarlılığı vurgulayıyor.\n\nTürkiye açısından geçiş kanalı belirgindir: yükselen reel faizler, BIST üzerine iki yönlü baskı oluşturuyor—bir taraftan getiri beklentilerini zayıflatan uzun vadeli iskonto oranları, diğer taraftan EM risk primini tırmandıran sermaye çıkışı tehdidi. TR_rel_5d gösteren -5.16 (persentil 8.5) ile Türkiye göreli pozisyon uyarı seviyesinde; CDS verisi eksikliği nedeniyle dış borç algısı takip edilemiyor.\n\nÖnümüzdeki tetikleyici: kredi spreatleri—özellikle yüksek getirili tahvillerin 284 bp'den kırılması—ilk kez reel faiz baskısının kredi piyasasına geçip geçmediğini gösterecek. Ayrıca hisse senedi zayıflığının derinleşmesi (S&P 500'ün persentili 90'ın altına düşmesi) ve Türkiye göreli performansının daha da gerilmesi rejimin şiddetlenmesinin başlangıç sinyali olur.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-08-05",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "tr_rel_5d",
+      "copper",
+      "spx",
+      "real_10y",
+      "ust_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi sekizinci gününe girdi ve temel dinamikler değişmemiş. 10 yıllık reel faiz 2.43% ile 2 yılın 99.6. persentilinde konumlanmış; son 60 günde 44 bp'lik yükseliş hızı istikrar gösteriyor. Kredi spreatleri—yüksek getirili 278 bp, yatırım dereceli 78 bp—hâlâ sakin kalmaya devam ediyor ve VIX 15.86, MOVE 70.88 oynaklık baskısı işaret etmiyor.\n\nAncak dün yeni tetikleyici ortaya çıktı: Türkiye göreceli 5 günlük getirisinin -6.86% oranında düştü ve bu 2 yılın 4.8. persentilini işaret ediyor. Bu baskı, reel faiz sıkışmasının EM sermaye akışlarına iletim başladığını isaret edebilir. Ek olarak, carry unwind riski (USDJPY son 5 iş gününde -3.8%) finansal koşulların sıkılaştığını gösteriyor.\n\nDaha geniş piyasa hareketlerinde SPX ve bakır 8 gündür en yüksek seviyelerde; reel faiz hızlı yükselişine rağmen finansal koşullar henüz önemli ölçüde geçmedi. Bu asimetri—yüksek reel faiz, sakin spreatler, ama Türkiye ve carry açıdan basınç—küresel ilişkisiz piyasaların ayarlanma aşamasında olduğunu işaret ediyor.\n\nÖnümüzdeki tetikleyici: Türkiye CDS beş yıllık verisinin geri gelmesi ve kredi spreatleri (özellikle HY-OAS) birinci persentile yaklaşıp yaklaşmadığı. Reel faiz ileri giderse ve EM stres yayılırsa, credit spreatlerin bu sakinliğu kırılabilir.",
+    "generated_by": "llm"
   }
 ]
