@@ -104,5 +104,18 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi sekizinci gününe girdi ve temel dinamikler değişmemiş. 10 yıllık reel faiz 2.43% ile 2 yılın 99.6. persentilinde konumlanmış; son 60 günde 44 bp'lik yükseliş hızı istikrar gösteriyor. Kredi spreatleri—yüksek getirili 278 bp, yatırım dereceli 78 bp—hâlâ sakin kalmaya devam ediyor ve VIX 15.86, MOVE 70.88 oynaklık baskısı işaret etmiyor.\n\nAncak dün yeni tetikleyici ortaya çıktı: Türkiye göreceli 5 günlük getirisinin -6.86% oranında düştü ve bu 2 yılın 4.8. persentilini işaret ediyor. Bu baskı, reel faiz sıkışmasının EM sermaye akışlarına iletim başladığını isaret edebilir. Ek olarak, carry unwind riski (USDJPY son 5 iş gününde -3.8%) finansal koşulların sıkılaştığını gösteriyor.\n\nDaha geniş piyasa hareketlerinde SPX ve bakır 8 gündür en yüksek seviyelerde; reel faiz hızlı yükselişine rağmen finansal koşullar henüz önemli ölçüde geçmedi. Bu asimetri—yüksek reel faiz, sakin spreatler, ama Türkiye ve carry açıdan basınç—küresel ilişkisiz piyasaların ayarlanma aşamasında olduğunu işaret ediyor.\n\nÖnümüzdeki tetikleyici: Türkiye CDS beş yıllık verisinin geri gelmesi ve kredi spreatleri (özellikle HY-OAS) birinci persentile yaklaşıp yaklaşmadığı. Reel faiz ileri giderse ve EM stres yayılırsa, credit spreatlerin bu sakinliğu kırılabilir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-08-06",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "copper",
+      "spx",
+      "real_10y",
+      "ust_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi dokuzuncu gününü sürdürüyor ve temel mekanizması önceki günlerde olduğu gibi korunmuş durumda. 10 yıllık reel faiz 2.4% seviyesinde 2 yılın 98.33. persentilinde yer almakta ve son 60 günde 40 bp'lik yükseliş tempo istikrarlı kalıyor. Kredi spreatleri—yüksek getirili 273 bp, yatırım dereceli 78 bp—hâlâ sakin seviyelerde bulunuyor; VIX 16.5 ve MOVE 70.88 göstergeleri oynaklık baskısı yaşamıyor.\n\nDünden bugüne reel faiz persentili biraz geriye çekilse de (99.6'dan 98.33'e), bu küçük değişim rejimin özünü değiştirmiyor. 10 yıllık nominal faiz 9 bp'lik artış ile 4.63% seviyesine ulaşmış ve bu da uzun vadeli varlık değerlemeleri üzerindeki basıncı devam ettiriyor. SPX ve bakır gibi riskli varlıklar yüksek persentillerde duruyorsa da, spreatlerin sakinliği henüz finansal sisteme geçen gerginliğin sınırlı olduğunu işaret ediyor.\n\nCarry unwind riski aktif hale gelmeye başlamış: USD/JPY son beş iş gününde 3.4% düşüş kaydetmiş. Bu, japonyalı carry yatırımcılarının pozisyon kapatma hareketine işaret ediyor ve EM sermaye akışı baskısını artırmaya olabilir. Türkiye açısından bu dinamik, sıvılık çekilmesi ve kur basıncı kanalıyla tezahür edebilir.\n\nİzlenecek kritik tetikleyici: kredi spreatleri—özellikle yüksek getirili segment—ilk kez tepki gösterip genişleme imânı veya carry unwind'in EM borçluluk maliyetine yansıması. Türkiye CDS verisi eksik; BIST-100 değerleme baskısı ve TL likidite göstergelerine dikkat gerekli.",
+    "generated_by": "llm"
   }
 ]
