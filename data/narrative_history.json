@@ -130,5 +130,18 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi devamını koruyor ve on birinci gününe girdi. 10 yıllık reel faiz 2.41% ile 2 yılın 99. persentilinde kalmış; son 60 günde 31 bp'lik yükseliş hızı önceki günlere nazaran hafiflemiş gibi görünüyor ancak seviye hâlâ tarihsel tepede bulunuyor. Bu durum, uzun vadeli varlık değerlemeleri ve reel getiri beklentileri üzerinde belirgin baskı oluşturmaya devam ediyor.\n\nKredi spreatleri sakinliğini sürdürüyor: yüksek getirili 275 bp, yatırım dereceli 78 bp seviyelerde istikrarlı kalıyor. VIX 15.81 ve MOVE 70.88 göstergeleri oynaklık artışı işaret etmemiş. Bu dikkat çekici bir ayrışmadır—faiz tarafındaki sıkışma henüz kredi piyasalarında strese yol açmamış, risk primleri uzamış dönem boyunca sabit kalabilir.\n\nTürkiye açısından bu ortam, reel faiz artışının sermaye akımları üzerindeki baskısını güçlendiriyor. Yükselen piyasa varlıklarına yönelik risk tercihinin ılımlı seviyelerde (EMRX benzeri endekslerde net talep henüz sönmemiş) kalması, daha belirgin bir kaçışın henüz yaşanmadığını ancak zamanla baskı artabileceğini işaret ediyor.\n\nGelecek tetikleyiciler: (1) reel faiz yükselişinin daha da yükselmesi veya stabilize olması, (2) ABD 10 yıllık nominal faiz trendiyle reel faiz arasındaki ilişkinin değişmesi, (3) kredi spreatleri üzerinde ilk stres belirtisinin görülmesi olacaktır. Türkiye CDS verisinin eksikliği nedeniyle doğrudan dış borçlanma koşullarındaki hareket yakından izlenmelidir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-08-10",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "spx",
+      "real_10y",
+      "copper",
+      "ust_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi on ikinci gününü sürdürüyor ve temel mekanizması değişmemiş durumda. 10 yıllık reel faiz 2.43% ile 2 yılın 99.583 persentilinde konumlanmış; son 60 günde 30 bp'lik yükseliş hızı önceki gün 31 bp iken hafif yavaşlamış görünüyor. Bu seviye, uzun vadeli varlık değerlemeleri ve reel getiri beklentileri üzerinde süregelen baskı oluşturmaya devam ediyor.\n\nKredi piyasaları henüz stress göstermeyerek rejim tanımının çekirdeğini oluşturuyor. Yüksek getirili spreader 271 bp, yatırım dereceli 78 bp seviyelerde sakin kalmış; VIX 15.15 ve MOVE 70.88 oynaklık sinyali vermemiş. Bu kolay finansman ortamı, likidite açısından kalkan işlevi görmekle birlikte değerleme baskısının kalıcılığını maskeliyor olabilir.\n\nS&P 500, bakır ve 10 yıllık hazine getirisi 2 yılın en uç noktalarında konumlanmış olmayı sürdürüyor; ancak bu devam eden aşırı durumlardan ziyade önceki günlerin devamlılığını yansıtıyor. Türkiye açısından geçiş kanalı, yükselen pazar borçlanma koşullarından çok reel faiz seviyeleri üzerindeki baskının uzun vadeli sermaye akınlarını sınırlayabilmesi ile açılmaktadır.\n\nRejim sona erecek mi diye bakılması gereken tetikleyici, kredi spreadlerindeki ani genişleme veya volatilite göstergelerinde belirgin kırılmadır. Türkiye CDS verisi eksik olduğu için EM risk iştahı izlenmesi önem kazınmış durumda; çevre piyasalardaki risk primindeki hareket, Türk varlıklarına yönelik sermaye girişini şekillendiren ilk sinyali verebilir.",
+    "generated_by": "llm"
   }
 ]
