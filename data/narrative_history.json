@@ -195,5 +195,18 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi devam ediyor ve 10 yıllık reel faiz 2.42% seviyesinde 2 yılın 98.333 persentilinde kalmıştır. Son 60 günde 26 bp'lik yükseliş hızı, önceki günlere kıyasla istikrarlı bir seyrediyor. Bu seviyelendirme, uzun vadeli varlık değerlemeleri üzerinde süregelen baskı oluşturmaya devam ediyor ve özellikle reel getirileri cazip hale getirerek gelişen piyasa sermaye akışlarını etkilemeye olabilir.\n\nKredi piyasaları şu ana kadar sağlam kalmıştır. Yüksek getirili tahvil spreadleri 271 bp ile 2 yılın 16.9 persentilinde işlem görmekte; yatırım seviyesi spreadleri de 79 bp ile sakin bir şekilde seyrediyor. Bu kalış, ileriye dönük credit risk beklentilerinin hâlâ düşük olduğunu göstermektedir.\n\nBorsa ve emtia cephesinde momentum devam ediyor. S&P 500 20 işlem gününde %4.6 yükseliş göstermiş, bakır ise 2 yılın 98.1 persentilinde kalmaya devam etmiştir. Bu durum, küresel risk iştahının şimdilik korunduğunu işaret ediyor. Oysa 10 yıllık nominal faiz (4.68%) de 97.9 persentilde yüksek tutunmakta, reel ve nominal getiriler arasındaki bu fark EM varlıklarını cazip hale getirme konusunda sınırlı kalabilir.\n\nTürkiye için tetikleyici, reel faiz sıkışmasının getirdiği EM sermaye akış baskısının Borsa İstanbul ve TL yatırımlarına yansımasıdır. Merkez Bankası politika adımları ve enflasyon dinamiklerinin 10 yıllık reel faiz seviyelendirmesine etkisini izlemek önem taşımaktadır.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-08-17",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "copper",
+      "spx",
+      "real_10y",
+      "ust_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi 17. gününü devam ettiriyor. 10 yıllık reel faiz 2.39%, 2 yılın 96.875 persentilinde konumlanmış durumda; son 60 günde 23 bp'lik yükseliş hızı önceki günlere kıyasla hafif düşüş gösteriyor ancak seviye muazzam yüksek kalmaya devam ediyor. Bu derinlikte reel getiriler, özellikle uzun vadeli sabit getirili ve öz sermaye varlıkları için değerleme baskısı oluşturmaya devam ediyor.\n\nKredi tarafı şu ana kadar sağlam tutunuyor. HY ve IG spreadleri (271 bp ve 79 bp) her ikisi de 2 yılın altında persentil 20'nin altında seyrediyor; bu, yüksek faiz ortamına rağmen temerrüt beklentilerinin normal kaldığını gösteriyor. Volatilite göstergeleri (VIX 14.63, Move 69.58) benzer şekilde sakin kalıyor.\n\nTürkiye açısından reel faiz sıkışması başka bir çekici getiri taşıyıcı olmadığı sürece gelişen piyasa portföyü girişlerini zayıflatabilir. Özellikle TL'ye karşı dolar güçlü kaldığında, likit EM pozisyonlarına karşı baskı söz konusu olabilir. CDS verisi eksikliği nedeniyle Türkiye kredi riski priminin tematik oyuncu olup olmadığı şu an takip edilemiyor.\n\nRejimi tetiklemesi en fazla ihtiyatlı olacağı senaryo, kredi spreadlerindeki ani genişleme (HY'nin 290 bp üstüne çıkması) veya reel 10 yıllı getirinin trend dönüşüyle birlikte gelmesidir. Arz tarafı şokları (emtia, enerji) veya merkez bankası iletişim değişiklikleri yakından izlenecek tetikleyicilerdir.",
+    "generated_by": "llm"
   }
 ]
