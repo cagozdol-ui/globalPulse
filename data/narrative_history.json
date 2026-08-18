@@ -208,5 +208,19 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi 17. gününü devam ettiriyor. 10 yıllık reel faiz 2.39%, 2 yılın 96.875 persentilinde konumlanmış durumda; son 60 günde 23 bp'lik yükseliş hızı önceki günlere kıyasla hafif düşüş gösteriyor ancak seviye muazzam yüksek kalmaya devam ediyor. Bu derinlikte reel getiriler, özellikle uzun vadeli sabit getirili ve öz sermaye varlıkları için değerleme baskısı oluşturmaya devam ediyor.\n\nKredi tarafı şu ana kadar sağlam tutunuyor. HY ve IG spreadleri (271 bp ve 79 bp) her ikisi de 2 yılın altında persentil 20'nin altında seyrediyor; bu, yüksek faiz ortamına rağmen temerrüt beklentilerinin normal kaldığını gösteriyor. Volatilite göstergeleri (VIX 14.63, Move 69.58) benzer şekilde sakin kalıyor.\n\nTürkiye açısından reel faiz sıkışması başka bir çekici getiri taşıyıcı olmadığı sürece gelişen piyasa portföyü girişlerini zayıflatabilir. Özellikle TL'ye karşı dolar güçlü kaldığında, likit EM pozisyonlarına karşı baskı söz konusu olabilir. CDS verisi eksikliği nedeniyle Türkiye kredi riski priminin tematik oyuncu olup olmadığı şu an takip edilemiyor.\n\nRejimi tetiklemesi en fazla ihtiyatlı olacağı senaryo, kredi spreadlerindeki ani genişleme (HY'nin 290 bp üstüne çıkması) veya reel 10 yıllı getirinin trend dönüşüyle birlikte gelmesidir. Arz tarafı şokları (emtia, enerji) veya merkez bankası iletişim değişiklikleri yakından izlenecek tetikleyicilerdir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-08-18",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "vix",
+      "spx",
+      "real_10y",
+      "ust_10y",
+      "copper"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi on sekizinci gününü devam ettiriyor. 10 yıllık reel faiz 2.41% seviyesinde 2 yılın 98.125 persentilinde konumlanmış; son 60 günde 31 bp'lik yükseliş hızı önceki günlerin istikrarlı seyrinden farklı değilse de, bu yükseklik uzun vadeli varlık değerlemeleri üzerinde etkili olmaya devam ediyor. Kurumsal borçlanma maliyetleri (HY OAS 267 bp, IG OAS 80 bp) hala sakin kalmışken, reel getiri cephesindeki bu derinlik başta gelişen piyasalar olmak üzere yapısal baskı oluşturmaktadır.\n\nDün göre en önemli değişim, volatilite endeksindedir; VIX son 20 iş gününde %16.4'lük düşüşle 14.25 seviyesine gerileyerek 2 yılın 4.4 persentilinde yer almıştır. Bu yeni hareketlilik azalışı, baskı altında olan reel faiz ortamında piyasaların daha rahat nefes aldığına işaret edebilir. Hisse senedi ve metaller (SPX 99.8, Bakır 97.3 persentil) hâlâ 2 hafta boyunca yüksek seviyelerde kalmaya devam ediyor.\n\nTürkiye açısından bu rejim, reel faizlerin küresel düzlemde bu kadar yüksek kalması nedeniyle EM varlıkları için getiri baskısı anlamına gelmektedir. TL'nin dış borçlanmada, hisse senedi akışlarında ve döviz rezervlerinde yaşayabileceği olumsuz etkileri izlemek önemlidir; CDS verisi eksik olması bu dinamiği tam değerlendirmeyi güçleştirmektedir.\n\nRejimin kırılacağı ilk tetikleyici, ya reel faizlerin doruğu aşıp geri çekilmesi ya da kredi piyasalarında (HY spreads) baskı belirtileri ortaya çıkmasıdır. Önümüzdeki dönemde ABD tasarruf ve yatırım bilançosundaki hareketleri ile uzun vadeli enflasyon beklentilerini yakından izlemek gerekecektir.",
+    "generated_by": "llm"
   }
 ]
