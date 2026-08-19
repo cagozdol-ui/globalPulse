@@ -222,5 +222,18 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi on sekizinci gününü devam ettiriyor. 10 yıllık reel faiz 2.41% seviyesinde 2 yılın 98.125 persentilinde konumlanmış; son 60 günde 31 bp'lik yükseliş hızı önceki günlerin istikrarlı seyrinden farklı değilse de, bu yükseklik uzun vadeli varlık değerlemeleri üzerinde etkili olmaya devam ediyor. Kurumsal borçlanma maliyetleri (HY OAS 267 bp, IG OAS 80 bp) hala sakin kalmışken, reel getiri cephesindeki bu derinlik başta gelişen piyasalar olmak üzere yapısal baskı oluşturmaktadır.\n\nDün göre en önemli değişim, volatilite endeksindedir; VIX son 20 iş gününde %16.4'lük düşüşle 14.25 seviyesine gerileyerek 2 yılın 4.4 persentilinde yer almıştır. Bu yeni hareketlilik azalışı, baskı altında olan reel faiz ortamında piyasaların daha rahat nefes aldığına işaret edebilir. Hisse senedi ve metaller (SPX 99.8, Bakır 97.3 persentil) hâlâ 2 hafta boyunca yüksek seviyelerde kalmaya devam ediyor.\n\nTürkiye açısından bu rejim, reel faizlerin küresel düzlemde bu kadar yüksek kalması nedeniyle EM varlıkları için getiri baskısı anlamına gelmektedir. TL'nin dış borçlanmada, hisse senedi akışlarında ve döviz rezervlerinde yaşayabileceği olumsuz etkileri izlemek önemlidir; CDS verisi eksik olması bu dinamiği tam değerlendirmeyi güçleştirmektedir.\n\nRejimin kırılacağı ilk tetikleyici, ya reel faizlerin doruğu aşıp geri çekilmesi ya da kredi piyasalarında (HY spreads) baskı belirtileri ortaya çıkmasıdır. Önümüzdeki dönemde ABD tasarruf ve yatırım bilançosundaki hareketleri ile uzun vadeli enflasyon beklentilerini yakından izlemek gerekecektir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-08-19",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "real_10y",
+      "ust_10y",
+      "spx",
+      "copper"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi devam ediyor. 10 yıllık reel faiz 2.44% ile 2 yılın 99.792 persentilinde yer alıyor ve son 60 günde 35 bp'lik yükseliş kaydedilmiştir. Bu seviye, dün ölçülen 2.41%'den 3 baz puan daha yüksektir ve historik olarak olağanüstü konumdadır.\n\nKredi piyasalarının sakinliği sürüyor ancak bu, temel stresin olmadığı anlamına gelmez. High yield spread 270 bp (2 yıllık ortalamanın 14.5 persentilinde) ve investment grade 81 bp (55.4 persentilinde) kalırken, reel getiri seviyeleri uzun vadeli varlık değerlemelerine karşı güçlü baskı oluşturmaya devam ediyor. S&P 500 18 gün boyunca yüksek persentillerde kalmış durumdadır (97.9 persentil), bu da fiyatlamanın yüksekliğine işaret ediyor.\n\nTürkiye açısından bu ortam, gelişen piyasalardan sermaye çekilmesi riski taşıyor. Reel faiz bu seviyelerde sabitlenirse, dolarla yapılan yatırımların gerçek getirisi cazip hale gelir ve bu, bölgesel akışları etkileyebilir. CDS verisi eksik olsa da, gelişen pazar dişsallığı izlenmesi önemlidir.\n\nSonraki tetikleyici, reel faizin bu yüksek seviyede stabil kalıp kalmaması ve kurumsal borçlanma koşullarında ilk stres belirtilerinin ortaya çıkıp çıkmayacağıdır. Spread genişlemesinin başlaması veya kredi hacmi göstergelerindeki zayıflama rejimi yeni aşamaya taşıyabilir.",
+    "generated_by": "llm"
   }
 ]
