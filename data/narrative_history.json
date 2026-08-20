@@ -235,5 +235,18 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi devam ediyor. 10 yıllık reel faiz 2.44% ile 2 yılın 99.792 persentilinde yer alıyor ve son 60 günde 35 bp'lik yükseliş kaydedilmiştir. Bu seviye, dün ölçülen 2.41%'den 3 baz puan daha yüksektir ve historik olarak olağanüstü konumdadır.\n\nKredi piyasalarının sakinliği sürüyor ancak bu, temel stresin olmadığı anlamına gelmez. High yield spread 270 bp (2 yıllık ortalamanın 14.5 persentilinde) ve investment grade 81 bp (55.4 persentilinde) kalırken, reel getiri seviyeleri uzun vadeli varlık değerlemelerine karşı güçlü baskı oluşturmaya devam ediyor. S&P 500 18 gün boyunca yüksek persentillerde kalmış durumdadır (97.9 persentil), bu da fiyatlamanın yüksekliğine işaret ediyor.\n\nTürkiye açısından bu ortam, gelişen piyasalardan sermaye çekilmesi riski taşıyor. Reel faiz bu seviyelerde sabitlenirse, dolarla yapılan yatırımların gerçek getirisi cazip hale gelir ve bu, bölgesel akışları etkileyebilir. CDS verisi eksik olsa da, gelişen pazar dişsallığı izlenmesi önemlidir.\n\nSonraki tetikleyici, reel faizin bu yüksek seviyede stabil kalıp kalmaması ve kurumsal borçlanma koşullarında ilk stres belirtilerinin ortaya çıkıp çıkmayacağıdır. Spread genişlemesinin başlaması veya kredi hacmi göstergelerindeki zayıflama rejimi yeni aşamaya taşıyabilir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-08-20",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "ust_10y",
+      "real_10y",
+      "spx",
+      "copper"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi devam ediyor. 10 yıllık reel faiz 2.41% ile 2 yılın 97.9 persentilinde durmuş; bu muazzam yüksek seviye, son 60 günde 35 bp'lik tırmanışın sonucudur. Dün 2.44%'ten bugün 2.41%'ye gerileme gerçekleşse de, bu 3 bp'lik hafiflemişlik rejimin temel karakterini değiştirmedi. Reel getiriler bu derinlikte kalıcı olduğu sürece, uzun vadeli varlık değerlemeleri üzerindeki baskı devam ediyor.\n\nKredi piyasaları sakin görünmektedir. High yield spread 275 bp ile 2 yılın 25.8 persentilinde, investment grade ise 82 bp ile 61.9 persentilinde yer almaktadır. Volatilite göstergeleri de normal aralığında seyrediyor: VIX 15.84, MOVE 71.26. Bu sakinlik, reel faiz şokunun henüz kredi riski primlerine yeterince yansımadığını işaret ediyor olabilir.\n\nHisse senedi ve emtia piyasaları yüksek seviyelerde sabit kalmıştır. S&P 500 7707.98 ile 97.9 persentilde, bakır 6.48 ile 95.9 persentilde konumlanmıştır; her ikisinin de 20 iş günü değişimi sırasıyla 4.0% ve 2.8% olmuştur. Bu seviyeler, yüksek reel faizlere rağmen büyüme beklentilerinin hala güçlü olduğunu gösteriyor olabilir.\n\nTürkiye açısından kritik tetikleyici, merkez bankası politikasının reel faiz yüksekliğine yanıtı olacaktır. Nominal faizler sabitleniyor iken enflasyon beklentileri reel getiri seviyesini belirleyecektir. Cari denge ve dış finansman koşullarının bu yüksek reel faiz ortamında nasıl evrimleşeceği takip edilmelidir.",
+    "generated_by": "llm"
   }
 ]
