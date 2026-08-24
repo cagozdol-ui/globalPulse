@@ -262,5 +262,19 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi aynı seviyelerde tutunuyor. 10 yıllık reel faiz 2.35% ile 2 yılın 95.4 persentilinde, son 60 günde 28 bp'lik yükselişle historik olarak son derece yüksek konumdadır. Dün 2.41%'den bu güne 6 bp'lik hafif gerileme gelse de, rejimin özü korunmaktadır. Yeni olarak 5-10 yıl ileri faiz beklentisi (fwd_5y5y) da 2.34% ile persentil 95.4'e ulaşmış, 20 iş günü içinde 6 bp yükselmiştir; bu da merkez bankasının uzun vadeli enflasyon/faiz görünümü hakkında pazar beklentilerinin giderek sertleştiğini isaret ediyor.\n\nKredi piyasaları şimdilik sessiz kalıyor. High yield spread 273 bp, investment grade spread 81 bp olup her ikisi de 2 yıllık ortalamanın oldukça altında yer almaktadır. Bu sakinlik, piyasa katılımcılarının reel faiz baskısını henüz sistematik risk olarak fiyatlamadığını göstermektedir. Ancak VIX 14.89'da normal, MOVE 73.18'de sakin; volatilite gostergeleri gergin değilse de, daha derin bir gerilemenin yolunu açıyor olabilir.\n\nTürkiye açısından bu rejim, dış finansman maliyetlerinin yüksek kalması anlamına gelir. EM sermaye akışlarına karşı baskı devam ederken, Türk varlıklarının relatif getirisi (tr_rel_5d 1.21% ile normal seviyede) şimdilik koruma sunmuş görülüyor. CDS verisinin eksikliği nedeniyle ülkeye özgü risk primini takip etmek kısıtlıdır.\n\nİzlemesi gereken tetikleyici: Uzun vadeli faiz beklentilerinin (fwd_5y5y) daha da yükselmesi veya tam tersi rotasyon olabilir; ayrıca reel faiz seviyesinin 95.4 persentilden kırılıp geri çekilmesi, rejim değişiminin ilk işareti olur. Kredi spreaddlerinde (HY OAS, IG OAS) ilk daralmanın ters yönde hareket etmesi de izlenmelidir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-08-24",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "fwd_5y5y",
+      "ust_10y",
+      "spx",
+      "copper",
+      "real_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi aynı koşullar altında devam ediyor. 10 yıllık reel faiz 2.35% ile 2 yılın 95.4 persentilinde kalıyor; son 60 günde 28 bp'lik yükseliş korunmuştur. Önceki güne kıyasla 6 bp'lik hafif iyileşme görülse de, rejimin temel yapısı değişmemiştir. Bu derin yükselişin uzun vadeli varlık değerlemeleri üzerindeki baskısı sürmektedir.\n\nYeni bir gelişme olarak 5-10 yıl ileri faiz beklentisi (fwd_5y5y) da 2.34% ile persentil 95.4'e çıkarak rejimi güçlendiriyor. 20 iş günü içinde 10 bp'lik bu yükseliş, piyasanın orta vadeli reel getiri beklentilerini de yükselttiğini işaret ediyor. Devam eden gostergelere bakıldığında, 10 yıllık nominal faiz 21 gündür persentil 97.9'da tutunmuş, hisse senetleri ve bakır da 16-18 gündür yüksek seviyelerde kalmış durumda.\n\nKredi piyasaları fakat sakin görünüyor. High yield spread 275 bp'de, investment grade spread 82 bp'de tutunarak her ikisi de 2 yılın alt yüzdeliklerde yer alıyor. Bu durum, reel faiz yüksekliğinin henüz borçlanma maliyetlerine tam sizdirmediğini, ancak uzun vadeli finansman talebinde erozyona işaret ettiğini göstermektedir.\n\nTürkiye açısından, reel faiz sıkışması ortamı uzun dönem EM kütlesi çekiciliğini azaltabilir ve sermaye akımlarında terkin baskısı oluşturabilir. İzlenecek tetikleyici: kredi spreadi yılı genelinde 300 bp'yi kırması halinde, reel faiz sıkışmasının kredi tarafına sıçrayıp sıçramayacağıdır.",
+    "generated_by": "llm"
   }
 ]
