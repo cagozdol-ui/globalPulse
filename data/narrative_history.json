@@ -289,5 +289,19 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi dün ile aynı koşullar altında devam ediyor. 10 yıllık reel faiz 2.4% ile 2 yılın 96.7 persentilinde tutunmakta; son 60 günde biriken 33 bp'lik yükseliş, bu gostergenin historik derinliğini koruyor. Kredi spread'leri hâlâ sakin (endüstriyel tahviller 81 bp, yüksek getirili 270 bp), ancak reel faizin bu seviyesi uzun vadeli varlık değerlemeleri üzerinde süregelen baskı oluşturuyor.\n\nVolatilite göstergeleri normal aralıkta seyrediyor; VIX 15.13 ve MOVE 73.98 ile piyasa yüzey halinde sakin görünüyor. Ancak bu huzur, altında reel getirilerin yüksekliğinin yol açtığı EM para akımları ve değerleme kompresyonunun gerçeğini gizliyor. Önceki günlere kıyasla dikkate değer bir hız değişimi tespit edilmemiştir; sıkışma derin ama zamanla ilerliyor.\n\nTürkiye için temel risk kanalı, global reel faizin bu yüksek düzeyinin uluslararası sermaye akışlarını zayıflatması yoluyla işliyor. Cari hesap finansmanına bağımlı bir ekonomide, EM'yi cezbeden getiri fark kaybolduğunda dış denge baskıya girer. TR/USD volatilitesi şimdilik 5 günde 1.08 ile sakin kalıyor, ancak bu stabilite, global reel faizin yukarı yönlü momentum kaybetmesi halinde test edilebilir.\n\nSonraki tetikleyici, 5-10 yıl ileri faiz beklentisinin (fwd_5y5y) 2.32 seviyesini aşıp aşmayacağı olacak. Bu gösterge, merkez bankalarının orta vadeli enflasyon baskısına dair sinyali taşıyor. Faiz beklentilerinin sıçraması, sıkışmanın derinleşmesini, tersine dönüşü ise EM için nefes alma alanı açmasını işaret eder.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-08-26",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "em_equity",
+      "copper",
+      "ust_10y",
+      "spx",
+      "real_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi devam ediyor ve temel dinamikler dünle aynı kalmıştır. 10 yıllık reel faiz 2.38% ile 2 yılın 95.625 persentilinde tutunmakta, son 60 günde birikmiş 27 bp'lik yükseliş historik derinliğini koruyor. Kredi piyasalarında (endüstriyel 81 bp, yüksek getirili 269 bp) hâlâ sakinlik söz konusu olsa da, bu yüksek reel faiz seviyesi uzun vadeli varlık değerlemeleri üzerindeki baskıyı sürdürmektedir. Hisse senedi oynaklığı (VIX 15.85) ve tahvil oynaklığı (Move 71.92) normalin altında kalmakta, piyasa yüzeysel olarak soğukkanlılığını koruyor.\n\nYeni bir gelişme olarak gelişen piyasa hisse senetleri (em_equity) persentil 95.7'ye ulaşmış ve son 20 iş günde %10.1 oranında artış kaydetmiştir. Bu hızlı yükseliş, yüksek reel faizin gelişen ülkelerdeki sermaye akımlarına ve değerlemelere baskı oluşturduğunu işaret ediyor. Bakır (persentil 100'de, %7.6 yükseliş) ve S&P 500 (persentil 97.5'te, %4.9 yükseliş) gibi uzun vadeli tetikleyiciler zaten haftalardır ekstremde olmaya devam etmektedir.\n\nTürkiye bağlamında bu ortam, reel faizin yüksek kaldığı dönemlerde kredi genişlemesinin kısıtlı kalacağını isaret ediyor. Dış finansman maliyetleri ise yükselen reel faizlerle birlikte artan baskı görebilir. Enerji ve hammadde fiyatları (bakır) güçlü seyrediyor ancak bu, EM cari açıklarını baskılamaya devam etmektedir.\n\nİzlenecek tetikleyici: Kredi spread'lerinin (özellikle yüksek getirili OAS) bu sakin seviyeleri ne kadar süreceğidir. Reel faiz 95+ persentilde sabitlendiği sürece, spreads'lerin genişlemesi (150 bp'lik bir sıçrama gibi) rejimin \"sıkışmadan\" gerçek kredi stresinize evrilmesini işaret edecektir. Ayrıca Turkish CDS verisi gelmediği için BIST duyarlılığı izlenemeyor, ancak EM equity gücü Türkiye'nin bu dönemde relatif performans baskısı altında olabileceğini göstermektedir.",
+    "generated_by": "llm"
   }
 ]
