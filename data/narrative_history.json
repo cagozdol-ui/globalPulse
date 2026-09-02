@@ -358,5 +358,20 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi üçüncü günde yerini koruyor; 10 yıllık reel faiz 2.42% ile 2 yılın 98.1 persentilinde zirveye yaklaşmış durumda. Dün 2 yıllık getiri 4.34%'e tırmandı ve bu seviye de 2 yılın 98.5 persentilini işaret ediyor—bu iki göstergede eş zamanlı uç seviyelere ulaşılması, kısa ve uzun vade arasındaki baskının şiddetini ortaya koymaktadır. Son 60 günde reel faizde 22 bp'lik birikmiş yükseliş, bu sıkışmanın yeni bir dinamiği yansıtıyor.\n\nKredi piyasaları, yüksek faiz ortamına rağmen hâlâ sakinliğini koruyor. Yüksek getirili spread'ler 260 bp'de (2 yılın 0.8 persentili) ve yatırım derecesi spread'ler 79 bp'de yer almakta, bu aşırı dar seviyelerdeki kalış kredi riskinin fiyatlanmasında bir boşluk işaret ediyor. Bu kontrast—faiz sıkışması ile kredi sakinliğinin birlikteliği—hem şirket borçlanma maliyetlerinin yükselmesine hem de refinansman baskısının gözlenebilir hale gelmesine kadar sürebilir.\n\nTürkiye açısından geçiş kanalı, yükselen reel faiz seviyesinin sermaye akımları üzerindeki etkisi yoluyla işliyor. Gelişen piyasalar için artan real getiri çekiciliği, döviz talebini kışı tarafından yükseltebilir ve BIST üzerinde yabancı katılımı düşürebilir. Aynı zamanda yerel finansal kurumların maliyet artışı ve hisse değerlemeleri baskilı kalacaktır.\n\nİzlenecek tetikleyici, kredi piyasalarının bu sakinliğini bozabilecek ilk işaret olacaktır. Yüksek getirili spread'lerde 20 bp'lik bir açılış, ya da 2 yıllık getirinin 4.50%'nin üzerine çıkması, rejimin dinamiklerini değiştirebilir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-09-02",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "real_10y",
+      "ust_2y",
+      "ust_10y",
+      "hy_oas",
+      "copper",
+      "spx"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi dördüncü gün yerini koruyor ve dinamiklerde hızlanma belirtileri görülüyor. 10 yıllık reel faiz 2.44% ile 2 yılın 99.8 persentilinde zirveye daha da yaklaştı; son 60 günde birikmiş 23 bp'lik yükseliş ve son 20 iş günündeki 3 bp'lik devam eden artış, bu seviyenin giderek sıkılaştığını işaret ediyor. Eş zamanlı olarak 2 yıllık getiri 4.34%'de istikrarlı kalmış ve bu da vade yapısı boyunca basıncın yayılmaya devam ettiğini gösteriyor.\n\nPiyasa volatilitesi hala sakin seviyelerde tutunuyor—VIX 14.92 ve MOVE 77.88'de normalin altında kalıyor. Kredi piyasaları ise bu yüksek reel faiz seviyelerine karşı şimdiye kadar dirençli kalmış; yüksek getirili spreadler 263 bp'de hala sakin bölgededir. Ancak 10 yıllık reel faizin 2 yılın uç persentilinde bu kadar uzun süre kalması, uzun vadeli varlık değerlemeleri ve özellikle gelişen piyasa sermaye akışları için artan bir baskı oluşturmaya başlıyor olabilir.\n\nTürkiye bağlamında, TL karşı dönem başına göre %-4 gerilemesi (persentil 13.6) bu küresel reel faiz ortamındaki sıkışmanın EM para birimleri üzerindeki etkisini yansıtıyor. Yüksek reel faiz ortamı, Türk sabit getiri piyasasında avantajlı göründüğü halde, küresel likidite ortamının sıklaşması BIST sermaye akışlarına ters yön verebilir.\n\nİzlenecek ana tetikleyici, reel 10 yıllık faizin bu ucundan geri çekilip çekilmeyeceği ile kredi piyasalarının ne zaman tepki vermeye başlayacağıdır. Eğer HY spreadler 263 bp'nin üstüne çıkarsa ve hisse senedi endeksleri (şu an %-1.2 gerilemede) bu gerilemesini derinleştirirse, rejim dinamiği kaymaya başlayabilir.",
+    "generated_by": "llm"
   }
 ]
