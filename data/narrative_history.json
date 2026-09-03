@@ -373,5 +373,19 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi dördüncü gün yerini koruyor ve dinamiklerde hızlanma belirtileri görülüyor. 10 yıllık reel faiz 2.44% ile 2 yılın 99.8 persentilinde zirveye daha da yaklaştı; son 60 günde birikmiş 23 bp'lik yükseliş ve son 20 iş günündeki 3 bp'lik devam eden artış, bu seviyenin giderek sıkılaştığını işaret ediyor. Eş zamanlı olarak 2 yıllık getiri 4.34%'de istikrarlı kalmış ve bu da vade yapısı boyunca basıncın yayılmaya devam ettiğini gösteriyor.\n\nPiyasa volatilitesi hala sakin seviyelerde tutunuyor—VIX 14.92 ve MOVE 77.88'de normalin altında kalıyor. Kredi piyasaları ise bu yüksek reel faiz seviyelerine karşı şimdiye kadar dirençli kalmış; yüksek getirili spreadler 263 bp'de hala sakin bölgededir. Ancak 10 yıllık reel faizin 2 yılın uç persentilinde bu kadar uzun süre kalması, uzun vadeli varlık değerlemeleri ve özellikle gelişen piyasa sermaye akışları için artan bir baskı oluşturmaya başlıyor olabilir.\n\nTürkiye bağlamında, TL karşı dönem başına göre %-4 gerilemesi (persentil 13.6) bu küresel reel faiz ortamındaki sıkışmanın EM para birimleri üzerindeki etkisini yansıtıyor. Yüksek reel faiz ortamı, Türk sabit getiri piyasasında avantajlı göründüğü halde, küresel likidite ortamının sıklaşması BIST sermaye akışlarına ters yön verebilir.\n\nİzlenecek ana tetikleyici, reel 10 yıllık faizin bu ucundan geri çekilip çekilmeyeceği ile kredi piyasalarının ne zaman tepki vermeye başlayacağıdır. Eğer HY spreadler 263 bp'nin üstüne çıkarsa ve hisse senedi endeksleri (şu an %-1.2 gerilemede) bu gerilemesini derinleştirirse, rejim dinamiği kaymaya başlayabilir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-09-03",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "ust_10y",
+      "real_10y",
+      "ust_2y",
+      "copper",
+      "spx"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi beşinci gün yerini koruyor ve dinamiklerde stabilizasyon sinyalleri görülüyor. 10 yıllık reel faiz 2.44% ile 2 yılın 99.792 persentilinde kalmış, ancak son 60 günde birikmiş 28 bp'lik yükseliş dün 23 bp'den yukarı çıktığını gösteriyor. Bu, reel faizin zirveye yaklaşırken hız kazandığını işaret ediyor; son 20 iş günündeki 1 bp'lik artış ise nihai sınıra ulaşılma sürecini yavaşlatıyor olabilir.\n\nKredi piyasasının sakinliği dikkat çekici. Yüksek getirili spreadi 265 bp ile 2 yılın 5.8 persentilinde kalmış, bu da borçluların henüz bu reel faiz basıncını fiyatlandırmadığını işaret ediyor. Investment grade spreadi ise 81 bp'de normal seviyelerde. Volatilite göstergeleri (VIX 16.34, MOVE 79.71) de sakin kalıyor; risk primi henüz sıkışmanın derinliğini yansıtmıyor.\n\nTürkiye bağlantısında kritik uyarı: TRY/USD 5 günlük bazda -3.82 persentil ile warning seviyesine geri çekildi. Reel faiz sıkışması ortamında, gelişmiş piyasalardaki yüksek reel getiri oranları para akımlarını çekebilir ve yerken para cinsiyetleri—Türkiye'yi de içeren EM'ler—baskı görebilir. Bu rejimin EM sermaye akımlarına yönelik baskısı, TRY'nin zayıflamasında belirgin rol oynuyor olabilir.\n\nSonraki tetikleyici: reel 10 yıllık faizin bu zirveyi kıracak mı yoksa tersine dönüş sağlayacak mı bunu görmek. Aynı zamanda HY spreadi 265 bp'den yukarı çıkıp çıkmaması—kredinin sıkışmayı sonunda fiyatlandırması—izlenmesi gerekiyor. Türkiye açısından ise CDS verisinin gelmesi (şu anda eksik) ve TRY'nin bu EM baskısından kurtulup kurtulmadığı belirleyici olacak.",
+    "generated_by": "llm"
   }
 ]
