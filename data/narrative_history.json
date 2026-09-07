@@ -402,5 +402,20 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi altıncı günü yerini koruyor ve tetikleyici göstergeler önceki günlere kıyasla daha belirgin bir ısınma gösteriyor. 10 yıllık reel faiz 2.45% ile 99.792 persentilinde zirvenin neredeyse başında yer almış, son 60 günde birikmiş yükseliş 28 bp'ye çıkmış durumda—bu, reel faizin hızını artırdığını işaret ediyor. Uzun vadeli ABD Hazine getirileri 14.0 bp artmışken, kısa uç 20.0 bp yükselmiş; eğrinin bu denli dik steepening koşulu, kredi piyasasında henüz stres görülmese de uzun vadeli varlık değerlemeleri üzerinde artan baskı oluşturuyor.\n\nÖnceki günlere göre en kayda değer değişim, EM hisse senedi endeksinin yüksek persentile (95.9) ulaşması ve 20 iş günü bazında 2.8% artış göstermesidir. Bu, sermaye akımlarının EM'ye hala akışında olduğunu ancak reel faiz baskısı altında kırılgan bir denge olduğunu işaret ediyor. S&P 500 ve bakır gibi devam eden periferik göstergeler ise 25-27 gündür yüksek seviyelerde bulunmakta; bu, pazar genelinin geri çekilmemiş olmasından ziyade, baskılarının daha seçici ve uzun vadeli varlıklara yöneldiğini gösteriyor.\n\nTürkiye için geçiş kanalı, uzun vadeli reel faizlerin bu kadar yükselişe devam etmesi halinde, EM cari açık ve dış finansman ihtiyacı olan ekonomilere dişi fon akımlarının ağırlaşabileceği yönündedir. TR_rel_5d göstergesi (-5.93, persentil 5.8) BIST'in bu dönemde relatif zayıflığını doğrulasada, henüz kredi tarafının bozulmaması Türk varlıklarının yeniden değerlendirilmeye açık olduğunu gösteriyor.\n\nİzlenecek kritik tetikleyici, reel 10 yıllık faizin 2.45% üzerinden yukarıya doğru atılması ya da tersine bu seviyede konsolidasyon sağlayıp geri çekilme göstermesidir; eş zamanlı olarak, EM hisse senedilerindeki yüksek persentil seviyesinin kredi spread genişlemesine dönüşüp dönüşmemesi ve BIST'in relatif performansının iyileşip iyileşmemesi yakından izlenmelidir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-09-07",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "em_equity",
+      "copper",
+      "ust_10y",
+      "ust_2y",
+      "spx",
+      "real_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi devam ediyor ve dinamiği önceki günlerden farklılaşmaya başlamıştır. 10 yıllık reel faiz 2.42% ile 97.5 persentilde kalsa da, son 60 günde birikmiş 27 bp'lik yükseliş hafifçe yavaşlamıştır. Buna karşılık yeni tetikleyici olarak ortaya çıkan gelişen piyasa hisse senetleri (em_equity) 68.7 seviyesinde 98.6 persentilinde, son 20 iş gününde 5.4% oranında yükselmiş durumda—bu, reel faiz baskısının EM sermaye akışlarını hemen hemen sınırda tuttuğunu işaret etmektedir.\n\nTürkiye piyasası bağlamında ise bağıl performans (tr_rel_5d) -4.35 seviyesinde 10.8 persentilinde, yani BIST, gelişen piyasaların bu son rallisinden belirgin şekilde geriye kalmıştır. Carry unwind riski de hızlanmış: USDJPY son beş iş gününde 3.6% düşmüştür; bu, yen taşıma ticaretinin söz konusu periyotta çerçevesini değiştirdiğini ve potansiyel olarak risk-on mevzilerini dengelemekte olduğunu göstermektedir.\n\nKredi piyasaları hala sakin görünmektedir—yüksek getirili oas 265 bp, yatırım notu oas 81 bp'de eski değerlerine kıyasla rahat durumda. Ancak reel 10 yılın zirve bölgesinde kalması, uzun vadeli değerlemelerde ağırlığı artırmaya devam etmektedir. Türkiye CDS verisi olmayışı izlemenin kısıtını oluşturmaktadır.\n\nSırada en kritik tetikleyici, reel faiz sıkışmasının kredi piyasalarına ve BIST'e hissettirileceği kanalıdır: eğer em_equity rallisi tersine dönerse veya USDJPY sakinliği kırılırsa, sermaye akışları yeniden değerlendirilebilir.",
+    "generated_by": "llm"
   }
 ]
