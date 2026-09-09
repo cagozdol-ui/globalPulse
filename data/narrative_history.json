@@ -432,5 +432,21 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi sabit kalmıştır; 10 yıllık reel faiz 97.5 persentilde konumlanmış ve son 60 günde 28 bp yükseliş göstermiştir. Bu seviye, uzun vadeli varlık değerlemeleri üzerinde baskı oluştururken kredi spreatleri (HY OAS 265 bp, IG OAS 81 bp) görece sakin kalmıştır. Dün meydana gelen değişim sınırlı olmakla birlikte, reel faizin 2 yılın tepesinde istikrarlı kalması rejimin gürlüğünü koruduğunu göstermektedir.\n\nÖnceki günlerle karşılaştırıldığında, reel faiz yükselişinin hızı hafifçe yavaşlamıştır; son 20 iş gününde sadece -1.0 bp hareket kaydedilmiş durumda. Buna karşılık gelişen piyasa hisse senetleri (em_equity) 68.7 seviyesinde 98.5 persentilinde ve son 20 iş gününde 5.0% oranında yükselerek, yüksek reel faiz ortamında sermaye akımlarının esnekliğini göstermektedir. Ancak Türkiye göreceli hisse senedi performansı (tr_rel_5d) -3.96 ile 13.6 persentilinde çift haneli negatif açı vermiş, bölge emsallerine kıyasla BIST'in geride kalışını işaret etmiştir.\n\nTürkiye için transmisyon kanalı temelde iki yönlüdür: yüksek reel faiz ortamı yabancı portföy yatırımcıları için daha cazip getiriler sunmakla birlikte, uzun vadeli kredi maliyetlerini ve sermaye maliyetini yükseltmektedir. Gelişen piyasalardaki ralli karşısında BIST'in relatif zayıflığı, bölgesel risk priminin yüksek reel faiz ve sıkı para politikasıyla yeterince dengelenmediğini olabilir işaret etmektedir.\n\nİzlenecek tetikleyici unsur, reel faizin bu seviyelerde tutunup tutunamaması ve gelişen piyasalarda yaşanan hisse senedi yükselişinin BIST'e yayılıp yayılmayacağıdır. Turkey CDS verisinin devamsızlığı risk algısının tam boyutunu ortaya koymayı zorlaştırmaktadır; söz konusu verinin gelmesiyle Türkiye'ye özgü dış borç algısı daha net görülebilecektir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-09-09",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "fwd_5y5y",
+      "copper",
+      "ust_10y",
+      "ust_2y",
+      "em_equity",
+      "real_10y",
+      "spx"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi altı gündür devam etmekte olup, tetikleyici göstergeler geçen gün ile kıyaslandığında mikro düzeyinde ilerleme göstermektedir. 10 yıllık reel faiz 98.7 persentilinin tepesinde sabitlenmiş, son 60 günde 20 bp daha yükselmiştir. Bu seviye, uzun vadeli varlık fiyatlandırmasına süregelen baskı oluştururken, kredi piyasaları (HY OAS 268 bp, IG OAS 81 bp) görece sakın kalma durumunu korumaktadır—bu da reel faiz ve kredi farkları arasında tipik olmayan bir ayrışmayı işaret ediyor.\n\nYeni bir gelişme olarak 5 yıl sonrasından itibaren 5 yıllık enflasyon beklentisi (fwd_5y5y) 2.34 seviyesine yükselmiş, 95.2 persentilinde konumlanarak son 20 iş günde 6.0 bp artış kaydetmiştir. Bu, uzun vadeli nominal getiri beklentilerinin de yükselmekte olduğunu göstermektedir. Aynı zamanda gelişen piyasa hisse senetleri (em_equity) 68.83 seviyesinde 98.8 persentile yaklaşmış durumda; EM döviz carry işlemlerinin (USDJPY son 5 iş günde yüzde 4.1 düşüş) potansiyel pürüzleriyle birlikte, bu varlık sınıfında yeniden-değerlendirme baskısı olabilir.\n\nTürkiye bağlamında ise bu rejim ortamında, reel faizlerin yüksek seviyelerde kalması ve EM sermaye çıkış baskısı, Hazine finansmanı maliyetlerini ve TL karşıtı yabancı yatırımcı davranışını etkilemeye devam etmektedir. Turkey CDS verisi eksikliği nedeniyle risky asset tarafından gözlem yapılamamaktadır, ancak EM spread genişlemesi ve carry unwind hızı, BIST ve Türk tahvil piyasasında henüz belirli olmayan ancak izlenecek bir gerginlik kaynağı teşkil edebilir.\n\nGelecek gözlem noktaları: (1) fwd_5y5y ve reel_10y arasındaki sapmadan, enflasyon beklentisinin gerçek ve nominal getiriler arasında denge bulup bulamadığı, (2) HY OAS spreatleri ve kredi göstergelerinde henüz bir uyarı işareti çıkıp çıkmadığı, (3) carry unwind hızının Türk finans piyasasına sirayet edip etmediği izlenecektir.",
+    "generated_by": "llm"
   }
 ]
