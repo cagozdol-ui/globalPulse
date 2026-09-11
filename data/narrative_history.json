@@ -463,5 +463,18 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi sekizinci gün sabit kalmıştır ve tetikleyici göstergeler önceki güne kıyasla daha da keskinleşmiştir. 10 yıllık reel faiz 2.43% ile 98.7 persentilinin zirvesinde yer almakta, son 60 günde 22 bp daha yükselmiştir. Bu seviyelendirme, uzun vadeli varlık değerlemeleri üzerindeki sıkışma basıncını pekiştirmektedir. Kredi spreatleri (HY OAS 267 bp, IG OAS 81 bp) henüz ciddi bir bozulma göstermese de, getiri eğrisi boyunca faiz artışları süregelmektedir—2 yıllık ABD Hazinesi son 20 işlem gününde 24 bp yükselmiş, 10 yıllık ise 17 bp değişim kaydetmiştir.\n\nReel faizin yüksek seviyelerde sabitlenerek persentil ucunda kalması, yatırım yapı oluşturan uzun vadeli tahvil ve hisse senedi değerlemesine doğrudan olumsuz etki uygulamaktadır. Gelişen piyasa hisse senetleri (em_equity) 97.7 persentilinde konumlanarak beş gündür bu listede bulunmakta, S&P 500 ise 95. persentil seviyesinde negatif momentum taşımaktadır (son 20 işlem gününde -2.1%). Bakır fiyatlandırması 100. persentilde ve 20 işlem gününde 3.4% artışta, riskli varlık rotasyonunun hala değişken olduğunu işaret etmektedir.\n\nDış talep şoklarına ve para politikası yaklaşımlarına duyarlı Türkiye bakımından, bu ortam iki kanal üzerinden baskı oluşturmaktadır: birincisi, reel faizin ABD tarafında yükselmesi yerli tasarruflara verimliliğe karşı yabancı yatırımcı ilgisini artırırken, ikincisi gelişen piyasa sermaye akımlarının hafif çekilişi (em_equity persentilinde hareketlilik) yerel likiditeyi karşılaştırmalı olarak komprese edebilir. Carry unwind riski de (USDJPY son 5 işlem gününde -3.4%) dolar ivmesini desteklemektedir.\n\nSonraki izlenecek tetikleyici, reel faizin persentil zirvesine mukavemet gösterip göstermeyeceği, bunun yanında HY OAS ve IG OAS spreadlerinin bu sakinliği muhafaza edip edemeyeceğidir. Eğer kredi spreatleri genişlemeye başlarsa, sıkışma basıncının kredi döngüsüne sirayet başladığını gösterecek ve Türkiye'ye yönelik riskli varlık durumunu ciddi ölçüde etkileyecektir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-09-11",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "fwd_5y5y",
+      "ust_10y",
+      "ust_2y",
+      "real_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi dokuzuncu gün boyunca sabit kalmıştır ve tetikleyici göstergeler dün kıyaslandığında güçlenmiştir. 10 yıllık reel faiz 99.791 persentilinin en uç kısmında yer almakta, son 60 günde 25 bp daha yükselmiş durumdadır. Bu tarihsel zirvede konumlanma, uzun vadeli varlık değerlemeleri üzerindeki baskıyı keskinleştirmektedir.\n\nKredi spreatleri (HY OAS 271 bp, IG OAS 81 bp) henüz önemli bir bozulma işareti vermemiş olup, volatilite ölçütleri (VIX 16.46, MOVE 82.09) normal sınırlarda kalmaktadır. Ancak yeni tetikleyici olarak ortaya çıkan 5 yıl sonrası 5 yıllık enflasyon beklentisi (2.34%, 95.4 persentil) son 20 işlem gününde 4 bp artış göstermiştir; bu uzun vadeli reel faiz baskısının beklenti mekanizmasına da yansımaya başladığı işareti olabilir.\n\nTürkiye açısından, nominal faiz seviyeleri ve reel getiri farklarındaki bu genişleme, yükselen piyasa sermaye akımlarını sınırlama riski taşımaktadır. Nitekim Türk varlıkların 5 günlük göreceli performansı 93.1 persentilde olup, bu da bölgenin diğer EM'lere kıyasla gerilediğini göstermektedir.\n\nTutulması gereken sonraki tetikleyici, HY OAS'ın 271 bp'den yukarıya çıkması (kredi piyasasının da sıkışmaya katılması) ya da 10 yıllık reel faizin 2.46% üstüne ilerlemesidir. CDS verilerinin eksikliği nedeniyle Türkiye'ye özgü kredi risk premi doğrudan izlenemese de, kredi spreatleri genişlemeye başlarsa EM tahvil taleplerinin sıkı hale gelmesi olasıdır.",
+    "generated_by": "llm"
   }
 ]
