@@ -504,5 +504,19 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi on ikinci gün boyunca kararlılıkla devam etmektedir. 10 yıllık reel faiz 2.6% ile 100. persentilde sabit kalmış, son 60 günde 31 bp yükselişi tetikleyici göstergeye işaret etmektedir. Uzun vadeli varlık değerlemeleri üzerindeki baskı istikrarlı bir şekilde derinleşmektedir; kredi piyasası spreatleri (HY OAS 265 bp, IG OAS 80 bp) hala sakin olmakla birlikte bu durumun ne kadar süreceği belli değildir.\n\nYeni ortaya çıkan 5y5y forward enflasyon beklentileri 2.34% ile son 20 iş gününde 95.8 persentilinin çok yakınına ulaşmıştır. Bu gösterge, merkez bankalarının orta vadeli fiyat istikrarı konusundaki kredibilitesine yönelik piyasa şüphesini işaret etmektedir. Daha geniş tablodan bakıldığında, hem reel hem de nominal oran eğrisi boyunca baskı devam etmektedir: 2 yıllık oran 4.63%, 10 yıllık oran 4.96% ile her ikisi de tarihsel zirveye yerleşmiş durumdadır.\n\nTürkiye açısından değerlendirildiğinde, küresel reel faiz yükselişi ve uzun vadeli enflasyon endişeleri, yerli varlık talebini zayıflatan dış sermaye akışları üzerinde baskı oluşturmaktadır. Reel getiri penceresi daralan bir ortamda, yurt dışı yatırımcıların Türk varlıklarına olan ilgisi sınırlanabilir. VIX ve benzeri risk göstergelerinin henüz normal seviyelerde kalması, olası bir piyasa şokuna karşı bir tampon sağlamakla birlikte, bu durumun kırılganlaştığında yön değiştirebilir.\n\nTakip edilecek tetikleyici: kredi spreatleri (özellikle HY OAS) ilk kez genişlemek; reel faizin yukarı yönde hareketini durduracak bir küresel ekonomik veri; veya Türkiye CDS spreadt ve sermaye giriş/çıkış hızlarında belirgin değişim.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-09-16",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "fwd_5y5y",
+      "brent",
+      "real_10y",
+      "ust_10y",
+      "ust_2y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi on üçüncü gün boyunca kararlılıkla sürmektedir. 10 yıllık reel faiz 2.6% ile tarihsel zirvesinin en uç noktasında (100. persentil) kalmış, son 60 günde 37 bp yükselişi devam etmektedir. Bu seviye, uzun vadeli varlık değerlemeleri üzerindeki baskıyı istikrarlı biçimde koruyor; HY OAS 271 bp ve IG OAS 80 bp'de kalsa da, spreatlerdeki bu durağanlık reel faiz baskısını maskeleyici etkide bulunuyor.\n\nSon gün içinde brent petrolü 108.45 düzeyine çıkarak 96.5. persentile ulaştı ve 20 işlem günü içinde yüzde 18.4 değerlenme gösterdi; bu yeni ortaya çıkan gösterge, enerji maliyetleri üzerindeki ek baskıyı işaret ediyor. Aynı zamanda 5y5y forward faiz beklentisi 2.35%'e yükselmiş (97.5. persentil, 20 gün içinde 3.0 bp değişim) ve bu da uzun vadeli enflasyon beklentilerinin kalıcı kalabileceğini göstermektedir.\n\nTürkiye açısından bu ortam EM sermaye akışlarına karşı ters rüzgar oluşturmaktadır; yüksek reel faiz seviyeleri dolar taşıyıcılığını cazip kılarken, türlü EM varlıklarından çıkışları tetikleyebilir. TR göreceli performans göstergesi (-3.58, 14.9. persentil) bu kaygıyı doğrulamaktadır ve BIST'in küresel risk ortamından bağımsız güç bulması giderek güçleşiyor.\n\nİzlenecek tetikleyici: reel 10 yıllık faiz bu seviyelerde kalırsa veya daha da yüksek giderse kredi spread'lerinin (özellikle HY OAS) bu sakinliğini bozup bozamayacağı, ayrıca petrol fiyatının ilerleme göstermesi halinde belirgin enflasyon çıkışının reel faiz baskısını daha da derinleştirip derinleştiremeyeceğidir.",
+    "generated_by": "llm"
   }
 ]
