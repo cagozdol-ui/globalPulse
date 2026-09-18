@@ -532,5 +532,20 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi on dördüncü gün kararlılıkla devam etmektedir. 10 yıllık reel faiz 2.62% ile 100. persentilde sabitlenmiş durumda olup, son 60 günde 43 bp'lik yükseliş tetikleyici göstergeleri ateşlemektedir. Uzun vadeli varlık değerlemeleri üzerindeki baskı istikrarlı şekilde korunmaktadır; HY OAS 276 bp ve IG OAS 80 bp'de durağan kalması, reel faiz mekanizmasının kredi riski kanalında henüz refleksiyon bulmadığını ancak potansiyel baskı olarak işaret ettiğini göstermektedir.\n\nYeni gelişme olarak bakır 6.6 seviyesinde 97. persentile yükselmiş ve 20 işgünde %2.1 artış kaydetmiştir. Bu komodit kuvvetlenmesi, reel faiz yükselişinin global büyüme beklentilerine karşı direnci olabilir. Aynı zamanda Türkiye nispi performansı (tr_rel_5d) -6.13 ile 4.8. persentile gerilemiş, 20 işgünde -7.7 bp zayıflamıştır; bu ciddi bir yeni uyarıdır.\n\nTürkiye özelinde, uzun vadeli faizlerin (UST_10y 5.0%, UST_2y 4.67%) 100. persentilde kalması ve reel faiz baskısının lira bazlı varlıklarda dış yatırımcıları caydırması olasıdır. Nispi performanstaki stres bu mekanizmanın canlanmış olabileceğini işaret etmektedir. Dolar/lira rota ve yabancı portföy akışları bu baskının şiddetini belirleyecektir.\n\nİzlenecek tetikleyici: Reel faizlerin 100. persentilden ayrılıp ayrılmadığı, HY/IG spreatlerdeki ilk uyarı sinyalleri ve Türkiye nispi performansının iyileşme gösterip göstermemesidir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-09-18",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "copper",
+      "tr_rel_5d",
+      "fwd_5y5y",
+      "real_10y",
+      "ust_10y",
+      "ust_2y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi on beşinci gün kararlılıkla sürmektedir. 10 yıllık reel faiz 2.68% ile 100. persentilde korunmuş, son 60 günde 50 bp'lik yükseliş tetikleyici mekanizmayı ateşlemektedir. Uzun vadeli varlık değerlemeleri üzerindeki baskı bu seviyelerde derinleşmeye devam etmektedir; HY OAS 270 bp, IG OAS 78 bp'de durağan kalırken, reel faiz mekanizması kredi riski kanalında henüz yangın çıkarmamıştır.\n\nDün görülmüş olan istikrarın ötesinde, iki yeni gösterge bundan böyle izleme merkezini değiştirmektedir. Türk varlık performansı son beş günde -7.06 puanlık şok yaşamış olup bu son yirmi işgünde -8.4 bp'lik kümülatif gerilemedir; bakır fiyatları son iki günde 98.8. persentile tırmandı ve %1.3 kazandı. Forward 5y5y oranı 2.34% (96. persentil) yöneliminde, uzun dönem beklentilerin reel faiz şokuyla tamamen kilitlenmiş olduğunu işaret etmektedir.\n\nTürkiye açısından Ankara ve tüm EM finansal kanallar altında yoğun stres görülmektedir. Türk varlıkların son beş günde -7.06 puanlık nispi göçü, reel faiz yükselişinin klinik olarak gelişen pazarlardan sermaye çekmesini ve Türkiye riskinden titremeyi tetiklediğini göstermektedir. Bu arada bakır—üretim ve riskten korunma endüstrisi göstergesi—98.8. persentile tırmanışı, kısa vadeli dolar gücü ve maliye tarafında konservatif duruşun yerleşmesini işaret etmektedir.\n\nİzlenecek tetikleyici: EM cinsinden daha derin performans kaybı (tr_rel_5d'nin -7 seviyesinin altına inmesi) veya alternativ olarak hy_oas'ın 280+ bp eşiğini aşması halinde, reel faiz sıkışmasından kredi stresine geçişin başlamış sayılması gerekecektir. Forward oranlardaki kilidin kırılması (fwd_5y5y'nin 96. persentilden düşmesi) de beklenti dengesinin bozulduğunun işareti olacaktır.",
+    "generated_by": "llm"
   }
 ]
