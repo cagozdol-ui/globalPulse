@@ -563,5 +563,22 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi on sekizinci günü kararlılıkla sürmektedir. 10 yıllık reel faiz 2.61% ile 99.6. persentilde korunmuş, son 60 günde 45 bp'lik yükseliş dinamiği tetikleyici mekanizmayı harekete geçmeye devam etmektedir. Uzun vadeli varlık değerlemeleri üzerindeki baskı bu seviyelerde derinleşmektedir; HY OAS 270 bp ve IG OAS 78 bp'de durağan kalırken, reel faiz mekanizması kredi riski kanalında henüz dirençli görünmektedir.\n\nYeni veri noktalarından 5y5y forward rate 2.35%'e yükselmiş (97.7. persentil, 20 işgünü içinde 3 bp değişim) ve S&P 500 7650.5'te (95. persentil) bulunmaktadır. Bu gelişmeler uzun vadeli enflasyon beklentilerinin sağlamlaşmasını ve küresel hisse senedi fiyatlamasındaki yanıltıcı istikrarı işaret etmektedir. Bakır üç gündür 99.8. persentilde kalmakta, riskli varlık talepindeki belirsizliği yansıtmaktadır. Türk lirası 5 günlük bağıl performansı -10.66 bp ile ters yönde hareket etmektedir; bu, gelişen piyasalara gelen sermaye baskısının Türkiye'yi spesifik olarak etkilediğini göstermektedir.\n\nTürkiye açısından tetikleyici kanal, global reel faiz yükselişinin EM varlıklarına yönelmesini sınırlandırması olabilir. Uzun vadeli faiz ve enflasyon beklentileri yükselde sabitlenirken, lira zayflığı bu seviyelerdeki durgun kalabilir. Gözlenecek sonraki tetikleyici: (1) reel 10y faizin 2.61%'i yukarıda test edip etmeyeceği, (2) HY/IG spreadlerinin reel faiz baskısına karşı kırılıp kırılmayacağı, (3) Türkiye'ye yönelik EM sermaye akışlarının yeniden dirençli olup olmayacağıdır.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-09-22",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "spx",
+      "em_equity",
+      "copper",
+      "real_10y",
+      "ust_10y",
+      "ust_2y",
+      "tr_rel_5d",
+      "fwd_5y5y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi on dokuzuncu gün devam etmektedir. 10 yıllık reel faiz 2.68% ile 100. persentilde sabitlenmiş, son 60 günde 48 bp'lik yükseliş tetikleyici mekanizmayı sürdürmektedir. Önceki günlere nazaran yeni gözlenen gelişme, S&P 500 ve gelişen pazar hisse senetlerinin aynı anda persentil uçlarına çıkmasıdır; bu, yüksek reel faizin küresel risk varlıklarını sıkıştırmaya başladığının işareti olabilir. Kupferin 16 gündür ekstrem seviyede kalması ve ABD uzun vadeli faizlerinin (10 yıl 5.01%, 2 yıl 4.76%) iki haftadır 100. persentilde durması, reel faiz baskısının kredi piyasasına henüz yansımamış olsa da, yapısal bir stres durumunu işaret etmektedir.\n\nTürkiye bağlantı kanalı net şekilde görülmektedir: Türkiye'nin 5 günlük göreceli performansı -9.36 bp ile 1.9. persentilde dibe çıkmış durumda. Bu, ABD reel faizlerinin yükselmesine karşı yerel varlıkların değer kaybettiğini ve sermaye çıkışı baskısını yansıtmaktadır. HY OAS (268 bp) ve IG OAS (77 bp) hala sakin kalmakta olsa da, bu seviyelerde Türk kredi priminin bozulma riski taşıdığı unutulmamalıdır.\n\nKredi spreadi kanalında yangın çıkmamışsa da, reel faiz sıkışması şiddeti eşinden fazla ve kalıcı hale gelmiştir. Yatırımcılar risk varlıklarından çekilmeye başlamış (hisse senetleri yüksek persentilde), emtia tarafı dirençli kalmış (bakır rekor seviyelerde) durumundadır. VIX (14.81) normal seviyelerde kalmakta, ancak bu sakinlik yüksek reel faiz ortamında meçhul bir tetikleyici için kırılgan olabilir.\n\nIzlenecek tetikleyici: İleri 5 yıl 5 yıl enflasyon beklentisinin (şu an 2.35%, 97.7. persentil) 100. persentile kesin olarak ulaşması veya HY OAS'ın 300 bp üzerine çıkması. Türkiye tarafında, CDS verisinin (mevcut değil) gelmesi ve TL varlık göreceli performansının ek zayıflaması durumunda risk keskin biçimde yükselebilir.",
+    "generated_by": "llm"
   }
 ]
