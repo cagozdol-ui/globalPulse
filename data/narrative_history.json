@@ -596,5 +596,22 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi yirminci gün kararlılıkla devam etmektedir. 10 yıllık reel faiz 2.62% ile 99.6. persentilde sabitlenmiş, son 60 günde 37 bp'lik yükseliş tetikleyici mekanizmayı sürdürmektedir. Dün 2.68%'den bugün 2.62%'ye gerileme aksini gösterse de, iki yılın tepesi korunmakta ve uzun vadeli değerleme baskısı kalıcı kalmaktadır.\n\nYeni gösterge olarak ortaya çıkan gelişen pazar hisse senetleri (EM equity) 98.8 persentilinde, 20 işgünü bazında %2.5 kazanç kaydederek, bu rejimin küresel risk varlıklarına yayılmaya başladığını işaret etmektedir. S&P 500'ün 99.6 persentilde kalması ve bakır fiyatının 100. persentilde tutunması ile birlikte, yüksek reel faizin hem gelişmiş hem gelişen pazar hisse senetlerini sıkıştırmaya devam ettiğini göstermektedir. HY OAS (266 bp) ve IG OAS (77 bp) kampanya durağan kalmakta, kredi riski henüz acı verici düzeyde bozulmamıştır.\n\nTürkiye relatif beş günlük bazda -4.17 ile uyarı seviyesinde dalgalanmaktadır (persentil 12.8); bu, reel faiz artışlarının EM sermaye akışlarını yavaşlatmasının bölgesel yansımasıdır. Dolar reel faiz artışları ve küresel risk varlık baskısı, Türkiye'nin dış finansman maliyetlerini yüksek tutmaya devam etme olasılığı taşımaktadır.\n\nİzlenecek sonraki tetikleyici: HY OAS'ın bu seviyelerde tutunup tutunmayacağı ve kredi tariflendirmesi baskısının ne zaman ortaya çıkacağı. Eğer reel 10 yıllık faiz 2.50%'nin altına düşerse rejim hafifleyebilir; tersine yukarı çıkışı devam ederse, kredi tarafında kopuş riski artar.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-09-24",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "vix",
+      "copper",
+      "real_10y",
+      "ust_2y",
+      "ust_10y",
+      "fwd_5y5y",
+      "spx",
+      "em_equity"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi yirmi birinci gün sürmektedir. 10 yıllık reel faiz 2.63% ile 99.6. persentilde sabitlenmiş, son 60 günde 37 bp'lik yükseliş tetikleyici dinamiğini koruyor. Dün öğleden sonra 2.68%'den bugün 2.62%'ye yaşanan geri çekilme kısa vadeli dalgalanma olarak değerlendirilecekse de, rejimdeki tahmin güç oranında herhangi bir zayıflama görülmüyor.\n\nYeni gelişme olarak VIX'in persentil ucunun 4.2'de bulunması, ancak son 20 işgünde 2.1% gerilemesi dikkat çekiyor; bu volatilite baskının yumuşamaya başladığına işaret edebilir. MOVE endeksi 95.45 ile normal seviyelerde kalmış, tahvil piyasası hala sakin durumdadır. Ancak HY OAS 268 bp'de kalıcı kalmakta ve IG OAS 77 bp'de güçlü seyrediyor; kredi yayılmaları reel faiz baskısını henüz tam yansıtmamış durumda.\n\nTürkiye açısından kritik uyarı, TR_REL_5D göstergesinin -4.91 ile persentil 8.7'de konumlanması ve \"warning\" işareti taşıması. Gelişen pazar sermaye akışları 99.6 persentilde yükselen reel faizin karşısında baskı altındadır. Yüksek reel faiz ortamı EM'den kaynak çıkışını tetiklemek için ön koşullar oluşmakta; Türkiye risk primi ve dış finans maliyeti kanal olacaktır.\n\nİzlenecek tetikleyici: Reel faizler 2.70% üzerine çıkış halinde kredi spreadi genişlemesi ve EM hisse akışının hızlanması olasıdır. TR_REL_5D'nin su seviyesini aşması veya CDS'nin (veri geldiğinde) 400 bp üzerine yükselişi, Türkiye'ye yönelik baskının derinleşmesi anlamına gelir.",
+    "generated_by": "llm"
   }
 ]
