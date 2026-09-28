@@ -628,5 +628,22 @@
     ],
     "narrative": "Altın anomalisi tespit edilen piyasa rejiminin ortaya çıkması, klasik dolar-altın ilişkisinin kırılmasını işaret ediyor. Son 60 günde dolar endeksi sadece 0.234% hareket ederken altın 5.003% yükselmiş; bu eşzamansız performans genellikle merkez bankası alım veya jeopolitik risk primini yansıtıyor. Aynı dönemde reel 10 yılık faiz 50 bp yükselişe rağmen altının bu şekilde güçlenmesi klasik ters ilişkinin bozulduğunu gösteriyor.\n\nBir önceki gündeki \"reel faiz sıkışması\" rejiminden bu hareketlenmeye geçiş önemli bir dönüm noktası. VIX'in son iki gün içinde radar uyarısına alınması (4.2 persentil, son 20 işgünü -1.5%), korku endeksinin normalin çok altında olmasına rağmen oynaklığın yeni bir dikkat çektiği anlamına geliyor. Reel faiz seviyeleri 19-21 gündür persentil tepesinde sabitli kalmakta; bu süreğen risk varlığı baskısı altında altının anomalî göstermesi paradoksal görünüyor.\n\nTürkiye bağlamında, tr_rel_5d seviyesi -3.36 ile warning alanında (persentil 17.3). Bu, BIST100'ün gelişen pazar akranlarına göre geri kalma trendi gösteriyor. Reel faizler ne kadar yüksek olursa olsun, jeopolitik prim veya küresel risk kaçışı senaryosunda Türkiye riski önem kazanıyor; CDS verisi boşluğu bu hassasiyeti takip etmeyi güçleştiriyor.\n\nİzlenecek tetikleyici, altının dolla-reel faiz ilişkisine dönüp dönmediği olacak. Reel 10 yılık faiz yükseliş trendesini kırmazsa altın anomalisi devam edebilir; ancak jeopolitik primdeki azalış veya merkez bankası talebinin durması hızlı kırılmayı olabilir. BIST'te gözlenecek iki adım: TL volatilite (MOVE benzeri) hareketiyle dolar dinamikleri arasındaki bozulma, ve yabancı portföy akışlarının jeopolitik risk algısından ne ölçüde etkilendiği.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-09-28",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "fwd_5y5y",
+      "em_equity",
+      "real_10y",
+      "ust_10y",
+      "ust_2y",
+      "spx",
+      "copper",
+      "vix"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi devam ediyor; 10 yıllık reel faiz 2.85% ile iki yılının en tepesinde (100. persentil) seyrediyor ve son 60 günde 61 bp yükselişini muhafaza ediyor. Bu seviye, uzun vadeli varlık değerlemelerine baskı oluşturmaktadır. Dün altın anomalisi rejiminden bugüne geçiş, piyasada reel faiz dinamiğinin tekrar öne çıktığını gösteriyor; dolar-altın ilişkisinin sıkışması yerine faiz reali merkez sahne almış görünüyor.\n\nYeni olarak ileri 5y5y enflasyon beklentisi 2.34% ile 96.5. persentile çıkmış ve gelişen pazar hisse senetleri 67.98 seviyesinde 96.1. persentilde konumlanmış. İkisi birlikte, EM sermaye akışlarının yüksek reel faizlerden uzaklaştığını işaret ediyor. Krediler henüz bozulmamış (HY OAS 280 bp'de sakin), ancak bu yukarı yönlü faiz hareketi uzun vadeli döngüyü zorlamaya başlamış bulunuyor.\n\nTürkiye açısından geçiş kanalı açıktır: reel faiz sıkışması ortamında EM sermaye çıkışları artarken, BIST ve Türk lirası reel getiri rekabetinde daha büyük zorluk çekebilir. Beş günlük BIST getirisi -5.35% ile uyarı seviyesinde (7.6. persentil altında) kalmasının bu dinamikle bağlantılı olduğu olabilir.\n\nİzlenecek tetikleyici: HY OAS'ın sakinliğini koruması kritik; 280 bp'den yükselme durumunda kredi risk priminin faiz sıkışmasıyla eşzamanlı hale gelmesi olabilir. Ayrıca TR_rel_5d'nin -5.35% seviyesinde kalıp kalmaması veya derinleşmesi, EM çıkışlarının Türkiye'ye özel yönelip yönelmediği açısından önemli bir izleme noktası.",
+    "generated_by": "llm"
   }
 ]
