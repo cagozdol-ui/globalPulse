@@ -689,5 +689,18 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi 23 gündür devam ediyor ve tetikleyici gostergelerde güçlü bir istikrar var. 10 yıllık reel faiz 2.91% ile iki yılının en tepesinde (100. persentil) seyrediyor ve son 60 günde 60 bp daha yükselmiş. Bu seviye, uzun vadeli varlık değerlemelerine uygulanan baskıyı açıkça gösteriyor; nominal 10 yıl faiz de aynı dönemde 49 bp artarak 5.26%'ye ulaştı.\n\nRejim parametre açısından istikrarlı görünse de, hızlandırma sinyalleri dikkat çekiyor. 10 yıllık faiz son 30 işgününde 57 bp yükselmiş ve bu tempo sokulmanın hızlanmasını işaret ediyor. Aynı zamanda tahvil oynaklığı (MOVE) 110.45 ile uyarı seviyesine çıkmış; iki yılın 94.2 persentilinde yer alıyor. Borsada Türkiye göreceli performansı da negatif (tr_rel_5d -5.05), bu da gelişen piyasalardaki faiz baskısının bölgesel maliyetlendirmeyi olumsuz etkilediğini gösteriyor.\n\nKredi piyasaları henüz bozulmamış durumda: HY OAS 308 bp'de (77.7. persentil) normal, IG OAS 84 bp'de (76.4. persentil) sakin seyrediyor. Ancak bu dirençlilik, reel faiz dinamiğinin şiddetinden ziyade, piyasaların henüz kredi riskine tam yansıtma yapmadığını olabilir. Türkiye için kritik nokta, sermaye maliyeti artışının cari açık ve dış borçlanma koşullarına ne zaman sızıntı yapacağı. İzlenecek tetikleyici: HY OAS'ın uyarı bölgesine girmesi ve Türkiye CDS'nin veri gelmeye başlaması ile birlikte bölgesel spreadlerin hareketlenmesi.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-10-02",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "real_10y",
+      "ust_10y",
+      "ust_2y",
+      "fwd_5y5y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi dördüncü haftasını tamamlamış durumda. 10 yıllık reel faiz 2.93% ile iki yılının en yüksek seviyesinde (100. persentil) kalmakta ve son 60 günde 61 bp artmış olmaktadır. Nominal 10 yıllık faiz de paralel şekilde 5.29%'ye yükselmiştir; bu durum uzun vadeli varlık değerlemelerine artan baskı oluşturmaya devam ediyor. Dünden bugüne gözle görülür bir değişim olmamış, rejim parametreleri sabit kalmıştır.\n\nKredi piyasası henüz genel olarak dirençli görünmektedir—yüksek getirili tahviller (HY OAS) 312 bp ve yatırım derecesi tahviller (IG OAS) 84 bp seviyesinde \"normal\" olarak sınıflandırılmakta. Fakat 5 yıl ileri 5 yıl faiz beklentisi (fwd_5y5y) 2.36%'de 99.2. persentile ulaşmış olması, uzun vadeli faiz beklentilerinin gergin durumda olduğunu işaret ediyor. Son 30 iş gününde 10 yıllık faizde 55 bp'lik hızlı yükselişe rağmen kredi marjları genişlememiş olması, piyasada bir esneklik kaynağı olabilir.\n\nTürkiye açısından, reel faiz sıkışması ortamı dış borçlanma maliyetlerini yükseltmekte ve EM varlıklarına dönüş tercihlerini olumsuz yönde etkilemeye devam edebilmektedir. Türk dış borç göstergeleri (CDS) şu an veri gelmediğinden bu kanal tek başına izlenemiyor. Ancak Türk 5 günlük göreceli performansı -3.06 ile uyarı seviyesinde seyrediyor ve bu, küresel reel faiz baskısının fiyatlandırmaya yansıdığını gösteriyor.\n\nİzlenecek tetikleyici: kredi marjlarının (HY OAS ya da IG OAS) genişlemeye başlaması rejimin ilk \"sızıntı\" işareti olur. Türkiye CDS verisi geri geldiğinde EM risk primlerindeki değişim, sermaye akımlarının yönünü gösterecektir.",
+    "generated_by": "llm"
   }
 ]
