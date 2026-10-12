@@ -780,5 +780,20 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi bir aydan uzun süredir sebat ediyor ve temel dinamikler değişmemiş durumda. 10 yıllık reel faiz 2.92% ile iki yılın 99.6. persentilinde kalmış; son 60 günde 61 bp yükseliş kaydedilmiş olup bu, uzun vadeli varlıklar üzerinde direkt baskı oluşturmaya devam ediyor. Nominal 10 yıllık faiz 5.28%'de; dün (5.26%) ile karşılaştırıldığında 2 bp'lik hafif bir artış gözlenmiş. Yüksek getiri spreadi 309 bp'de istikrarlı seyretmiş ve kredi piyasaları henüz bu reel faiz yükselmesine tepki vermemiş görünüyor.\n\nDünden bu yana yeni bir tetikleyici ortaya çıkmadı; faiz şoku uyarısı 30 iş gününde 55 bp yükselişi işaret ediyor ve bu, rejimin temel sebebini (uzun vadeli reel faiz baskısı) doğrulamakta. S&P 500 ve bakır, beş gündür persentil üstünde kalmış olmakla birlikte bu, kredi sıkışmasına henüz dönüşmemiş durumdadır. VIX 15.08'de normaldir ve volatilite öldürücü bir seviyede değil.\n\nTürkiye açısından kanal şu şekilde işliyor: küresel reel faizler yükselmekte; bu, para politikasını sıkılaştıran EM'lere karşı arbitraj avantajını azaltmakta ve sermaye akışını engellemeye başlamaktadır. Türk 5 yıllık CDS verisi gelmiyor olsa da, reel faiz sıkışması ortamında risksiz oran yükselmesi, Türkiye gibi yüksek borç hizmetinin bulunduğu ekonomilerde maliye baskısı oluşturacak. Izlenecek tetikleyici: kredi spreadi (HY OAS) sıkışması başlayıp başlamayacağı ve buna karşılık EM para birimleri karşısında TL'nin savunma kabiliyeti.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-10-12",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "brent",
+      "copper",
+      "spx",
+      "real_10y",
+      "ust_10y",
+      "ust_2y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi ayı aşan süresinde devam ediyor ve temel yapı değişmemiş durumda. 10 yıllık reel faiz 2.87% ile 2 yılın 98.3. persentilinde kalmakta, son 60 günde 52 bp yükseliş kaydedilmiştir. Nominal 10 yıllık faiz 5.22% seviyesinden, dünkü 5.27%'ye kıyasla 5 bp düşüş gözlenmiş olsa da, uzun vadeli faizler genel olarak iki yılının tepesinde istikrarlı biçimde yerleşmiş bulunmaktadır.\n\nBrent petrol yeni olarak listeye girdi ve 105.87 dolardan 95.1. persentilde yer almakta; bu, malzeme maliyetlerinde gelen baskıyı işaret ediyor. Bakır ve hisse senedileri (S&P 500) altı gündür yüksek persentil bölgesinde; bu, riski yüksek varlıklardan gelen talep devam etse de, yükselen reel faizin değerlemeler üzerindeki uzun vadeli yükü gölgelediğini olabilir. Kredi piyasaları henüz gerginleşmemiş durumda; HY spread 315 bp ile normal aralıkta ve IG spread 82 bp ile sakinleştiği halde, bu makas ileri dönem kredibilite koşullarına karşı uyarı niteliği taşıyabilir.\n\nTürkiye açısından kanal hem faiz hem de dış talep ekseninde çalışmaktadır. Yükselen reel faizler, TL varlıkların nispi çekiciliğini bir yandan güçlendirse de, uzun vadeli borçlanmada maliyetleri yükseltir; öte yandan petrol ve metallerindeki sertleşme cari dengeye baskı uygulamaya devam ediyor. Turkey CDS verisi ulaşılamadığından dış risk algısı doğrudan ölçülemese de, EM sermaye akışlarını reel faiz sıkışması halen yönlendirmeye devam etmektedir.\n\nİzlenecek tetikleyici: Reel 10 yıllık faizdeki hareketin yönü, kredi spreadlerinin (özellikle HY OAS) bu seviyeleri tırmandırıp tırmandırmayacağı ve petrol fiyatındaki sabit yükseklik ya da gerileme. Nominal faiz türevi volatilite (MOVE) normal seviyelerde kalıyor ancak hızlı hareket ihtimaline hazırlanmalı.",
+    "generated_by": "llm"
   }
 ]
