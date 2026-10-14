@@ -809,5 +809,19 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi bir buçuk aydan uzun süredir yaşanmakta ve temel yapı değişmemiştir. 10 yıllık reel faiz 2.87% ile iki yılın 98. persentilinde yer almaya devam ediyor; son 60 günde 50 bp'lik yükseliş, uzun vadeli varlık değerlemelerine düşük fakat istikrarlı baskı oluşturmaktadır. Nominal 10 yıllık faiz 5.22% seviyesinde yerleşmiş ve bu seviyelerde tekil gün dalgalanmaları sınırlı kalmıştır. Kredi piyasaları (yüksek getirili OAS 315 bp, investment grade OAS 82 bp) henüz paniğe gitmemiş, volatilite göstergeleri (VIX 14.84, MOVE 98.47) normaldir; bu da rejimin yakın terimde acı fakat kontrollü karakterini yansıtır.\n\nDün öncesi temel tetikleyicilerde değişim kaydedilmemiş; reel 10 yıllık faiz, yüksek getirili spread ve nominal 10 yıllık faiz aynı konumlarda sabittir. Hız uyarıları yoktur, yani esen rüzgardan çok bir durağan baskı vardır. Pahalı değerlemeler ve yüksek finansal koşullar zaman içinde etkilerini gösterebilir; ancak bu, ani bir çöküşten çok, yavaş ve sistematik bir erozyon paterni işaret etmektedir.\n\nTürkiye bağlamında, reel faiz sıkışması uluslararası sermaye akımlarına baskı yaratabilir. Yüksek kur (TR_REL 5 gün bazında 1.72 persentilinde normal), Türk varlıklarının göreli cazibesini sınırlayan yüksek küresel faizler ve EM risk priminin (kredi spreadi ve dış borçlanma maliyeti) yüksek kalmasıyla yapışık bir ortamdır. Kurdan ziyade gelişmiş piyasalarda faiz seviyelerinin sertleşmesi, portföy akımlarını baskılamaya devam edebilir.\n\nİzlenecek tetikleyici: reel 10 yıllık faizin 2.87%'den yukarı çıkması (98.3 persentilini kırması) veya kredi spreadlerinin (özellikle yüksek getirili OAS) ani bir genişlemesidir. İkincisi, risk iştahının kaybını işaret ederek rejimi daha keskin bir \"reel-finansal sıkışmaya\" dönüştürebilir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-10-14",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "copper",
+      "spx",
+      "real_10y",
+      "ust_10y",
+      "ust_2y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi otuz iki gündür devam etmekte ve temel yapı değişmemiştir. 10 yıllık reel faiz 2.91% ile iki yılın 99.2 persentilinde yer almakta, son 60 günde 52 bp'lik yükseliş kaydedilmiştir. Bu seviyelerde yerleşen reel faizler, uzun vadeli varlık değerlemelerine istikrarlı bir baskı oluşturmaya devam ediyor. Nominal 10 yıllık faiz ise 5.24% ile yüksek seviyelerde konumlanmış bulunmaktadır.\n\nVolatilite ve kredi göstergeleri henüz rejimin tanımlanmasından sapma işareti vermemektedir. VIX 15.21 ile normal aralıkta, yüksek getirili obligasyon spreadi 311 bp'de endüstri persentilinin alt yarısında yer almakta; kredi tarafı hâlâ dengeli görünmektedir. Investment grade spreadi 83 bp ile sakinliği yansıtmaktadır. Bu durum, yüksek reel faiz ortamının henüz kredi piyasalarında keskin bir deteriyorasyona dönüşmediğini işaret ediyor.\n\nDönem içinde hisse senedi endeksleri ve emtia fiyatları (SPX 7805.45, bakır 6.73) iki haftalık bazda güçlü pozisyon korumakta olsa da, bu performans reel faiz sıkışmasının yapısal baskısıyla tezat halindedir. Yapı uzun süredir değişmediği için bu gözlem bir önceki günlerin analizi ile uyumlu kalmaktadır.\n\nTürkiye açısından reel faiz sıkışması ortamında iki risk kanalı izlenecektir: bir, EM para politikası tepkilerinin gelişmesi; iki, risk primlerinde ani bir yükseliş tetikleyebilecek küresel borç dinamiklerinin hızlanması. Gelişmeler bu çerçevede takip edilmelidir.",
+    "generated_by": "llm"
   }
 ]
