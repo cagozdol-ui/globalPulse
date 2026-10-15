@@ -823,5 +823,19 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi otuz iki gündür devam etmekte ve temel yapı değişmemiştir. 10 yıllık reel faiz 2.91% ile iki yılın 99.2 persentilinde yer almakta, son 60 günde 52 bp'lik yükseliş kaydedilmiştir. Bu seviyelerde yerleşen reel faizler, uzun vadeli varlık değerlemelerine istikrarlı bir baskı oluşturmaya devam ediyor. Nominal 10 yıllık faiz ise 5.24% ile yüksek seviyelerde konumlanmış bulunmaktadır.\n\nVolatilite ve kredi göstergeleri henüz rejimin tanımlanmasından sapma işareti vermemektedir. VIX 15.21 ile normal aralıkta, yüksek getirili obligasyon spreadi 311 bp'de endüstri persentilinin alt yarısında yer almakta; kredi tarafı hâlâ dengeli görünmektedir. Investment grade spreadi 83 bp ile sakinliği yansıtmaktadır. Bu durum, yüksek reel faiz ortamının henüz kredi piyasalarında keskin bir deteriyorasyona dönüşmediğini işaret ediyor.\n\nDönem içinde hisse senedi endeksleri ve emtia fiyatları (SPX 7805.45, bakır 6.73) iki haftalık bazda güçlü pozisyon korumakta olsa da, bu performans reel faiz sıkışmasının yapısal baskısıyla tezat halindedir. Yapı uzun süredir değişmediği için bu gözlem bir önceki günlerin analizi ile uyumlu kalmaktadır.\n\nTürkiye açısından reel faiz sıkışması ortamında iki risk kanalı izlenecektir: bir, EM para politikası tepkilerinin gelişmesi; iki, risk primlerinde ani bir yükseliş tetikleyebilecek küresel borç dinamiklerinin hızlanması. Gelişmeler bu çerçevede takip edilmelidir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-10-15",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "fwd_5y5y",
+      "real_10y",
+      "ust_2y",
+      "ust_10y",
+      "spx"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi otuz üç gündür yaşanmakta ve bugün de aynı koşullar geçerli kalmıştır. 10 yıllık reel faiz 2.88% ile iki yılın 98.33 persentilindedir ve son 60 günde 45 bp'lik yükseliş kaydedilmiştir. Bu yüksek seviyelerde yerleşen reel faizler, uzun vadeli varlık değerlemelerine süregelen baskı oluşturmaya devam ediyor. Dün nominal 10 yıllık faiz daha da yükselmiş, bu hareketi takiben uzun dönem enflasyon beklentileri yeniden yükselişe geçmiş görünmektedir.\n\nDünün sonrasında yeni olarak ortaya çıkan dinamik, 5 yıl-5 yıl ileri faiz beklentisinin (fwd_5y5y) 2.34 seviyesine yerleşmesidir. Bu seviye iki yılın 95. persentilinde yer almakta ve son bir gündür listede bulunmaktadır. Merkez bankasının kontrol ettiği kısa-orta vadeli faizler sabitken, piyasanın 5 yıl sonrasından öngördüğü enflasyon ve faiz ortamı giderek yükselişe geçmiş olması, reel faiz sıkışmasının derinleşmesine işaret etmektedir.\n\nTürkiye açısından bu rejim, yüksek reel faiz seviyeleriyle birlikte yabancı yatırımcılar için EM portföyleri yeniden çekici hale gelmesine karşın, uzun vadeli kredi maliyetlerinin baskı altında kalması anlamına gelmektedir. Ulusal ekonomide kredi tarafının henüz kötüleşmemiş olması, bu sıkışmanın kademeli ama istikrarlı bir etki yaratabileceğini göstermektedir. Gelecek dönemde izlenecek kritik tetikleyici, reel faizlerin bu seviyelerde sabitlenmesi durumunda kredi standartlarında ve kurumsal yatırım kararlarında ortaya çıkabilecek değişimlerdir.",
+    "generated_by": "llm"
   }
 ]
