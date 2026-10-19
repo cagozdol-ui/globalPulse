@@ -852,5 +852,19 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi otuz dört gündür devam etmektedir. 10 yıllık reel faiz 2.84% ile iki yılın 97.5 persentilinde yerleşmiş durumdadır ve son 60 günde 41 bp yükselmiştir. Bu yüksek seviyeler, uzun vadeli varlık değerlemelerine istikrarlı bir baskı oluştururken kredi piyasası henüz bu strese yanıt vermemiştir; yüksek getirili tahvil spreadi 325 bp seviyesinde normal persentil konumunda kalmıştır.\n\nBugün itibariyle iki yeni gösterge stress sinyali vermeye başlamıştır. BIST-USD döviz kuru 236.15 seviyesinde iki yılın 2.7 persentilindedir ve son 20 işlem gününde yüzde 13.3'lük değer kaybı yaşamıştır; bu, reel faiz yüksekliğinin ortaya çıkardığı sermaye çıkışı baskısını işaret ediyor olabilir. Buna karşılık bakır fiyatı 6.63 seviyesinde 96.7 persentilde kalarak enerji talep ve meta beklentilerinin güçlü kaldığını göstermektedir.\n\nTürkiye açısından reel faiz yükselişi, yerel varlık fiyatlamasında devam eden baskı kaynağıdır. Döviz kurundaki son gün hareketi, yabancı portföy akımlarının EM için tercih kaybı yaşayan bir ortamda Türk lirası üzerinde de yüksek reel faizlere rağmen çekim kaybı olduğunu düşündürtmektedir. Gelişmiş ülkelerdeki nominal 10 yıllık faizler (5.19%) ve fiyatlandırmalar (S&P 500 persentil 96.7'de) hala yer aldığından, reel faiz sıkışması temel koşulunun kırılması için dış faiz beklentilerinde keskin bir yumuşama gerekecektir.\n\nİzlenecek tetikleyici: Döviz kurundaki düşüşün bir trend haline dönüp dönmediğini ve buna eşlik edecek şekilde portföy çıkışlarının hızlanıp hızlanmadığını gözlemlemek. Ayrıca reel faizin bu seviyelerde sabitlenip sabitlenmediğini veya daha da yükselip yükselmediğini takip etmek kritiktir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-10-19",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "bist_usd",
+      "brent",
+      "ust_2y",
+      "real_10y",
+      "ust_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi otuz sekiz gündür devam etmektedir ve bugün de yapısal değişim olmamıştır. 10 yıllık reel faiz 2.78% ile iki yılın 97.1 persentilinde yerleşmiş durumda; son 60 günde 34 bp yükselişle arz tarafi yumuşak hale gelmiş olsa da, uzun vadeli varlık değerlemelerine baskı sürmektedir. Yüksek getirili tahvil spreadi 323 bp'de normal persentil konumunda kalmaya devam ederken, bu asimetrinin risk varlıklara yansıması yeni gözlemlenen BIST dolarında belirginleşmektedir.\n\nBIST dolar kuru son iki gün içinde listeye girmiş olup, 234.28 seviyesinde tarihsel 1.7 persentilde bulunmaktadır; 20 işlem günü öncesine kıyasla yüzde 14.3 gerilemiştir. Bu hareket, reel faizlerin yüksek seviyelerde kalmasının Türkiye'ye yönelen sermaye akımını baskıladığını isaret etmektedir. Aynı dönemde Brent petrolü 108.65 dolara yükselmiş (persentil 96.5) olup yüzde 8.3'lük 20 günlük kazançla cari açığı ağırlaştırma potansiyeli taşımaktadır.\n\nNominal faizlerde çok günlük istikrar gözlenirken, reel faiz spreadi 97+ persentilde yerleşmiş durumda EM ve uzun vadeli varlıklar için kalıcı bir cazip olmama ortamı yaratmaktadır. IG spreadi 84 bp'de sakinliğini korumakta ancak bu yapı, kredi olayı gibi bir tetikleyicinin gelişinde ani açılmalar için hazırlıklı olmayı gerektirmektedir.\n\nİzlenecek tetikleyiciler arasında BIST dolar kuru yeni düşüş seviyeleri, Türkiye CDS beş yıllığı (veri eksikliği nedeniyle takip edilemedi), ve ABD 10 yıllık reel faizde persentilden kurtulup gerileyin başarması bulunmaktadır. Petrol fiyatlarının yüksek seviyelerde kalması ve cari açık baskısı, Türk Lirası ve riskli varlıklar üzerindeki olumsuz seslerin yinelenmesini beraberinde getirebilir.",
+    "generated_by": "llm"
   }
 ]
