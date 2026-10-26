@@ -924,5 +924,18 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi kırk üç gündür sürmekte ve bugün de yapısal bir değişim gözlenmemektedir. 10 yıllık reel faiz 2.76% ile iki yılın tepesinde (96.458 persentil) konumlanmış; son 60 günde 29 bp'lik yükseliş devam etmektedir. Uzun vadeli varlık değerlemelerine karşı istikrarlı baskı oluşturmaya devam eden bu ortamda, kredi piyasası henüz bu strese yanıt vermemiş durumdadır—yüksek getirili tahvil spreadi 327 bp'de normal seviyelerde kalmaktadır.\n\nÖnceki güne kıyasla reel faiz biraz düşüş göstermiş (2.77%'den 2.76%'ye), ancak persentil sıralaması istikrarlı kalmıştır. Volatilite göstergeleri (VIX 16.68, MOVE 106.84) ve yatırım seviyesi tahvil spreadi (88 bp, sakin) piyasanın bu noktada yapısal strese işaret etmediğini göstermektedir. Brent petrolün 96.9 persentildeki yüksek seviyeleri ve dolar/lira kurunun 39 gündür hızlı düşüşü (persentil 0.2), Türk piyasalarındaki kaynaştırma baskısını yoğunlaştırmaktadır.\n\nTürkiye açısından bu rejimin kanal etkisi, reel faiz yükselmesinin uzun vadeli yatırımları (hisse, gayrimenkul) caydırması ve dış finansmana erişim maliyetini arttırması yoluyla işlemektedir. Dolar/lira kurunun aşırı zayıflığı ihraç ve dış ticaret dinamiklerini ters yönde etkileme potansiyeli taşırken, yüksek petrol fiyatları enerji ithalatı maliyetlerini yüksek tutmaktadır.\n\nİzlenecek tetikleyici, kredi spreadi genişlemesinin ilk işaretidir; HY-OAS'ın normal persentilden çıkarak 350 bp'yi test etmesi, reel faiz baskısının nihayet kredi piyasasına aktarıldığını gösterecek ve Türk para piyasasında erişim maliyetlerini derhal artıracaktır.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-10-26",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "bist_usd",
+      "brent",
+      "real_10y",
+      "ust_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi kırk dört gündür sürmekte olup, bugün yapısal bir değişim gözlenmemektedir. 10 yıllık reel faiz 2.64% ile iki yılın tepesinde (95.417 persentil) konumlanmış; son 60 günde 21 bp'lik yükseliş, uzun vadeli varlık değerlemelerine karşı istikrarlı baskı oluşturmaya devam etmektedir. Bu baskı ortamında kredi piyasası henüz strese yanıt vermemiş durumdadır—yüksek getirili tahvil spreadi 340 bp'de normal aralıkta seyrederken, investment grade spreadi sakin seviyelerde (89 bp) kalması bu iki katmanlı yapıyı yansıtmaktadır.\n\nTürkiye cephesinde döviz kurundaki hafiflemeden bağımsız olarak reel faiz sıkışması, uzun vadeli tasarruf ve yatırım kararlarını etkilemeye devam etmektedir. BIST 100, dolar karşısında yirmi işlem günü içinde yüzde 13.5 oranında değer kaybetmiş olup, bu durum reel faiz ortamında sermaye maliyetinin yüksekliğine işaret etmektedir. Petrol fiyatlarının 97.5 persentilde kalması (110.09 dolar/varil) enerji maliyetlerindeki baskıyı körüklemeye devam etmektedir.\n\nİzlenecek tetikleyici, kredi piyasasının bu reel faiz seviyesine ne zaman yanıt vereceğidir. Yüksek getirili spreadi 340 bp'de kalsa da, ani bir likidite gerginliği veya seçici (idiosyncratic) şok bu \"sakin\" yüzeyin altında riski gizleme potansiyelini taşımaktadır. Türkiye açısından ise, reel faiz yüksekliğinde uzun soluklu kaldığı takdirde kurban bölge ve yükselen pazar para akışlarına baskı oluşturabilir.",
+    "generated_by": "llm"
   }
 ]
