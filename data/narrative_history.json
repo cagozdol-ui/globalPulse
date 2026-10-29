@@ -967,5 +967,20 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi kırk altıncı gününü tamamlamakta, 10 yıllık reel faiz 2.66% ile iki yılın tepesine (95.4 persentil) sabit kalmaktadır. Son 60 günde 25 bp'lik yükseliş, uzun vadeli varlık değerlemelerine karşı sistematik baskı oluşturmaya devam etmektedir. Dün olduğu gibi bugün de rejim yapısında değişim gözlenmemiş, kredi piyasası—yüksek getirili tahviller 330 bp, yatırım sınıfı 90 bp'de—strese henüz yanıt vermemiştir.\n\nYeni tetikleyici olarak bakır fiyatı 6.64 seviyesinde (96.9 persentil) yer almakta ve 20 iş gününde 1.2% artış göstermektedir; S&P 500 ise 7722.6 ile 95.0 persentilde (20 iş gününde 0.9% kazanç) yerini almıştır. Her iki gösterge de reel faiz baskısı altında yükselen varlık fiyatlandırmasının yeni emarelerini taşımaktadır. Uzun dönem enflasyon beklentileri (5y5y forward 2.25%, 53.4 persentil) ise normal seviyede kalmaya devam etmektedir.\n\nTürkiye cephesinde BIST-USD 224.06 seviyesinde (0.6 persentil) dokuz gündür düşüş halinde, 20 iş gününde yüzde 8.1'lik zayıflama göstermektedir. Brent petrolü ise 110.95'te (97.1 persentil) sekiz gündür yüksek kalmalı, 20 iş gününde yüzde 7.2'lik artış ile enerji maliyetlerine yönelik baskıyı işaret etmektedir. Bu kombinasyon, TL'nin reel faiz diferansiyelinden çıkış aradığını ve petrol fiyat yükseliş riskini göstermektedir.\n\nİzlenen tetikleyici: Kredi piyasasının (yüksek getirili spread) bu reel faiz ortamında genişlemeye başlaması, varsa Türkiye CDS 5Y verisi (şu an eksik) gelmesi ve BIST-USD'nin bu sıkıştırıcı ortamda 224 altına daha fazla kırılıp kırılmayacağıdır.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-10-29",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "spx",
+      "ust_2y",
+      "bist_usd",
+      "brent",
+      "copper",
+      "real_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi kırk yedinci gününü sürdürmektedir. 10 yıllık reel faiz 2.64% ile iki yılın tepesinde (95 persentil) sabit konumlanmış, son 60 günde 21 bp'lik yükseliş varlık değerlemelerine karşı sistematik baskı oluşturmaya devam etmektedir. Dünkü günle kıyaslandığında rejim yapısında değişim gözlenmemiş, ancak yeni gelişmeler söz konusu: S&P 500 1.0% kazançla 96.3 persentile ulaşmış ve ABD 2 yıllık tahvil getirisi 4.7%'e yerleşmiş durumdadır.\n\nReel faiz tepesindeki bu kalış, küresel uzun vadeli varlık değerlemelerine baskı uygulamaya devam ederken kredi piyasası henüz strese dönüşmemiştir. Yüksek getirili tahvil spreadi 318 bp ve yatırım sınıfı spreadi 88 bp'de normal seviyelerde kalmaktadır. Brent petrol 96.9 persentilde ve bakır 95.3 persentilde konumlanması, enerji ve döngüsel mallar üzerindeki direnç isaret etmektedir.\n\nTürkiye açısından tetikleyici rol oynayan gösterge 5 günlük relatif performanstır: BIST 100, dolar karşısında -3.83% ile persentil 16.4'te yer almakta ve bu 10 günlük eğilim (dolar cinsinden -10.3%) devam etmektedir. Reel faiz sıkışması ortamında, gelişen piyasalar için sermaye çıkış baskısı potansiyeli mevcuttur ve Türkiye'nin vadesiz dış borç hassasiyeti bu riski artırmaktadır.\n\nİzlenecek tetikleyici: reel 10 yıllık faizin persentil sıralamasında değişim, kredi spreadlerinde (özellikle yüksek getirili tahviller) yükseliş işareti ve BIST 100 dolar cinsinden 5 günlük relatif performanstaki hareket. Türkiye CDS verisinin yetersizliği nedeniyle alternatif risk göstergelerinin takibi önem taşımaktadır.",
+    "generated_by": "llm"
   }
 ]
