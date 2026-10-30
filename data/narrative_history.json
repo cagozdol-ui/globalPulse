@@ -982,5 +982,18 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi kırk yedinci gününü sürdürmektedir. 10 yıllık reel faiz 2.64% ile iki yılın tepesinde (95 persentil) sabit konumlanmış, son 60 günde 21 bp'lik yükseliş varlık değerlemelerine karşı sistematik baskı oluşturmaya devam etmektedir. Dünkü günle kıyaslandığında rejim yapısında değişim gözlenmemiş, ancak yeni gelişmeler söz konusu: S&P 500 1.0% kazançla 96.3 persentile ulaşmış ve ABD 2 yıllık tahvil getirisi 4.7%'e yerleşmiş durumdadır.\n\nReel faiz tepesindeki bu kalış, küresel uzun vadeli varlık değerlemelerine baskı uygulamaya devam ederken kredi piyasası henüz strese dönüşmemiştir. Yüksek getirili tahvil spreadi 318 bp ve yatırım sınıfı spreadi 88 bp'de normal seviyelerde kalmaktadır. Brent petrol 96.9 persentilde ve bakır 95.3 persentilde konumlanması, enerji ve döngüsel mallar üzerindeki direnç isaret etmektedir.\n\nTürkiye açısından tetikleyici rol oynayan gösterge 5 günlük relatif performanstır: BIST 100, dolar karşısında -3.83% ile persentil 16.4'te yer almakta ve bu 10 günlük eğilim (dolar cinsinden -10.3%) devam etmektedir. Reel faiz sıkışması ortamında, gelişen piyasalar için sermaye çıkış baskısı potansiyeli mevcuttur ve Türkiye'nin vadesiz dış borç hassasiyeti bu riski artırmaktadır.\n\nİzlenecek tetikleyici: reel 10 yıllık faizin persentil sıralamasında değişim, kredi spreadlerinde (özellikle yüksek getirili tahviller) yükseliş işareti ve BIST 100 dolar cinsinden 5 günlük relatif performanstaki hareket. Türkiye CDS verisinin yetersizliği nedeniyle alternatif risk göstergelerinin takibi önem taşımaktadır.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-10-30",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "ust_10y",
+      "bist_usd",
+      "brent",
+      "real_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi kırk sekizinci gününü sürdürmektedir. 10 yıllık reel faiz 2.67% ile iki yılın tepesinde (95.4 persentil) kalmış, son 60 günde 27 bp'lik yükseliş uzun vadeli varlık değerlemelerine karşı baskı oluşturmaya devam etmektedir. Dün olduğu gibi bugün de rejim yapısında değişim gözlenmemiş, kredi piyasası henüz bozulmamış durumdadır—yüksek getirili tahviller 314 bp, yatırım sınıfı 86 bp'de sakin kalmaktadır.\n\nYeni gelişme olarak 10 yıllık ABD tahvil getirisi 5.05%'e çıkmış (95.8 persentil), 20 iş gününde 23 bp'lik düşüşe rağmen persentil uca yaklaşmıştır. Bu hareket, reel faiz baskısının nominal tarafında da yoğunlaştığını isaret etmektedir. Volatilite göstergeleri (VIX 16.91, MOVE 93.54) normal aralıkta olup paniğin henüz finansal sistem geneline yayılmadığını göstermektedir.\n\nTürkiye tarafında baskı belirginleşmektedir: BIST/USD 219.06 seviyesinde (0.2 persentil, 11 gündür listede) kalmış, 20 iş gününde yüzde 12.3 düşüş yaşamıştır. Türkiye ile reel dolar arasındaki göreli performans (tr_rel_5d: -3.15, 21.8 persentil) uyarı seviyesinde bulunmaktadır. Yükselen piyasa sermaye akımları, reel faiz sıkışması ortamında EM varlıklarından kaçış yaşıyor olabilir.\n\nİzlenecek tetikleyici: kredi piyasasının (HY OAS) 314 bp'den ayrılması, Türkiye CDS'nin geri dönmesi ve BIST/USD'nin bu seviyelerde sabitlenemeyip daha aşağıya gitmesi olacaktır. Kısıtlı volatilite ortamında reel faiz baskısının kalıcılığı risk varlıkları—özellikle yükselen piyasaları—ağırlaştırıyor görünmektedir.",
+    "generated_by": "llm"
   }
 ]
