@@ -1016,5 +1016,16 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi süregelmektedir. 10 yıllık reel faiz 2.6% ile iki yılın 93.3 persentilinde sabitlenmiş, son 60 günde 17 bp'lik yükseliş uzun vadeli varlık değerlemelerine karşı baskı uygulamaya devam etmektedir. Dün gözlenen 2.63% seviyesinden hafif gerileme olsa da, rejim yapısı ve mekaniği değişmemiş—faiz artış trendi kırılmamıştır.\n\nKredi piyasası henüz bozulmamış durumda kalıyor. Yüksek getirili tahviller 344 bp ile normal persentil (94.0) seviyesinde, yatırım sınıfı spreadler 94 bp ile yine normal (93.5) aralığında yer almaktadır. Oynaklık ölçütleri (VIX 19.42, MOVE 100.36) de normalde seyrediyor; kredi döngüsü henüz stres göstermemektedir.\n\nTürkiye tarafında BIST/USD kuru 219.54 düzeyinde, 20 işlem günde %12.8 değer kaybı ile aşırı zayıflık (0.6 persentil) göstermeye devam ediyor. Reel faiz sıkışması ortamında yüksek faiz varlıkları çekici görünse de, dolar güçlenmesi ve uzun vadeli getiri baskısı dönem boyunca yerli riski bastırmış durumdadır. CDS verisi eksikliği nedeniyle Türkiye kredi primindeki dinamikler izlenemiyor.\n\nRejimi kıracak aşağıdaki tetikleyicilere dikkat gerekli: reel faiz zirveye ulaştığı sinyalinin kaynağı, kredi piyasasında spread genişlemesi başlangıcı ve EM dış finansmanında net akış değişimleri. Yakında yayımlanacak faiz beklentisi verilerine ve küresel büyüme izlerine odaklanılmalıdır.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-11-04",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "tr_rel_5d",
+      "bist_usd"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi dünle aynı yapıda devam etmektedir. 10 yıllık reel faiz 2.62% ile 2 yılın 94. persentilinde sabitlenmiş, son 60 günde 20 bp'lik yükseliş uzun vadeli varlık değerlemelerine karşı baskıyı sürdürmektedir. Kredi piyasası henüz bozulmamış—hem yüksek getirili (343 bp) hem de yatırım sınıfı (94 bp) spreadler normal seviyelerde kalmaya devam ediyor.\n\nBugünün öne çıkan hareketi Türkiye'nin 5 günlük göreli getirisi ile ilgilidir. TRY bazlı varlıklar 6.28 bp'lik performansla 2 yılın 96.8 persentilinde tutunmuş, bu da 1 gündür raporlanan yeni bir sapıştırmadır. Eşzamanlı olarak volatilite göstergesi (VIX 21.15) warning seviyesinde kalmış; bu durum emerin reel faiz üst basıncı altında daha hareketli hale geldiğini işaret edebilir.\n\nBIST/USD tarafında uzun vadeli bozulma trendine devam ediliyor—20 işlem günü içinde 6.8 % gerileme ve 2.1 persentilde bulunma durumu değişmemiş. Bu, reel faiz sıkışmasının ülkesel getiri ve dış borçlanma maliyetine yönelik mekanizmalarının aktif kaldığını göstermektedir.\n\nÖne alınacak tetikleyici, reel faiz basıncının kredi pazarına sızıp sızmayacağıdır; özellikle HY spreadlerin 350 bp'yi aşıp aşmayacağı ve Türkiye CDS verilerinin (bugün yokluk) ne zaman döneceği izlenmelidir.",
+    "generated_by": "llm"
   }
 ]
