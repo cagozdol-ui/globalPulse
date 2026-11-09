@@ -1048,5 +1048,17 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi bugün de aynı yapıda devam etmektedir. 10 yıllık reel faiz 2.64% ile 2 yılın 94.6 persentilinde yer almakta, son 60 günde 23 bp'lik yükseliş uzun vadeli varlık değerlemelerine karşı baskıyı sürdürmektedir. Dünün 2.65% seviyesinden bugünkü 2.64% seviyesine hafif gerileme olsa da, faiz artış mekanizması hala temel dinamiği belirlemektedir. Kredi piyasası henüz bozulmamış—hem yüksek getirili (332 bp) hem de yatırım sınıfı (91 bp) spreadler normal seviyelerde kalmaya devam ediyor.\n\nDikkati çeken yeni gelişme, Türkiye'nin ileri 5 günlük göreli performansında görülmektedir. TR/gelişmiş piyasalar göreli hareketinde 10.37 birim seviyesine ulaşan ve 2 yılın 100. persentilinde yer alan bu gösterge, son 20 iş günü içinde 9.5 bp'lik katkı sağlamıştır. BIST100 dolar bazlı 227.22 seviyesinde 2 yılın 2.1 persentilinde kalsa da, son günlerin yükseliş hareketi Türkiye'nin bölgesel risk ortamında göreceli güç kazanmaya başladığını işaret edebilir.\n\nGlobal risk göstergelerine bakıldığında, VIX 16.61 seviyesinde ve MOVE endeksi 97.92 seviyesinde normal seviyelerde yer almaktadır. Bu durumda reel faiz sıkışmasının komplikasyon yaratmaktan ziyade varlık tahsisine yönelik seçicilik arttırdığını isaret ediyor. Türkiye özelinde takip edilecek tetikleyici, reel faizin persentil sıralamasında 95 seviyesini aşıp aşmayacağı ve bu durumda kredi spreadlerinin tepki gösterip göstermeyeceğidir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-11-09",
+    "regime_id": "technical_volatility",
+    "regime_label": "Teknik dalgalanma",
+    "highlight_ids": [
+      "tr_rel_5d",
+      "vix",
+      "bist_usd"
+    ],
+    "narrative": "Hisse piyasası volatilitesinde ani ve keskin bir yükseliş gözlemlenmiştir; VIX son 20 işgünde %85.3 oranında sıçrayarak 28.18 seviyesine ulaşmış ve 2 yılın 96.6 persentilinde yer almaktadır. Ancak bu hareketlenme kredi piyasasında yansıma bulamamıştır—hem yüksek getirili (348 bp) hem de yatırım sınıfı (93 bp) spreadler normal seviyeler içinde kalmaya devam etmektedir. Bu uyumsuzluk, volatilite artışının geçici ve pozisyon kaynaklı olabileceğine işaret ediyor.\n\nReel faiz sıkışması rejiminden \"teknik dalgalanma\" rejimine geçiş, VIX'in stress seviyesine çıkması ve Türkiye ilişkili göstergelerde bir öne çıkmayla eşzamanlı gerçekleşmiştir. Özellikle tr_rel_5d (Türkiye nispi performans) 9.46 ile 99.8 persentilinde; son 20 iş günü içinde 8.4 bp'lik bir yükseliş kaydedilmiştir. Bu, Türkiye varlıklarının son dönem göreceli güçlenmesini göstermektedir.\n\nEk olarak, bist_usd (BIST dolar cinsinden) 17 gündür performans çukurunda kalmaya devam etmektedir—233.74 seviyesi 2 yılın 4.2 persentilinde ve son 20 iş günde %5.1 düşüş kaydetmiştir. Reel faiz artan ortamda dolar dayanabilir, ancak Türkiye göreceli güçlenmesi bu basıya karşı bir direnç oluşturmaktadır.\n\nPiyasa izlemesi açısından sonraki tetikleyici, hisse volatilitesinin kredi spreadlerine yayılıp yayılmadığı ve Türkiye ilişkili varlıklardaki performans artışının sürdürülebilir olup olmadığıdır. Eğer VIX elevatörü kredi piyasasına ulaşırsa rejim ciddi bir bozulmaya işaret edecektir.",
+    "generated_by": "llm"
   }
 ]
