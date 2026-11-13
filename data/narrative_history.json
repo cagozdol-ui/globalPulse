@@ -1092,5 +1092,16 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi bir gün daha devam ediyor ve yapısı değişmemiş durumda. 10 yıllık reel faiz 2.66% ile 2 yılın tepesinde (95.2 persentil) konumlanmış; son 60 günde 31 bp'lik yükseliş kaydetti. Bu yükseliş, uzun vadeli varlık değerlemelerine karşı artan baskıyı işaret ediyor. Dün -12.0 bp'lik günlük gerileme olsa da, 20 işgünlük pencerede reel faiz hala yüksek seviyede seyretmeye devam ediyor.\n\nKredi piyasası tarafı koruyucu görünüyor. High yield ve investment grade spreadler (sırasıyla 334 bp ve 91 bp) her ikisi de normal aralıklar içinde—yani piyasa henüz kredi riski taşıyıcı olarak hareket etmiyor. VIX ve MOVE volatilite ölçütleri de normal seviyelerdedir. Bu fotoğraf, reel faiz yükselmesinin şu an için risks varlıkları değil, uzun vadeli tahvil değerlemelerini hedef aldığını gösteriyor.\n\nTürkiye boyutu sınırlı görünmektedir. TR_rel_5d göstergesi -2.43 seviyesinde kalıp normal aralıkta (29.1 persentil); BIST'in gelişen piyasa reel faiz basıncıyla eş zamanlı hareket etmediği anlamına geliyor. Ancak küresel reel faizlerin yükselmesi, ilerleyen dönemde EM sermaye akışlarını sindirebilir.\n\nİzlenecek tetikleyici, kredi spreadlerinin bu sıkı ortamda ne yapacağıdır. Eğer high yield OAS 334 bp'nin ötesinde genişlemeye başlarsa, sıkışmanın risk varlıklarına yayılmaya başladığı anlamı taşır. Aynı zamanda yabancı yatırımcı akışları (BIST performansı) ve TL gücü, reel faiz baskısının Türkiye'ye iletilip iletilmediğinin göstergesi olacak.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-11-13",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "ust_2y",
+      "real_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi bir gün daha aynı yapıda devam ediyor. 10 yıllık reel faiz 2.78% ile 2 yılın 96.9 persentilinin tepesinde konumlanmış durumda; son 60 günde 38 bp'lik yükseliş kaydetti. Bu seviye, uzun vadeli varlık değerlemelerine karşı süregelen baskıyı işaret ediyor. Kredi piyasası henüz bozulmamış—yüksek getirili spreadler 330 bp ve yatırım sınıfı spreadler 90 bp'de normal aralıkta seyrediyor.\n\nDünkü günle karşılaştırıldığında rejim yapısı değişmemiş, ancak 2 yıllık hazine faizi (4.73%) yeni olarak stress seviyesine çıktı ve 95.2 persentilde yer aldı. 20 işgünlük perspektiften bakıldığında -1.0 bp'lik ufak gerilemeye rağmen, bu oran da yüksek seviyede istikrarlı durumda. Volatilite göstergeleri (VIX 17.49, MOVE 98.43) normal aralıkta kalıyor; piyasa riski şu an yapıya yansımıyor.\n\nTürkiye açısından bu yapı, EM para birimlerine ve borsa değerlemelerine yönelik yer değiştirme baskısı oluşturmaya devam olabilir. Reel faizin yüksek kaldığı sürece, yatırımcılar gelişmiş piyasalardaki getiri fırsatlarına döne devam edebilir. Bununla birlikte, kredi piyasası şu an \"kandırılmamış\"—geniş reel faiz farkına rağmen spreader normal. Bu durum, piyasanın kısa dönem daha fazla sıkışmaya tolerans gösterdiği anlamına gelir.\n\nİzlenecek tetikleyici: 2 yıllık reel faizin 2.78% seviyesini aşıp daha da yükselip yükselmeyeceği ve kredi spreadlerinin (özellikle yüksek getirili) sıkışıp sıkışmayacağı. Ayrıca Türkiye CDS verisi dönerek risk farkını doğrudan izlemeyi sağlamaya başlayacak olması önem taşıyacak.",
+    "generated_by": "llm"
   }
 ]
