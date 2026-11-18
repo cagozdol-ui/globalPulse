@@ -1129,5 +1129,18 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi beşinci gününe girdi ve yapısı değişmemiş durumda kalmaya devam ediyor. 10 yıllık reel faiz 2.91% ile 2 yılın 99.2 persentilinin en üst ucunda yer alıyor; son 60 günde 59 bp'lik yükseliş bu seviyeyi tarihsel baskının doruk noktasına taşıdı. Dün kaydedilen 14 bp'lik günlük yükseliş, reel getiri baskısının hala aktif olduğunu gösteriyor.\n\nYeni gelişme olarak 10 yıllık nominal getiri 5.15%'ye çıkış ve bist_usd'nin 232.19'a düşüşü, Türkiye için EM sermaye akımlarının ciddi şekilde bozulmakta olduğunu işaret ediyor. 2 yıllık tahvil getirisi 4.88% ile 99.6 persentilde sabit kalmış durumda; bu kombinasyon, eğri yapısının hala ters-eğri karakterini koruduğunu ancak özellikle uzun ucun baskı altında olduğunu gösteriyor. Yüksek getirili spreadler 323 bp'de normal seviyelerde kalmakla birlikte, kredi piyasasının henüz işitme mesafesinde bozulma işareti yoktur.\n\nTürkiye için risk taşıma kapasitesi zayıflamakta görünüyor. Dolar cinsinden hisse senedi fiyatlamasının 20 işgünde %2.4 gerileme kaydetmesi, hem reel faiz yükselmesi hem de TL zayıflamasının eşzamanlı etkisini yansıtıyor. Bu durum, global reel faiz seviyelerinde istikrar sağlanana dek BIST'e gelen akımların düşük kalabileceğini işaret ediyor.\n\nIzlenecek tetikleyici: Yüksek getirili spreadlerin (hy_oas) 330 baz puan eşiğinin aşılması veya 2 yıllık tahvil getirilerinin 99.9 persentili kırması halinde, reel faiz sıkışması rejimi kredi piyasası etkilerine geçebilir. BIST'in dolar bazında 230 seviyesi altına düşmesi de EM sergisi kapısının kapanmakta olduğunu net şekilde gösterecektir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-11-18",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "bist_usd",
+      "real_10y",
+      "ust_2y",
+      "ust_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi altıncı gününe girdi ve temel yapısı değişmeden devam ediyor. 10 yıllık reel faiz 2.92% ile 2 yılın 99.6 persentilinin en üst ucunda sabit kaldı; son 60 günde 58 bp'lik yükseliş, bu seviyeyi tarihsel baskının doruk noktasına yerleştirmiş durumda. Reel getiri baskısının güçlü ve kalıcı olması, uzun vadeli varlık değerlemelerine karşı beklenen baskıyı işaret ediyor.\n\nDünden bugüne önemli bir yeni harekat gözlendi: BIST/USD 229.05 seviyesine gerileyerek 2 yılın 2.3 persentilinin en alt ucuna düştü ve 20 iş günü bazında %1.9 düşüş kaydetti. Bu ani gerileme, reel faiz ortamının EM varlıklarına yönelik baskısının Türkiye piyasasına somut olarak yansıdığını gösteriyor. Kredi piyasası henüz bozulmamış—yüksek getirili spreadler 334 bp'de normal seviyede kalmaya devam ediyor.\n\nTürkiye açısından kanal net olarak görülüyor: yüksek reel faiz ortamı, dolar/lira paritesi üzerinden yabancı sermayeyi caydırıyor ve BIST'e aşağı yönlü baskı yapıyor. 2 yıllık Türk tahvil getirisi 4.83% ile 98.3 persentilinde yüksek kalması, Türk merkez bankasının politika cevabını çoğaltıyor.\n\nIzlenecek tetikleyiciler: (1) BIST/USD'nin bu seviyelerde stabilize olup olamayacağı, (2) Türk kredi spreadlerinin (CDS veri eksikliği nedeniyle direkt izlenemiyor ancak) geniş yen alıp almayacağı, (3) reel 10 yılık faizin 60 bp'lik basamağı aşıp aşmayacağı. Eğer gerileme devam ederse, EM sermaye akımlarına yönelik baskı daha belirgin hale gelebilir.",
+    "generated_by": "llm"
   }
 ]
