@@ -1169,5 +1169,19 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi dün teknik oynaklığın yerini aldı ve ikinci gününe girdi. 10 yıllık reel faiz 2.88% seviyesinde, 2 yılın en üst ucundaki (97.7 persentil) konumunu koruyor; son 60 günde 46 bp'lik artış, bu tarihsel yüksekliğin kalıcı bir trend tarafından desteklendiğini gösteriyor. Kredi piyasası henüz bu reel getiri baskısına yanıt vermemiş durumda—HY spread 347 bp ve IG spread 93 bp ile rahat seviyelerde seyrediyor—ancak uzun vadeli varlık değerlemeleri üzerindeki baskı devam etmektedir.\n\nDün kaydedilen önemli değişim, 5 yıl ileri 5 yıl enflasyon beklentisinin (fwd_5y5y) keskin şekilde düşmesidir. Son 20 iş gününde 10 bp'lik gerileme sonucu 2.1 persentile inerken, bu gösterge 2 yılın en düşük seviyelerine ulaşmıştır. Reel faiz zirve yaparken, enflasyon beklentilerinin aynı anda zayıflaması, piyasanın nominal faiz yapısının normalleşme sinyali verdiğini ancak reel getiri baskısının henüz çekilmediğini işaret ediyor.\n\nTürkiye açısından kanal, USD/TRY kurundaki (220.64) devam eden zayıflıkla bağlantılıdır. 4 günden beri 2 yılın en düşük persentilinde (0.8) yer alan lira, küresel reel faiz yükselişine karşı sermaye çekişine maruz kalmaya devam ediyor. Reel getiri baskısı arttıkça, gelişen piyasalardan çıkış basıncı sürebilir.\n\nİzlenecek ana tetikleyici, kredi spreadlerinin (özellikle HY) bu reel faiz zirveye nasıl yanıt vereceğidir. Yüksek seviyede istikrarlı kalması, fundamentallerin dayanıklı olduğunu doğrulayacak; ancak 360 bp'nin üzerine çıkışı, piyasanın reel getiri ortamını giderek daha sorunlu görmeye başladığının işareti olacaktır.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-11-23",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "vix",
+      "hy_oas",
+      "bist_usd",
+      "real_10y",
+      "ust_2y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi ikinci gün kalmakla birlikte, volatilite ve kredi piyasasında yeni baskılar ortaya çıkmış durumda. VIX 35.89 ile tarihsel 99. persentile ulaşarak geçtiğimiz 20 iş gününde %95.2'lik sıçrama kaydetti; bu, hisse piyasasında keskin gerginliğin 1 günlük bir fenomen olmadığını, daha geniş risk kaçışı dinamiklerine işaret ediyor. High yield spread ise 376 bp'ye çıkarak persentil 97'ye ulaştı ve 1 günde listeye girdi—46 bp'lik artış, kredi piyasasının nihayetinde reel faiz baskısını fiyatlamaya başladığını gösteriyor.\n\n10 yıllık reel faiz 2.88%'de 97.7 persentilinin en yüksek konumunu 9. gün için korumaya devam ediyor; 60 günde 44 bp'lik yükseliş, bu tarihsel seviyenin strukturel bir trende dayandığını pekiştiriyor. Ileri 5y5y beklentisi 2.12% ile normal seviyelerde kalmış olması, enflasyon beklentisinin şimdilik tutarlı görüldüğünü ama uzun vadeli reel getirilerin baskı altında olduğunu gösteriyor. BIST/USD ise 5. günü kesintisiz 219.01'de ve persentil 0.4'ün alt ucunda; lira, reel faiz ve global risk kaçışının kombinasyonuna karşı korunmasız durumda.\n\nTürkiye açısından kanal şu şekilde şekilleniyor: Global reel faiz baskısı ve artan volatilite ortamında, yerli varlıklara aşağıdan bakan EM yatırımcıları kredi spreadlerini genişletiyor ve lira satıyor. BIST/USD'nin persentil alt ucunda 5 gün kalması, bu sermaye kaçışının hız ve kalıcılığını vurguluyor. Türkiye Merkez Bankası ve kredi piyasasındaki herhangi bir adaptasyon—ya faiz, likidite ya da iletişim şeklinde—bu kaçışı tersine çevirip çeviremeyeceği izlenecek ana tetikleyici olmakla beraber, global reel faiz trendi de bağımsız olarak önemli risk taşıyor.",
+    "generated_by": "llm"
   }
 ]
