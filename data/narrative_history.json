@@ -1219,5 +1219,17 @@
     ],
     "narrative": "Reel faiz sıkışması rejimi devam ediyor. 10 yıllık reel faiz 2.79% ile 95.6 persentilde kalarak son 60 günde 37 bp artış kaydetti; bu, uzun vadeli borçlanma maliyetlerinin ciddi şekilde yükselmeye devam ettiğini gösteriyor. Dün rapor edildiği gibi kredi piyasasında henüz genel bir bozulma gözlenmemiş olsa da, VIX 26.36'da (94.0 persentil) uyarı seviyesinde ve high yield spread 372 bp ile 96.0 persentilde sabitlenmiş durumda; bu ikisi beraber, risk kaçışının yavaş fakat istikrarlı bir şekilde ilerlediğini işaret ediyor.\n\nÖnceki günlerden fark edilecek husus, BIST/USD'nin (214.4, 0.4 persentil) 8 gündür en düşük seviyelerde seyretmesi ve Türkiye nispi hisse senedi getirisinin (tr_rel_5d = -4.48, 12.3 persentil) uyarı seviyesine düşmesidir. Bu iki gösterge, gelişen piyasaların reel faiz ortamında değer kaybetme tuzağına düştüğünü ve Türkiye'nin içinde de bu eğilimin belirgin olduğunu göstermektedir. Dış piyasada 10 yıllık reel faiz zirvelerine yaklaşırken, EM varlıkları ve özellikle Türk hisse senetleri sermaye çıkışı baskısı altında kalmaktadır.\n\nTürkiye'ye geçiş kanalı açıktır: reel faiz yükselmesi, dolarla rekabetin keskinleşmesine ve EM portföylerinden çıkışa yol açmakta; bunu BIST/USD düşüşü ve nispi performans erozyonu doğrulamaktadır. CDS verisi eksik olması nedeniyle kredi primleri izlenebildiği kadarıyla baskı altında olup, Merkez Bankası'nın ilerlemesi parasal sıkılıkla çakışacak şekilde geliştikçe, iç faiz oranları da talep kaybına maruz kalabilir.\n\nİzlenecek tetikleyici: reel 10 yıllık faizin 95.6 persentilden daha yukarı çıkıp çıkmayacağı, VIX'in uyarı seviyesinden geçip stress'e girip girmeyeceği ve BIST/USD'nin yeni düşük seviyelere inip inmeyeceğidir. Aynı zamanda kredi spreadlerinin (HY OAS) 96.0 persentilden yükselip yaygın bir kredi stresini tetikleyip tetiklemeyeceği yakından izlenmelidir.",
     "generated_by": "llm"
+  },
+  {
+    "as_of": "2026-11-27",
+    "regime_id": "real_rate_squeeze",
+    "regime_label": "Reel faiz sikismasi",
+    "highlight_ids": [
+      "bist_usd",
+      "hy_oas",
+      "real_10y"
+    ],
+    "narrative": "Reel faiz sıkışması rejimi dördüncü haftasını tamamlıyor. 10 yıllık reel faiz 2.79% ile 95.6 persentilde konumunu koruyarak son 60 günde 36 bp artmış; uzun vadeli borçlanma maliyetlerinin kalıcı yüksekliği, varlık değerlemeleri üzerinde baskı oluşturmaya devam ediyor. Türkiye relatif performansı -6.46 ile 5.2 persentilinde stres bölgesinde; bu, EM dış akımlarının hızlandığını isaret ediyor.\n\nVIX 26.36'da (93.9 persentil) uyarı seviyesinde kalırken, high yield spreadi 372 bp'de (96.0 persentil) istikrar bulmuş gibi görünüyor; son beş iş gününde kredi piyasasında belirgin ilerleme ya da kötüleşme sinyali henüz gözlenmiyor. MOVE endexi 97.54'te normal aralıkta kalmış, tahvil volatilitesi kontrollü durumdadır.\n\nRejim tetikleyicileri değişmedi ve dünkü günden bir sapma gözlenmedi. Reel faiz trend çizgisi güçlü ve yatay; bu, sıkışmanın yapısal olabileceğini isaret ediyor. Türkiye açısından BIST ve Türk varlıkları reel faiz yükselişine karşı hassasiyet göstermeye devam ediyor; CDS verilerinin eksikliği, ülkeye özgü kredi riski değerlendirmesini sınırlandırmakta.\n\nİzlenecek tetikleyici: high yield spreadin 372 bp seviyesinde hareket alanı daralmaya başlayıp yeniden 380+ bp'ye çıkıp çıkmayacağı; bunun yanı sıra VIX'in alarm seviyesini (27 civarı) aşıp aşmayacağı ve Türk varlıklarının bu dış şoklar karşısında ne kadar daha EM çıkışının hedefi olacağı.",
+    "generated_by": "llm"
   }
 ]
